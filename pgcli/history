@@ -1,0 +1,1679 @@
+
+# 2020-05-10 23:11:49.615165
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE ) as
++death, case_type as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++
+
+# 2020-05-10 23:12:20.655514
++SELECT * FROM casos
+
+# 2020-05-10 23:12:24.480000
++SELECT * FROM casos;
+
+# 2020-05-10 23:13:37.924153
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, case_type as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:14:24.838962
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++deatvh, case_type as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:14:34.151587
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, case_type as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:15:25.139428
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++USE
+
+# 2020-05-10 23:15:36.471138
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, case_type as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:17:13.236654
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = '') as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:17:33.242851
++SELECT case_type FROM casos;
+
+# 2020-05-10 23:17:39.227044
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed') as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:18:15.364346
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed') as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region; 
+
+# 2020-05-10 23:18:22.165331
++SELECT DISTINCT country_region,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths') as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed') as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:19:33.332603
++SELECT country_region as country,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths' and country_region = country) as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed' and country_region = country) as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:21:48.602790
++WITH SELECT country_region as country,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths' and country_region = country) as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed' and country_region = country) as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:23:17.783426
++SELECT country_region as country,(SELECT COUNT (*) FROM casos WHERE case_type = 'Deaths' and country_region = country) as
++death, (SELECT COUNT (*) FROM casos WHERE case_type = 'Confirmed' and country_region = country) as infected, COUNT(*) AS cases FROM casos GROUP BY country_region,case_type ORDER BY country_region;
++USE
+
+# 2020-05-10 23:26:01.707650
++SELECT country_region, COUNT(*) FROM casos
+
+# 2020-05-10 23:26:13.549066
++SELECT country_region, COUNT(*) FROM casos GROUP BY country_region
+
+# 2020-05-10 23:26:22.365963
++SELECT country_region, COUNT(cases) FROM casos GROUP BY country_region
+
+# 2020-05-10 23:26:34.751540
++SELECT country_region, COUNT(cases) FROM casos GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:27:17.779925
++SELECT country_region, COUNT(cases) AS Infectados FROM casos GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:27:46.391961
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Confirmed' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:31:01.577988
++SELECT country_region, COUNT(cases as cases2) AS Infectados FROM casos WHERE case_type='Confirmed' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:31:34.958192
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Confirmed' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:32:03.456924
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:32:41.986526
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region JOIN SELECT COUNT(cases) AS Muertos FROM casos
+
+# 2020-05-10 23:33:29.220581
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region INNER JOIN SELECT COUNT(cases) AS Muertos FROM casos
+
+# 2020-05-10 23:35:35.483134
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region union SELECT COUNT(cases) AS Muertos FROM casos
+
+# 2020-05-10 23:36:49.775238
++select count(caseS) as muertos from casos
+
+# 2020-05-10 23:36:52.288113
++q
+
+# 2020-05-10 23:37:06.912424
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region union SELECT COUNT(cases) AS Muertos FROM casos
+
+# 2020-05-10 23:37:19.377039
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region UNION SELECT COUNT(cases) AS Muertos FROM casos
+
+# 2020-05-10 23:38:35.990927
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-10 23:45:55.253468
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region UNION 
+
+# 2020-05-10 23:46:03.862452
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region UNION SELECT * FROM casos;
+
+# 2020-05-10 23:46:36.921770
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY country_region ORDER BY country_region UNION ALL SELECT * FROM casos;
+
+# 2020-05-10 23:46:49.577437
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' UNION
+
+# 2020-05-10 23:46:56.458087
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' UNION SELECT * from casos
+
+# 2020-05-10 23:47:07.563561
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' UNION SELECT * from casos GROUP BY country_region
+
+# 2020-05-10 23:47:13.003587
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' UNION SELECT * from casos GROUP BY casos.country_region
+
+# 2020-05-10 23:48:03.407952
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT * from casos 
+
+# 2020-05-10 23:48:51.955922
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT COUNT(cases)as 'Infected' from casos WHERE casos.case_type = 'Confirmed' 
+
+# 2020-05-10 23:49:10.853164
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT COUNT(cases) AS 'Infected' from casos WHERE casos.case_type = 'Confirmed' 
+
+# 2020-05-10 23:49:12.932757
++q
+
+# 2020-05-10 23:49:30.806191
++SELECT country_region, COUNT(cases) AS Infectados FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT COUNT(cases) AS 'Infected' from casos WHERE casos.case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:49:59.481328
++SELECT country_region, COUNT(cases) AS Muertos FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT COUNT(cases) AS Infectados  from casos WHERE casos.case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:50:43.660035
++SELECT count(*) from casos where case_type = 'Infected'
+
+# 2020-05-10 23:50:50.380620
++SELECT count(*) from casos where case_type = 'Confirmed'
+
+# 2020-05-10 23:51:59.938433
++SELECT count(*) from casos where case_type = 'Confirmed'group by country_region
+
+# 2020-05-10 23:52:13.843563
++SELECT count(country_region) from casos where case_type = 'Confirmed'group by country_region
+
+# 2020-05-10 23:53:10.712329
++SELECT count(country_region) from casos where case_type = 'Death'group by country_region
+
+# 2020-05-10 23:53:16.936719
++SELECT count(country_region) from casos where case_type = 'Deaths'group by country_region
+
+# 2020-05-10 23:54:40.400132
++SELECT country_region, COUNT(cases) AS Muertos FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT COUNT(cases) AS Infectados  from casos WHERE casos.case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:55:03.793510
++SELECT country_region, COUNT(cases) AS Muertos FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT Null, COUNT(cases) AS Infectados  from casos WHERE casos.case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:55:24.051335
++SELECT country_region, COUNT(cases) AS Muertos FROM casos WHERE case_type='Deaths' GROUP BY casos.country_region UNION SELECT Null as test, COUNT(cases) AS Infectados  from casos WHERE casos.case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:57:40.174700
++SELECT countyr_region, COUNT(cases) AS Infectados FROM casos where case_type = 'Confirmed'
+
+# 2020-05-10 23:57:51.935483
++SELECT country_region, COUNT(cases) AS Infectados FROM casos where case_type = 'Confirmed' 
+
+# 2020-05-10 23:57:58.959916
++SELECT country_region, COUNT(cases) AS Infectados FROM casos where case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-10 23:58:09.392923
++SELECT country_region, COUNT(cases) AS Infectados FROM casos where case_type = 'Confirmed' GROUP BY country_region O
+
+# 2020-05-10 23:58:10.800903
++SELECT country_region, COUNT(cases) AS Infectados FROM casos where case_type = 'Confirmed' GROUP BY country_region 
+
+# 2020-05-11 00:01:42.322978
++SELECT DISTINCT case_type FROM casos;
+
+# 2020-05-11 00:01:49.827443
++SELECT country_region, COUNT(A.cases), COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' GROUP BY country_region FULL OUTER JOIN 
+
+# 2020-05-11 00:01:54.499870
++SELECT country_region, COUNT(A.cases), COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' GROUP BY country_region 
+
+# 2020-05-11 00:02:39.399683
++SELECT country_region, COUNT(A.cases), COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' and a.country_region = B.countr GROUP BY country_region 
+
+# 2020-05-11 00:02:54.584885
++SELECT A.country_region, COUNT(A.cases), COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' and a.country_region = B.country_region GROUP BY A.country_region 
+
+# 2020-05-11 00:04:27.920744
++SELECT A.country_region, COUNT(A.cases)AS Muertos, COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' and a.country_region = B.country_region GROUP BY A.country_region 
+
+# 2020-05-11 00:04:54.549415
++SELECT A.country_region, COUNT(A.cases)AS Muertos, COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' and a.country_region == B.country_region GROUP BY A.country_region 
+
+# 2020-05-11 00:06:22.954771
++SELECT A.country_region, COUNT(A.cases)AS Muertos, COUNT(B.cases) AS Infectados FROM casos A, casos B where A.case_type = 'Confirmed' and B.case_type = 'Deaths' and a.country_region = B.country_region GROUP BY A.country_region, B.country_region
+
+# 2020-05-11 00:07:06.383387
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.caseS) AS Muertos from casos A, casos B
+
+# 2020-05-11 00:07:19.391986
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.caseS) AS Muertos from casos A, casos B GROUP BY A.country_region
+
+# 2020-05-11 00:09:33.789727
++SELECT cases FROM casos where case_type = 'Confirmed'
+
+# 2020-05-11 00:10:28.849915
++SELECT cases FROM casos where case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-11 00:10:38.931793
++SELECT country_region,cases FROM casos where case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-11 00:10:45.315607
++SELECT country_region,cases FROM casos where case_type = 'Confirmed' GROUP BY country_region,cases
+
+# 2020-05-11 00:11:21.671182
++SELECT country_region,count(case)s FROM casos where case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-11 00:11:29.527886
++SELECT country_region,count(cases) FROM casos where case_type = 'Confirmed' GROUP BY country_region
+
+# 2020-05-11 00:14:02.421998
++SELECT A.country_region, COUNT(A.cases) AS Infectados AS Muertos from (SELECT cases FROM casos WHERE case_type = 'Confirmed') as A GROUP BY A.country_region
+
+# 2020-05-11 00:14:05.622355
++q
+
+# 2020-05-11 00:14:18.743700
++SELECT A.country_region, COUNT(A.cases) AS Infectados AS Muertos from (SELECT cases FROM casos WHERE case_type = 'Confirmed') A GROUP BY A.country_region
+
+# 2020-05-11 00:14:32.857569
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT cases FROM casos WHERE case_type = 'Confirmed') as A GROUP BY A.country_region
+
+# 2020-05-11 00:15:01.947480
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A GROUP BY A.country_region
+
+# 2020-05-11 00:15:27.421775
++SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed'
+
+# 2020-05-11 00:16:43.460764
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A, (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B   GROUP BY A.country_region
+
+# 2020-05-11 00:17:00.134204
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A GROUP BY A.country_region
+
+# 2020-05-11 00:17:18.679904
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A, (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B GROUP BY A.country_region
+
+# 2020-05-11 00:17:44.618802
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B,cases) as Muertos from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A, (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B GROUP BY A.country_region
+
+# 2020-05-11 00:17:55.611477
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B.cases) as Muertos from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A, (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B GROUP BY A.country_region
+
+# 2020-05-11 00:18:30.142368
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as A GROUP BY A.country_region
+
+# 2020-05-11 00:18:46.255839
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Infected') as A GROUP BY A.country_region
+
+# 2020-05-11 00:18:55.376666
++SELECT A.country_region, COUNT(A.cases) AS Infectados from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A GROUP BY A.country_region
+
+# 2020-05-11 00:21:00.780016
++SELECT B.country_region, COUNT(B.cases) AS Infectados, COUNT (B.cases) as Muertos from  (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B GROUP BY B.country_region
+
+# 2020-05-11 00:23:26.697176
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B.cases) as Muertos from (SELECT country_region,cases FROM casos WHERE case_type = 'Confirmed') as A, (SELECT country_region,cases FROM casos WHERE case_type = 'Deaths') as B GROUP BY A.country_region
+
+# 2020-05-11 00:23:53.643466
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B.cases) as Muertos from casos A, casos B
+
+# 2020-05-11 00:24:05.628715
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B.cases) as Muertos from casos A, casos B group by A.country_region
+
+# 2020-05-11 00:24:55.153525
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT (B.cases) as Muertos from casos A, casos B WHERE A.case_type 'Confirmed' group by A.country_region
+
+# 2020-05-11 00:25:13.074437
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos A, casos B WHERE A.case_type 'Confirmed' group by A.country_region
+
+# 2020-05-11 00:25:41.013002
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos as A, casos B WHERE A.case_type 'Confirmed' group by A.country_region
+
+# 2020-05-11 00:26:05.927865
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos A, casos B WHERE case_type 'Confirmed' group by A.country_region
+
+# 2020-05-11 00:26:17.432212
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos A, casos B WHERE casos B
+
+# 2020-05-11 00:26:22.920927
++\dt 
+
+# 2020-05-11 00:26:29.017309
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos A, casos B WHERE casos B
+
+# 2020-05-11 00:26:52.779336
++SELECT A.country_region, COUNT(A.cases) AS Infectados, COUNT(B.cases) as Muertos from casos A
+
+# 2020-05-11 00:27:01.740176
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos A
+
+# 2020-05-11 00:27:14.509230
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos A GROUP BY A.country_region
+
+# 2020-05-11 00:27:35.327154
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos A, casos B GROUP BY A.country_region
+
+# 2020-05-11 00:52:12.390865
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A, casos as B GROUP BY A.country_region
+
+# 2020-05-11 00:54:52.148378
++SELECT a.cases, b.cases from casos a, casos b
+
+# 2020-05-11 01:04:37.295064
++SELECT culo FROM putas
+
+# 2020-05-11 01:04:50.191627
++SELECT A.culo FROM putas A
+
+# 2020-05-11 01:04:56.096048
++SELECT A.culo FROM putas A, putas B
+
+# 2020-05-11 01:05:05.776572
++SELECT A.culo, B.chocha FROM putas A, putas B
+
+# 2020-05-11 01:06:14.884539
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos A, casos B GROUP BY A.country_region
+
+# 2020-05-11 02:37:14.919153
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos A
+
+# 2020-05-11 02:37:27.856993
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A, casos as B GROUP BY A.country_region
+
+# 2020-05-11 02:37:58.946218
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A  GROUP BY A.country_region
+
+# 2020-05-11 02:38:13.794795
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A, casos as B GROUP BY A.country_region B.country_region
+
+# 2020-05-11 02:38:21.283074
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A, casos as B GROUP BY A.country_region, B.country_region
+
+# 2020-05-11 02:38:32.323513
++quti
+
+# 2020-05-11 02:38:33.939578
++quit
+
+# 2020-05-11 10:53:36.320784
++SELECT A.country_region, COUNT(A.cases) AS Infectados from casos as A, casos as B GROUP BY A.country_region, B.country_region
+
+# 2020-05-11 10:56:56.073371
++SELECT A.country_region FROM casos
+
+# 2020-05-11 10:56:59.594151
++SELECT A.country_region FROM casos A
+
+# 2020-05-11 10:57:05.706091
++SELECT A.country_region FROM casos A, casos B
+
+# 2020-05-11 10:57:19.963714
++SELECT chocha FROM p
+
+# 2020-05-11 10:57:31.547588
++SELECT A.chocha FROM putas A, putas B
+
+# 2020-05-11 11:08:43.196379
++\d casos
+
+# 2020-05-11 11:21:49.011946
++SELECT * FROM casos;
+
+# 2020-05-11 11:35:43.356751
++SELECT * FROM casos WHERE country_region = 'Venezuela'
+
+# 2020-05-11 11:38:34.997225
++quit
+
+# 2020-05-11 11:38:36.789428
++uit
+
+# 2020-05-11 11:38:38.053599
++quit
+
+# 2020-05-11 11:40:33.407293
++SELECT country_region, cases as infectados from casos WHERE
++
++
++
++;
+
+# 2020-05-11 11:41:50.612318
++SELECT country_region, count(cases) AS infectados
++FROM casos
++WHERE case_type = 'Confirmed';
+
+# 2020-05-11 11:42:04.085654
++SELECT country_region, count(cases) AS infectados
++FROM casos
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:19:06.457343
++SELECT country_region, count(cases) AS infectados
++FROM casos 
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:23:19.783135
++SELECT country_region as pais, count(cases), count(SELECT cases from casos WHERE country_region = 'pais') AS infectados
++FROM casos 
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:26:09.891123
++SELECT country_region as pais, count(cases), count(SELECT cases from casos WHERE country_region = 'pais' AS infectados
++FROM casos A, (SELECT 
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:26:45.893951
++SELECT country_region as pais, count(cases), count(SELECT cases from casos WHERE country_region = 'pais' )AS infectados
++FROM casos A, (SELECT 
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:26:50.630104
++SELECT country_region as pais, count(cases), count(SELECT cases from casos WHERE country_region = 'pais' )AS infectados
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:27:42.477147
++SELECT country_region as pais, count(cases), (SELECT count(cases) from casos WHERE country_region = 'pais' )AS infectados
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:29:03.381149
++SELECT country_region as pais, count(cases) as infectados, (SELECT count(cases) from casos WHERE country_region = pais )AS infectados
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:30:00.764989
++SELECT A.country_region, count(cases) as infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region )AS infectados
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:33:13.918860
++SELECT DISTINCT case_type FROM casos;
+
+# 2020-05-11 12:33:20.390293
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:34:04.217286
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 12:36:41.438022
++SELECT country_region,count(cases) FROM casos GROUP BY country_region:
+
+# 2020-05-11 12:36:43.854393
++SELECT country_region,count(cases) FROM casos GROUP BY country_region;
+
+# 2020-05-11 12:36:53.614557
++SELECT country_region,count(cases) FROM casos GROUP BY country_region ORDER BY country_region;
+
+# 2020-05-11 12:43:21.584033
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos Pais
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 12:43:32.613160
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS 'Muertos Pais'
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region;
+
+# 2020-05-11 13:08:37.304419
++DROP table casos
+
+# 2020-05-11 14:29:30.646459
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 14:34:39.783688
++DROP table casos
+
+# 2020-05-11 14:34:56.456673
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 14:59:53.116111
++\d casos
+
+# 2020-05-11 14:59:58.829238
++\dt
+
+# 2020-05-11 15:10:02.383290
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 15:10:56.004991
++\dt
+
+# 2020-05-11 15:10:57.909260
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 15:51:44.175632
++DROP table casos
+
+# 2020-05-11 15:54:05.545517
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 16:01:47.879631
++DROP table casos
+
+# 2020-05-11 16:06:14.424156
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 16:06:28.072961
++DROP table casos
+
+# 2020-05-11 16:06:31.289150
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:15:19.887090
++DROP table casos
+
+# 2020-05-11 17:15:22.607866
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:15:46.144949
++\dt
+
+# 2020-05-11 17:16:12.194913
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:25:07.830874
++\dt
+
+# 2020-05-11 17:25:09.846949
++DROP table casos
+
+# 2020-05-11 17:25:12.423166
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:26:24.620022
++DROP table casos
+
+# 2020-05-11 17:26:27.020181
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:29:05.159012
++DROP table casos
+
+# 2020-05-11 17:29:19.719951
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:31:53.698822
++SELECT country_region,count(cases) FROM casos GROUP BY country_region ORDER BY country_region;
+
+# 2020-05-11 17:52:37.114542
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 17:52:38.794630
++DROP table casos
+
+# 2020-05-11 17:52:41.547525
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 18:01:45.870396
++DROP table casos
+
+# 2020-05-11 18:01:47.726209
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 18:28:52.941820
++DROP table casos
+
+# 2020-05-11 18:28:55.005573
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 18:32:41.962955
++DROP table casos
+
+# 2020-05-11 18:33:00.380144
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 18:44:14.520076
++DROP table casos
+
+# 2020-05-11 18:44:16.199772
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 18:50:41.761327
++DROP table casos
+
+# 2020-05-11 18:50:43.729419
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 19:00:03.623104
++x
+
+# 2020-05-11 19:00:29.816990
++SELECT country_region,count(cases) FROM casos WHERE country_region = 'Venezuela' ORDER BY country_region;
+
+# 2020-05-11 19:00:47.530136
++SELECT country_region,count(cases) FROM casos WHERE country_region = 'Venezuela' GROUP BY country_region ORDER BY country_region;
+
+# 2020-05-11 19:01:25.340739
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' GROUP BY country_region ORDER BY country_region;
+
+# 2020-05-11 19:01:32.028929
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela'  ORDER BY country_region;
+
+# 2020-05-11 19:05:44.746424
++SELECT country_region, MAX(cases= FROM casos WHERE country_region = 'Venezuela'  ORDER BY country_region;
+
+# 2020-05-11 19:05:51.179377
++SELECT country_region, MAX(cases) FROM casos WHERE country_region = 'Venezuela'  ORDER BY country_region;
+
+# 2020-05-11 19:06:01.691474
++SELECT country_region, MAX(cases) FROM casos WHERE country_region = 'Venezuela';
+
+# 2020-05-11 19:06:13.068141
++SELECT country_region, MAX(cases) FROM casos WHERE country_region = 'Venezuela' GROUP BY country_region;
+
+# 2020-05-11 19:06:34.685709
++SELECT country_region, MAX(cases) FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' GROUP BY country_region;
+
+# 2020-05-11 19:06:51.197986
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' GROUP BY country_region;
+
+# 2020-05-11 19:06:55.838606
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' GROUP BY country_region,cases;
+
+# 2020-05-11 19:07:05.455372
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ;
+
+# 2020-05-11 19:13:02.852796
++\d casos
+
+# 2020-05-11 19:13:24.837498
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY Date;
+
+# 2020-05-11 19:13:29.110437
++SELECT country_region, cases FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY casos.Date;
+
+# 2020-05-11 19:13:56.247496
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY Date;
+
+# 2020-05-11 19:14:00.055815
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths';
+
+# 2020-05-11 19:14:34.361910
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY DATE ;
+
+# 2020-05-11 19:14:47.690793
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY casos.DATE ;
+
+# 2020-05-11 19:16:38.977644
++DROP table casos
+
+# 2020-05-11 19:17:11.731760
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths';
+
+# 2020-05-11 19:17:17.092805
++DROP table casos
+
+# 2020-05-11 19:17:25.541188
++\d casos
+
+# 2020-05-11 19:18:39.561321
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths';
+
+# 2020-05-11 19:20:18.447701
++SELECT COUNT(*) FROM casos
+
+# 2020-05-11 19:20:38.896946
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY Date;
+
+# 2020-05-11 19:20:48.257528
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY report_date;
+
+# 2020-05-11 19:21:00.610334
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported;
+
+# 2020-05-11 19:21:09.330892
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC;
+
+# 2020-05-11 19:22:43.625610
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported;
+
+# 2020-05-11 19:22:46.953160
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported LIMIT 1;
+
+# 2020-05-11 19:23:37.357168
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported;
+
+# 2020-05-11 19:23:45.613015
++q
+
+# 2020-05-11 19:23:49.661605
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC;
+
+# 2020-05-11 19:23:57.502186
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1;
+
+# 2020-05-11 19:25:46.516832
++SELECT TOP* FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1;
+
+# 2020-05-11 19:25:53.509329
++SELECT TOP * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1;
+
+# 2020-05-11 19:26:04.998128
++SELECT TOP 1 * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1;
+
+# 2020-05-11 19:26:16.902688
++SELECT * FROM casos WHERE country_region = 'Venezuela' and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1;
+
+# 2020-05-11 19:30:08.447970
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:31:05.925461
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region
+
+# 2020-05-11 19:32:56.328713
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++HAVING MAX(date_reported)
++ORDER BY A.country_region;
+
+# 2020-05-11 19:35:23.063668
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported limit 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++HAVING MAX(date_reported)
++ORDER BY A.country_region;
+
+# 2020-05-11 19:35:28.094925
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported limit 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:36:56.200506
++select country_Region from casos;
+
+# 2020-05-11 19:37:02.809383
++select country_Region from casos order by date_reported;
+
+# 2020-05-11 19:37:58.196912
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT MAX(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported limit 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:38:15.350765
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported limit 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:38:46.359849
++SELECT A.country_region as pais, MAX(cases) as Infectados, 
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:40:48.338405
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:41:21.869860
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
++USE
+
+# 2020-05-11 19:41:27.975428
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:42:10.842862
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados,
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:43:41.601956
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados,
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++ORDER BY A.country_region;
+
+# 2020-05-11 19:44:27.271142
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados,
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 19:46:41.656437
++DELETE TABLE casos
++;
+
+# 2020-05-11 19:46:54.920029
++SELECT COUNT(*) FROM casos
++
+
+# 2020-05-11 19:47:04.504759
++DELETE TABLE casos
++;
+
+# 2020-05-11 19:47:07.145193
++SELECT COUNT(*) FROM casos
++
+
+# 2020-05-11 19:47:14.089523
++DROP table casos
+
+# 2020-05-11 19:47:28.138543
++SELECT COUNT(*) FROM casos
++
+
+# 2020-05-11 19:51:01.770821
++SELECT country_region, cases FROM casos WHERE countyr_region = 'US'
++;
+
+# 2020-05-11 19:51:10.940196
++SELECT country_region, cases FROM casos WHERE country_region = 'US'
++;
+
+# 2020-05-11 19:51:26.060745
++SELECT country_region, cases FROM casos WHERE country_region = 'US'order by date_reported ;
+
+# 2020-05-11 19:51:32.685330
++SELECT country_region, cases FROM casos WHERE country_region = 'US'order by date_reported DESC;
+
+# 2020-05-11 19:51:55.535129
++SELECT country_region, cases FROM casos WHERE country_region = 'US'order by date_reported asc;
+
+# 2020-05-11 19:58:57.118816
++SELECT country_region, cases FROM casos WHERE country_region = 'US'order by cases asc;
+
+# 2020-05-11 19:59:15.647554
++SELECT DISTINCT country_region, cases FROM casos WHERE country_region = 'US'order by cases asc;
+
+# 2020-05-11 19:59:24.320450
++SELECT DISTINCT country_region, cases FROM casos WHERE country_region = 'US'order by cases DESC;
+
+# 2020-05-11 19:59:36.529000
++SELECT DISTINCT country_region, cases FROM casos WHERE country_region = 'US'order by date_reported DESC;
+
+# 2020-05-11 19:59:57.666738
++SELECT DISTINCT country_region, cases, date_reported FROM casos WHERE country_region = 'US'order by date_reported DESC;
+
+# 2020-05-11 20:00:24.245231
++SELECT *  FROM casos WHERE country_region = 'US'order by date_reported DESC;
+
+# 2020-05-11 20:33:34.259706
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 20:35:28.969046
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados,
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 20:37:09.872014
++SELECT * FROM casos where country_region = 'Venezuela'
+
+# 2020-05-11 20:38:22.901209
++SELECT * FROM casos where country_region = 'Venezuela' ORDER BY date_reported
+
+# 2020-05-11 20:39:31.337778
++SELECT country_region, cases, case_type  FROM casos where country_region = 'Venezuela' ORDER BY date_reported
+
+# 2020-05-11 20:39:42.794671
++SELECT country_region, cases, case_type, date_reported  FROM casos where country_region = 'Venezuela' ORDER BY date_reported
+
+# 2020-05-11 20:39:50.922835
++SELECT country_region, cases, case_type, date_reported  FROM casos where country_region = 'Venezuela' ORDER BY date_reported DESC
+
+# 2020-05-11 20:43:10.616466
++\d casos
+
+# 2020-05-11 20:43:20.521162
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region = 'Venezuela' ORDER BY date_reported DESC
+
+# 2020-05-11 20:43:29.530354
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region = 'US' ORDER BY date_reported DESC
+
+# 2020-05-11 20:43:52.747617
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region != 'US' ORDER BY date_reported DESC
+
+# 2020-05-11 20:44:23.037292
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region != 'US' AND province_state != 'N/A'  ORDER BY date_reported DESC
+
+# 2020-05-11 20:45:13.761323
++SELECT country_region, province_state  , cases,difference,  case_type, date_reported  FROM casos where country_region != 'US' AND province_state != 'N/A'  ORDER BY date_reported DESC
+
+# 2020-05-11 20:49:36.066406
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region != 'Venezuela' ORDER BY date_reported DESC
+
+# 2020-05-11 20:49:44.259011
++SELECT country_region, province_state  , cases, case_type, date_reported  FROM casos where country_region = 'Venezuela' ORDER BY date_reported DESC
+
+# 2020-05-11 20:50:11.941355
++SELECT country_region,difference,  province_state  , cases, case_type, date_reported  FROM casos where country_region = 'Venezuela' ORDER BY date_reported DESC
+
+# 2020-05-11 20:51:25.338285
++SELECT country_region, SUM(difference) FROM casos GROUP BY country_region
+
+# 2020-05-11 20:51:48.155850
++SELECT country_region, SUM(difference) FROM casos GROUP BY country_region ORDER BY country_region
+
+# 2020-05-11 20:57:46.995185
++SELECT A.country_region as pais,  
++	(SELECT SUM(difference) FROM casos WHERE country_region = A.country_region and case_type='Confirmed' )AS Infectados,
++	(SELECT SUM(difference) from casos WHERE country_region = A.country_region and case_type='Deaths')AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 20:58:34.086569
++SELECT country_region, SUM(difference) FROM casos GROUP BY country_region ORDER BY country_region
+
+# 2020-05-11 20:58:50.295436
++SELECT country_region, SUM(difference) FROM casos WHERE country_region = 'Venezuela' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-11 20:59:23.833592
++SELECT country_region, SUM(difference) FROM casos WHERE country_region = 'Venezuela' and case_type ='Deaths' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-11 21:00:07.516525
++SELECT country_region, difference FROM casos WHERE country_region = 'Venezuela' and case_type ='Deaths' GROUP BY country_region ORDER BY country_region
+
+# 2020-05-11 21:00:16.861159
++SELECT country_region, difference FROM casos WHERE country_region = 'Venezuela' and case_type ='Deaths'  ORDER BY country_region
+
+# 2020-05-11 21:00:31.102293
++SELECT country_region, difference, cases FROM casos WHERE country_region = 'Venezuela' and case_type ='Deaths'  ORDER BY country_region
+
+# 2020-05-11 21:00:59.568242
++SELECT country_region, difference, cases, date_reported FROM casos WHERE country_region = 'Venezuela' and case_type ='Deaths'  ORDER BY date_reported
+
+# 2020-05-11 21:33:36.328189
++SELECT count (*) from testing
++;
+
+# 2020-05-11 21:34:29.737811
++SELECT A.country_region as pais,  
++	(SELECT SUM(difference) FROM casos WHERE country_region = A.country_region and case_type='Confirmed' )AS Infectados,
++	(SELECT SUM(difference) from casos WHERE country_region = A.country_region and case_type='Deaths')AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 21:35:50.592740
++SELECT count (*) from casos
++;
+
+# 2020-05-11 21:38:12.357800
++SELECT a.country_region as "Pais", sum(a.difference) as "Casos",
++(SELECT sum(difference) as Fallecidos FROM caso
++WHERE a.country_region=country_region and case_type = 'Deaths'
++GROUP BY country_region)
++FROM casos a
++WHERE a.case_type = 'Confirmed' 
++GROUP BY country_region
++ORDER BY country_region
+
+# 2020-05-11 21:38:28.279363
++SELECT a.country_region as "Pais", sum(a.difference) as "Casos",
++(SELECT sum(difference) as Fallecidos FROM casos
++WHERE a.country_region=country_region and case_type = 'Deaths'
++GROUP BY country_region)
++FROM casos a
++WHERE a.case_type = 'Confirmed' 
++GROUP BY country_region
++ORDER BY country_region
+
+# 2020-05-11 21:41:08.463178
++SELECT A.country_region as pais,  
++	(SELECT SUM(difference) FROM casos WHERE country_region = A.country_region and case_type='Confirmed' )AS Infectados,
++	(SELECT SUM(difference) from casos WHERE country_region = A.country_region and case_type='Deaths')AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 21:42:33.653055
++SELECT count (*) from testing
++;
+
+# 2020-05-11 21:42:36.533225
++SELECT count (*) from casos
++;
+
+# 2020-05-11 21:43:12.535823
++SELECT count (*) from testing
++;
+
+# 2020-05-11 21:52:23.896262
++SELECT a.country_region as "Pais", sum(a.difference) as "Casos",sum(b.difference) as "Muertes"
++FROM casos a, casos b
++WHERE a.country_region=b.country_region AND a.case_type = 'Confirmed' AND b.case_type = 'Deaths'
++GROUP BY a.country_region, b.country_region
+
+# 2020-05-11 21:58:09.966604
++SELECT * FROM casos where country_region = 'Dominica' ORDER BY date_reported
+
+# 2020-05-11 21:58:54.562168
++SELECT country_region, cases, difference FROM casos where country_region = 'Dominica' ORDER BY date_reported
+
+# 2020-05-11 22:05:22.795228
++SELECT country_region, MAX(cases) FROM casos GROUP by country_region
+
+# 2020-05-11 22:20:12.376534
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM casos A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 22:20:31.674163
++SELECT A.country_region, count(cases) as Infectados, (SELECT count(cases) from casos WHERE country_region = A.country_region and case_type='Deaths' )AS Muertos
++FROM testing A
++WHERE case_type = 'Confirmed'
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 22:25:53.131302
++SELECT MAX(cases) FROm casos
+
+# 2020-05-11 22:26:12.348927
++SELECT MAX(cases) FROM casos WHERE country_region = 'Venezuela'
+
+# 2020-05-11 22:47:41.607421
++SELECT country_region, MAX(cases) FROM casos GROUP by country_region
+
+# 2020-05-11 22:48:22.345262
++SELECT country_region,province_state,  MAX(cases) FROM casos GROUP by country_region, province_state ORDER BY country_Region
+
+# 2020-05-11 22:53:38.720254
++SELECT country_region, province_state, MAX(cases)  FROM casos group by country_region,province_State
++;
+
+# 2020-05-11 22:53:47.745586
++SELECT country_region, province_state, MAX(cases)  FROM casos group by country_region,province_State, order by country_Region;
+
+# 2020-05-11 22:53:56.049859
++SELECT country_region, province_state, MAX(cases)  FROM casos group by country_region,province_State order by country_Region;
+
+# 2020-05-11 22:55:45.241487
++SELECT country_region, province_state, MAX(cases) FROM casos GROUP BY country_region, province_state ORDER BY country_region, province_state
++;
+
+# 2020-05-11 22:59:04.979661
++SELECT country_region, province_state, SUM(cases) FROM casos GROUP BY country_region, province_state ORDER BY country_region, province_state
+
+# 2020-05-11 23:02:24.305590
++select * from cases
+
+# 2020-05-11 23:02:26.513301
++select * from casos
+
+# 2020-05-11 23:02:36.705958
++select max(cases) from casos
+
+# 2020-05-11 23:07:05.764370
++SELECT A.country_region as pais,  
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Confirmed' ORDER BY date_reported DESC LIMIT 1 )AS Infectados,
++	(SELECT cases from casos WHERE country_region = A.country_region and case_type='Deaths' ORDER BY date_reported DESC LIMIT 1 )AS Muertos
++FROM casos A
++GROUP BY country_region
++ORDER BY A.country_region;
+
+# 2020-05-11 23:18:03.459227
++SELECT country_region
++CASE
++    WHEN province_state != 'N/A'
++END    
++FROM casos;
+
+# 2020-05-11 23:23:20.516224
++SELECT 
++CASE country_region
++    WHEN province_state != 'N/A'
++END    
++FROM casos;
+
+# 2020-05-11 23:26:40.096570
++SELECT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos;
+
+# 2020-05-11 23:27:02.499306
++SELECT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region
++;
+
+# 2020-05-11 23:27:13.635239
++SELECT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++;
+
+# 2020-05-11 23:27:53.078166
++SELECT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:28:11.623124
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:34:01.534066
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN true END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:34:41.581185
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:34:52.620896
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:35:07.565747
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:35:09.981871
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:48:16.501697
++SELECT DISTINCT CASE
++ WHEN province_state != 'N/A' THEN country_region
++ ELSE country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:50:02.141276
++SELECT DISTINCT CASE
++ WHEN province_state != 'N/A' THEN country_region
++ WHEN province_State = 'N/A' THEN country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:50:55.742318
++select country_region,province_state 
++from casos
++where country_region = 'US'
++;
+
+# 2020-05-11 23:51:13.279893
++select country_region,province_state 
++from casos
++where country_region = 'US'
++and province_state = 'N/A';
+
+# 2020-05-11 23:51:18.834799
++SELECT DISTINCT CASE
++ WHEN province_state != 'N/A' THEN country_region
++ WHEN province_State = 'N/A' THEN country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:52:23.213187
++SELECT DISTINCT CASE
++ WHEN province_state != 'N/A' THEN country_region
++ WHEN province_state = 'N/A' THEN country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:54:20.197076
++SELECT DISTINCT CASE
++ WHEN province_state = 'N/A' THEN country_region
++ WHEN province_state = 'N/A' THEN country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:54:41.506071
++select country_region,province_state 
++from casos
++where country_region = 'US'
++and province_state = 'N/A';
+
+# 2020-05-11 23:54:50.498844
++SELECT DISTINCT CASE WHEN province_state != 'N/A' THEN country_region END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:55:41.735395
++SELECT DISTINCT CASE
++ WHEN province_state = 'N/A' THEN country_region
++ WHEN province_state = 'N/A' THEN country_region
++ END AS country_region
++from casos 
++group by country_region,province_State
++order by country_region;
+
+# 2020-05-11 23:56:47.769253
++select country_region,province_state from casos where country_region = 'United Kingdom'
+
+# 2020-05-12 00:01:27.422305
++select country_region, sum(cases) from casos
+
+# 2020-05-12 00:01:36.270185
++select country_region, sum(cases) from casos group by country_region
+
+# 2020-05-12 00:05:35.347286
++select a.country_region, 
++(SELECT SUM(cases) FROM casos WHERE country_region = a.country_region) 
++from casos a
++  group by country_region;
+
+# 2020-05-12 00:13:55.306027
++select a.country_region, 
++(SELECT SUM(cases) FROM casos b WHERE b.country_region = a.country_region and date_reported = (SELECT max(date_reported) from casos where country_region = b.country_region )) 
++from casos a
++  group by country_region;
+
+# 2020-05-12 00:26:05.659801
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region
++)
++from casos a
++group by country_region;
+
+# 2020-05-12 00:29:03.008777
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = a.country_region)
++)
++from casos a
++group by country_region;
+
+# 2020-05-12 00:30:00.623243
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = a.country_region)
++)
++from casos a
++group by country_region
++order by country_region;
+
+# 2020-05-12 00:48:59.798518
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = a.country_region and case_type='Deaths') as Muertes, (select sum(cases) from casos b where a.country_region = b.country_region and da
++ te_reported  = (select max(date_reported) from casos where country_region = a.cou
++ ntry_region and case_type='Confirmed') as Infectados
++)
++from casos a
++group by country_region
++order by country_region;
+
+# 2020-05-12 00:52:11.557226
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Deaths') as Muertes, 
++(select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Confirmed') as Infectados)
++from casos a
++group by country_region
++order by country_region;
+
+# 2020-05-12 00:52:15.533580
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Deaths') as Muertes, 
++(select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Confirmed') as Infectados)
++from casos a
++group by country_region
++order by country_region;
++
+
+# 2020-05-12 00:52:42.505953
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Deaths')) as Muertes, 
++(select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Confirmed')) as Infectados)
++from casos a
++group by country_region
++order by country_region;
++
+
+# 2020-05-12 00:52:53.998063
++select country_region,
++ (select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Deaths')) as Muertes, 
++(select sum(cases) from casos b where a.country_region = b.country_region and date_reported  = (select max(date_reported) from casos where country_region = 
++		a.country_region and case_type='Confirmed')) as Infectados
++from casos a
++group by country_region
++order by country_region;
++
+
+# 2020-05-12 00:57:27.967267
++select country_region,
++  (select sum(cases) from casos b 
++   where a.country_region = b.country_region and date_reported  = 
++   (select max(date_reported) from casos where country_region = a.country_region) and case_type = 'Confirmed'
++ ) As Infectados, 
++   (select sum(cases) from casos c
++   where a.country_region = c.country_region and date_reported  = 
++   (select max(date_reported) from casos where country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ from casos a
++ group by country_region
++ order by country_region;
+
+# 2020-05-12 01:03:43.747957
++SELECT a.country_region as "Pais", MAX(cases) as "Casos",
++(SELECT sum(difference) as Fallecidos FROM caso
++WHERE a.country_region=country_region and case_type = 'Deaths'
++GROUP BY country_region)
++FROM caso a
++WHERE a.case_type = 'Confirmed' 
++GROUP BY country_region
++ORDER BY country_region
+
+# 2020-05-12 01:03:46.763807
++SELECT a.country_region as "Pais", MAX(cases) as "Casos",
++(SELECT sum(difference) as Fallecidos FROM caso
++WHERE a.country_region=country_region and case_type = 'Deaths'
++GROUP BY country_region)
++FROM casos a
++WHERE a.case_type = 'Confirmed' 
++GROUP BY country_region
++ORDER BY country_region
+
+# 2020-05-12 01:03:52.566490
++SELECT a.country_region as "Pais", MAX(cases) as "Casos",
++(SELECT sum(difference) as Fallecidos FROM casos
++WHERE a.country_region=country_region and case_type = 'Deaths'
++GROUP BY country_region)
++FROM casos a
++WHERE a.case_type = 'Confirmed' 
++GROUP BY country_region
++ORDER BY country_region
+
+# 2020-05-12 01:14:07.398357
++SELECT country_region,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region
++ ORDER BY country_region;
+
+# 2020-05-12 01:18:50.927354
++select count(*) from testing
++;
+
+# 2020-05-12 01:19:51.469064
++\d testing
+
+# 2020-05-12 01:33:48.965036
++\dt
+
+# 2020-05-12 01:34:00.933918
++drop table casos
++;
+
+# 2020-05-12 01:34:04.085298
++\dt
+
+# 2020-05-12 01:34:50.572262
++select count(*) from casos;
+
+# 2020-05-12 01:35:43.119161
++SELECT * FROM casos;
+
+# 2020-05-12 01:36:13.571636
++select count(*) from casos;
+
+# 2020-05-12 02:00:18.348410
++drop table casos
++;
+
+# 2020-05-12 02:01:36.514328
++select count(*) from casos;
+
+# 2020-05-12 02:05:50.308901
++select country_region,count(cases) from casos
++;
+
+# 2020-05-12 02:06:00.053029
++select country_region,count(cases) from casos
++group by country_region;
+
+# 2020-05-12 02:07:04.889467
++select country_region,cases from casos where country_region = 'Venezuela'
++;
+
+# 2020-05-12 02:07:23.149195
++select country_region,cases from casos where country_region = 'Venezuela'
++order by date_reported;
+
+# 2020-05-12 02:07:28.251571
++select country_region,cases from casos where country_region = 'Venezuela'
++order by date_reported DESC;
+
+# 2020-05-12 02:07:49.805214
++select country_region,cases,case_type from casos where country_region = 'Venezuela'
++order by date_reported;
+
+# 2020-05-12 02:21:17.834500
++q
+
+# 2020-05-12 02:21:20.523278
++quit
+
+# 2020-05-12 12:27:02.359023
++SELECT country_region,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region
++ ORDER BY country_region;
+
+# 2020-05-17 12:38:21.766245
++quit
+
+# 2020-05-18 13:08:04.069712
++select * from casos
+
+# 2020-05-18 13:16:59.280299
++\d
+
+# 2020-05-18 13:17:04.112711
++\dt
+
+# 2020-05-18 13:17:10.081347
++\db
+
+# 2020-05-18 13:17:19.778089
++\l
+
+# 2020-05-18 18:20:03.690738
++select * from casos_resumen
+
+# 2020-05-18 18:22:21.398008
++\d casos
+
+# 2020-05-18 18:24:56.641628
++SELECT country_region,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region
++ ORDER BY country_region;
+
+# 2020-05-24 16:21:40.614792
++INSERT INTO casos VALUES
+
+# 2020-05-24 16:23:55.628517
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',100,'Confirmed', 24/05/2020, 'Caracas')
+
+# 2020-05-24 16:24:23.134132
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',100,'Confirmed', '24/05/2020', 'Caracas')
+
+# 2020-05-24 16:25:22.048893
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',500,'Confirmed', '24/05/2020', 'Caracas')
+
+# 2020-05-24 16:43:05.929731
++select * from casos
+
+# 2020-05-24 16:43:21.674662
++select * from casos where date_reported  = '24/05/2020'
+
+# 2020-05-24 16:43:47.276170
++DELETE casos  where date_reported = '24/05/2020'
+
+# 2020-05-24 16:43:55.564501
++DELETE from casos  where date_reported = '24/05/2020'
+
+# 2020-05-24 16:48:49.724879
++SELECT country_region,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region
++ ORDER BY country_region;
+
+# 2020-05-24 16:49:25.934851
++SELECT country_region,date_reported,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region
++ ORDER BY country_region;
+
+# 2020-05-24 16:49:33.753417
++SELECT country_region,date_reported,
++  (SELECT SUM(cases) FROM casos b 
++   WHERE a.country_region = b.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Confirmed'
++ ) AS Infectados, 
++   (SELECT SUM(cases) FROM casos c
++   WHERE a.country_region = c.country_region and date_reported  = 
++   (SELECT MAX(date_reported) FROM casos WHERE country_region = a.country_region) and case_type = 'Deaths'
++ ) AS "Muerte"
++ FROM casos a
++ GROUP BY country_region,date_reported
++ ORDER BY country_region;
+
+# 2020-05-24 16:51:55.990496
++select max(date_reported) from casos
+
+# 2020-05-24 16:52:14.599736
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',500,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 17:29:43.806474
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',2,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 18:21:08.278428
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',3,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 18:27:59.956950
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',2,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 20:39:30.364762
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',100,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 20:43:52.688752
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',50,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-24 21:02:12.861763
++q
+
+# 2020-05-24 21:02:18.289006
++quit
+
+# 2020-05-25 17:28:44.306204
++INSERT INTO casos(country_region,cases,case_type,date_reported,province_state) VALUES ('Venezuela',50,'Confirmed', '07/05/2020', 'Caracas')
+
+# 2020-05-25 17:28:48.705377
++quit

@@ -1,0 +1,5 @@
+2020/05/25-11:50:00.097 381b Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/25-11:50:32.653 385a Level-0 table #5: started
+2020/05/25-11:50:32.709 385a Level-0 table #5: 1668 bytes OK
+2020/05/25-11:50:32.756 385a Delete type=0 #3
+2020/05/25-11:50:32.756 385a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

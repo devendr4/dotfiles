@@ -1,0 +1,8 @@
+[Added Associations]
+application/octet-stream=userapp-"st nvim"-N74LK0.desktop;userapp-"nvim"-DGJ7J0.desktop;
+image/png=sxiv-rifle.desktop;
+
+[Default Applications]
+application/pdf=mupdf.desktop;
+text/csv=userapp-"nvim"-DGJ7J0.desktop;
+application/javascript=userapp-"nvim"-DGJ7J0.desktop;

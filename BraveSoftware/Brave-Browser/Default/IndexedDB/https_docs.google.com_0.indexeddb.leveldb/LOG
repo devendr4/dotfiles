@@ -1,0 +1,15 @@
+2020/05/25-13:19:41.380 690e Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/25-13:19:41.381 690e Recovering log #4
+2020/05/25-13:19:41.381 690e Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_docs.google.com_0.indexeddb.leveldb/000004.log 
+2020/05/25-13:36:27.004 385a Level-0 table #8: started
+2020/05/25-13:36:27.059 385a Level-0 table #8: 1171 bytes OK
+2020/05/25-13:36:27.108 385a Delete type=0 #4
+2020/05/25-13:36:27.108 385a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/25-13:36:27.108 385a Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x02\x01\x16\x00d\x00o\x00c\x00s\x00O\x00f\x00f\x00l\x00i\x00n\x00e\x00I\x00f\x00r\x00a\x00m\x00e\x00A\x00p\x00i\x00-\x00n' @ 666 : 1
+2020/05/25-13:36:27.108 385a Compacting 1@1 + 1@2 files
+2020/05/25-13:36:27.149 385a Generated table #9@1: 205 keys, 3039 bytes
+2020/05/25-13:36:27.149 385a Compacted 1@1 + 1@2 files => 3039 bytes
+2020/05/25-13:36:27.197 385a compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/25-13:36:27.197 385a Delete type=2 #8
+2020/05/25-13:36:27.197 385a Delete type=2 #5
+2020/05/25-13:36:27.197 385a Manual compaction at level-1 from '\x00\x02\x01\x02\x01\x16\x00d\x00o\x00c\x00s\x00O\x00f\x00f\x00l\x00i\x00n\x00e\x00I\x00f\x00r\x00a\x00m\x00e\x00A\x00p\x00i\x00-\x00n' @ 666 : 1 .. (end); will stop at (end)

@@ -1,0 +1,8 @@
+2020/05/24-16:30:53.924 f7b Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_us.flow.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/24-16:30:53.924 f7b Recovering log #14
+2020/05/24-16:30:53.924 f7b Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_us.flow.microsoft.com_0.indexeddb.leveldb/000014.log 
+2020/05/24-16:41:03.325 8ab Level-0 table #18: started
+2020/05/24-16:41:03.325 8ab Level-0 table #18: 0 bytes OK
+2020/05/24-16:41:03.363 8ab Delete type=0 #14
+2020/05/24-16:41:03.363 8ab Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/24-16:41:03.363 8ab Manual compaction at level-1 from (begin) .. (end); will stop at (end)
