@@ -1,3 +1,0 @@
-05:15:15.847542 Log continuation - Log started 2020-07-14T17:53:23.204897000Z
-05:17:27.469391 ERROR [COM]: aRC=NS_ERROR_UNEXPECTED (0x8000ffff) aIID={c0447716-ff5a-4795-b57a-ecd5fffa18a4} aComponent={SessionWrap} aText={The session is not locked (session state: Unlocked)}, preserve=false aResultDetail=0
-05:17:47.232698 GUI: UIMediumEnumerator: Medium-enumeration finished!

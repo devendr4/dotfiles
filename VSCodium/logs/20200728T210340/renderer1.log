@@ -1,7 +1,0 @@
-[2020-07-28 21:03:50.502] [renderer1] [error] Error: Unable to read file '/home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py' (Error: Unable to resolve non-existing file '/home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py')
-    at Object.t.createErrorWithActions (file:///usr/share/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:53:207)
-    at w.handleSetInputError (file:///usr/share/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:5717:168)
-    at w.handleSetInputError (file:///usr/share/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:5719:772)
-    at w.setInput (file:///usr/share/vscodium-bin/resources/app/out/vs/workbench/workbench.desktop.main.js:5716:869)
-[2020-07-28 21:04:02.285] [renderer1] [warning] UNRESPONSIVE extension host, 'vscode.typescript-language-features' took 100% of 2472.346ms, saved PROFILE here: '/tmp/exthost-75c250.cpuprofile' [{"id":"vscode.emmet","total":5208,"percentage":0},{"id":"vscode.typescript-language-features","total":2466984,"percentage":100}]
-[2020-07-28 21:04:09.925] [renderer1] [warning] UNRESPONSIVE extension host, 'ms-python.python' took 83% of 960.458ms, saved PROFILE here: '/tmp/exthost-fda18d.cpuprofile' [{"id":"gc","total":114217,"percentage":12},{"id":"ms-python.python","total":793649,"percentage":83},{"id":"program","total":1338,"percentage":0},{"id":"self","total":16223,"percentage":2},{"id":"vscode.json-language-features","total":32136,"percentage":3}]

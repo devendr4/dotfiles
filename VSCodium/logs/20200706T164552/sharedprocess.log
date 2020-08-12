@@ -1,9 +1,0 @@
-[2020-07-06 16:45:59.067] [sharedprocess] [info] main {"machineId":"7a2d6b634c7ad945f7103262f74e6acf929e1ce4986a1b0d409b2f4671618b6b","windowId":2}
-[2020-07-06 16:45:59.142] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/devendra/.config/VSCodium/User/snippets'
-[2020-07-06 16:46:39.111] [sharedprocess] [info] Starting to clean up unused language packs.
-[2020-07-06 18:51:46.424] [sharedprocess] [info] Installing extension: ms-python.python
-[2020-07-06 18:52:22.660] [sharedprocess] [info] Downloaded extension: ms-python.python /tmp/96c3a0cb-3a6b-4af5-bc78-b00c941bbbc5
-[2020-07-06 18:52:29.208] [sharedprocess] [info] Extracted extension to /home/devendra/.vscode-oss/extensions/.ms-python.python-2020.6.3: ms-python.python
-[2020-07-06 18:52:29.209] [sharedprocess] [info] Renamed to /home/devendra/.vscode-oss/extensions/ms-python.python-2020.6.3
-[2020-07-06 18:52:29.220] [sharedprocess] [info] Installation completed. ms-python.python
-[2020-07-06 18:52:29.314] [sharedprocess] [info] Extensions installed successfully: ms-python.python
