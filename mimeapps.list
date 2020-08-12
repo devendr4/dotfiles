@@ -6,3 +6,4 @@ image/png=sxiv-rifle.desktop;
 application/pdf=mupdf.desktop;
 text/csv=userapp-"nvim"-DGJ7J0.desktop;
 application/javascript=userapp-"nvim"-DGJ7J0.desktop;
+x-scheme-handler/postman=Postman.desktop

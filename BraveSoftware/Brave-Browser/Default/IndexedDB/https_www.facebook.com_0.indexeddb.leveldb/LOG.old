@@ -1,0 +1,5 @@
+2020/06/14-17:32:43.430 889a Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/14-17:33:16.187 68e5 Level-0 table #5: started
+2020/06/14-17:33:16.255 68e5 Level-0 table #5: 1234 bytes OK
+2020/06/14-17:33:16.294 68e5 Delete type=0 #3
+2020/06/14-17:33:16.315 68e5 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

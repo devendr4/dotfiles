@@ -1,5 +1,5 @@
-favorites=exo-terminal-emulator.desktop,firefox.desktop,xfce-settings-manager.desktop,org.xfce.Parole.desktop,pavucontrol.desktop,xfce4-taskmanager.desktop
-recent=org.qutebrowser.qutebrowser.desktop
+favorites=exo-terminal-emulator.desktop,xfce-settings-manager.desktop,pavucontrol.desktop,xfce4-taskmanager.desktop
+recent=vscodium-bin.desktop,gzdoom.desktop,exo-terminal-emulator.desktop,brave-browser.desktop,org.qutebrowser.qutebrowser.desktop
 button-title=EndeavourOS
 button-icon=/usr/share/endeavouros/EndeavourOS-icon.png
 button-single-row=false

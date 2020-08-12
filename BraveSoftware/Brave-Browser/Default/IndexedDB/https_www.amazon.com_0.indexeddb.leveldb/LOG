@@ -1,5 +1,15 @@
-2020/05/25-13:48:52.711 690e Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/05/25-13:49:20.113 385a Level-0 table #5: started
-2020/05/25-13:49:20.151 385a Level-0 table #5: 1763 bytes OK
-2020/05/25-13:49:20.191 385a Delete type=0 #3
-2020/05/25-13:49:20.191 385a Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/28-12:20:44.550 783f Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/28-12:20:44.550 783f Recovering log #4
+2020/05/28-12:20:44.550 783f Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/000004.log 
+2020/05/28-12:21:02.693 3242 Level-0 table #8: started
+2020/05/28-12:21:02.868 3242 Level-0 table #8: 926 bytes OK
+2020/05/28-12:21:03.030 3242 Delete type=0 #4
+2020/05/28-12:21:03.120 3242 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/28-12:21:03.120 3242 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x1f\x03\x00\x00%\xcf\xc4%wB\x00\x01\x14\x00H\x00N\x00B\x008\x00R\x00E\x002\x00B\x00Z\x00P\x000\x00H\x00V\x00V\x007\x00K\x00G\x00K\x00C\x00F' @ 110 : 1
+2020/05/28-12:21:03.120 3242 Compacting 1@1 + 1@2 files
+2020/05/28-12:21:03.216 3242 Generated table #9@1: 27 keys, 865 bytes
+2020/05/28-12:21:03.216 3242 Compacted 1@1 + 1@2 files => 865 bytes
+2020/05/28-12:21:03.263 3242 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/28-12:21:03.264 3242 Delete type=2 #8
+2020/05/28-12:21:03.264 3242 Delete type=2 #5
+2020/05/28-12:21:03.264 3242 Manual compaction at level-1 from '\x00\x01\x01\x1f\x03\x00\x00%\xcf\xc4%wB\x00\x01\x14\x00H\x00N\x00B\x008\x00R\x00E\x002\x00B\x00Z\x00P\x000\x00H\x00V\x00V\x007\x00K\x00G\x00K\x00C\x00F' @ 110 : 1 .. (end); will stop at (end)

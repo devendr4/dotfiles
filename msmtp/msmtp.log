@@ -1,1 +1,3 @@
 may 25 17:00:23 host=smtp.gmail.com tls=on auth=on user=angel.emo.altuve@gmail.com from=angel.emo.altuve@gmail.com recipients=angel_gustavo_03@hotmail.com mailsize=276 smtpstatus=250 smtpmsg='250 2.0.0 OK  1590440423 r6sm6800798qkm.29 - gsmtp' exitcode=EX_OK
+may 29 16:32:13 host=smtp.gmail.com tls=on auth=on user=angel.emo.altuve@gmail.com from=angel.emo.altuve@gmail.com recipients=gli.16@est.ucab.edu.ve mailsize=25596 smtpstatus=250 smtpmsg='250 2.0.0 OK  1590784332 f138sm375492vke.54 - gsmtp' exitcode=EX_OK
+jul 29 16:00:04 host=smtp.gmail.com tls=on auth=on user=angel.emo.altuve@gmail.com from=angel.emo.altuve@gmail.com recipients=devendr4@protonmail.com mailsize=272 smtpstatus=250 smtpmsg='250 2.0.0 OK  1596052804 6sm2217127qkj.134 - gsmtp' exitcode=EX_OK

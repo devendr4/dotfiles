@@ -1,0 +1,15 @@
+2020/05/28-12:37:01.660 9323 Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.epicgames.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/28-12:37:01.660 9323 Recovering log #7
+2020/05/28-12:37:01.660 9323 Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.epicgames.com_0.indexeddb.leveldb/000007.log 
+2020/05/28-12:39:17.838 3242 Level-0 table #12: started
+2020/05/28-12:39:17.907 3242 Level-0 table #12: 13673 bytes OK
+2020/05/28-12:39:17.984 3242 Delete type=0 #7
+2020/05/28-12:39:18.013 3242 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/05/28-12:39:18.027 3242 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x04\x01\x02\x016\x00b\x00u\x00n\x00d\x00l\x00e\x00-\x00p\x00a\x00g\x00e\x00s\x00-\x00b\x00o\x00r\x00d\x00e\x00r\x00l\x00a\x00n\x00d\x00s\x00-\x00t\x00h\x00e\x00-\x00h\x00a\x00n\x00d\x00s\x00o\x00m\x00e\x00-\x00c\x00o\x00l\x00l\x00e\x00c\x00t\x00i\x00o\x00n\x00-\x00e\x00n\x00-\x00U\x00S' @ 415 : 1
+2020/05/28-12:39:18.028 3242 Compacting 1@1 + 1@2 files
+2020/05/28-12:39:18.453 3242 Generated table #13@1: 75 keys, 8244 bytes
+2020/05/28-12:39:18.453 3242 Compacted 1@1 + 1@2 files => 8244 bytes
+2020/05/28-12:39:18.496 3242 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/28-12:39:18.496 3242 Delete type=2 #9
+2020/05/28-12:39:18.496 3242 Delete type=2 #12
+2020/05/28-12:39:18.496 3242 Manual compaction at level-1 from '\x00\x04\x01\x02\x016\x00b\x00u\x00n\x00d\x00l\x00e\x00-\x00p\x00a\x00g\x00e\x00s\x00-\x00b\x00o\x00r\x00d\x00e\x00r\x00l\x00a\x00n\x00d\x00s\x00-\x00t\x00h\x00e\x00-\x00h\x00a\x00n\x00d\x00s\x00o\x00m\x00e\x00-\x00c\x00o\x00l\x00l\x00e\x00c\x00t\x00i\x00o\x00n\x00-\x00e\x00n\x00-\x00U\x00S' @ 415 : 1 .. (end); will stop at (end)

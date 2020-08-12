@@ -168,7 +168,7 @@ bindsym $mod+z exec subl3
 bindsym $mod+q exec qutebrowser
 
 #START FILE BROWSER
-bindsym $mod+x exec thunar 
+bindsym $mod+x exec pcmanfm 
 bindsym $mod+u move scratchpad
 bindsym $mod+i scratchpad show
 
@@ -180,21 +180,25 @@ bindsym $mod+Mod2+KP_1 exec st nvim /home/devendra/.config/i3/config
 
 bindsym $mod+Mod2+KP_2 exec st lf
 
-bindsym $mod+Mod2+KP_3 exec networkmanager_dmenu
+bindsym $mod+Mod2+KP_3 exec st htop
 
 bindsym $mod+Mod2+KP_4 exec st neomutt 
 
 bindsym $mod+Mod2+KP_5 exec st calcurse
 
-bindsym $mod+Mod2+KP_6 exec st htop
+bindsym $mod+Mod2+KP_6 exec --no-startup-id  networkmanager_dmenu
+
+bindsym $mod+Mod2+KP_7 exec st nnn -e
 
 bindsym $mod+P exec ~/.config/rofi/scripts/menu_powermenu.sh
+
+bindsym $mod+F1 exec st sudo pacman -Syu
 
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id dunst
 exec_always ~/.config/polybar/launch.sh
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id xautolock -time 20 -locker "i3lock-fancy"
+exec --no-startup-id xautolock -time 40 -locker "i3lock-fancy"
 exec --no-startup-id compton 
 gaps inner 8
 gaps outer 2
@@ -248,3 +252,4 @@ bindsym $mod+Shift+n exec i3-msg move workspace to output right
 
 #bindsym $mod+Mod2+KP_6 exec networkmanager_dmenu
 #bindsym $mod+Mod2+KP_7 exec ./Downloads/VirtScreen.AppImage --right --portrait
+#

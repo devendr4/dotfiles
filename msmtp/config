@@ -28,3 +28,11 @@ passwordeval "pass mutt-wizard-emo"
 
 
 
+account hotmail
+host smtp-mail.outlook.com
+port 587
+from angel_gustavo_03@hotmail.com
+user angel_gustavo_03@hotmail.com
+passwordeval "pass mutt-wizard-hotmail"
+
+

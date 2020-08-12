@@ -1,0 +1,36 @@
+2020/05/28-16:02:33.009 e579 Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_us02web.zoom.us_0.indexeddb.leveldb/MANIFEST-000001
+2020/05/28-16:02:40.881 3242 Level-0 table #5: started
+2020/05/28-16:02:41.092 3242 Level-0 table #5: 2764546 bytes OK
+2020/05/28-16:02:41.160 3242 Delete type=0 #3
+2020/05/28-16:02:42.786 3242 Level-0 table #7: started
+2020/05/28-16:02:43.065 e34f Current memtable full; waiting...
+2020/05/28-16:02:43.207 3242 Level-0 table #7: 3320865 bytes OK
+2020/05/28-16:02:43.301 3242 Delete type=0 #4
+2020/05/28-16:02:43.304 3242 Level-0 table #9: started
+2020/05/28-16:02:43.577 3242 Level-0 table #9: 2214357 bytes OK
+2020/05/28-16:02:43.665 e34f Current memtable full; waiting...
+2020/05/28-16:02:43.679 3242 Delete type=0 #6
+2020/05/28-16:02:43.681 3242 Level-0 table #11: started
+2020/05/28-16:02:43.934 3242 Level-0 table #11: 2214357 bytes OK
+2020/05/28-16:02:44.046 3242 Delete type=0 #8
+2020/05/28-16:05:49.064 3242 Level-0 table #13: started
+2020/05/28-16:05:49.394 3242 Level-0 table #13: 308 bytes OK
+2020/05/28-16:05:50.004 3242 Delete type=0 #10
+2020/05/28-16:05:50.005 3242 Manual compaction at level-0 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01\x05\x00v\x00i\x00d\x00e\x00o' @ 177 : 1
+2020/05/28-16:05:50.005 3242 Compacting 3@0 + 1@1 files
+2020/05/28-16:05:51.131 3242 Generated table #14@0: 25 keys, 1106987 bytes
+2020/05/28-16:05:51.131 3242 Compacted 3@0 + 1@1 files => 1106987 bytes
+2020/05/28-16:05:51.556 3242 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/05/28-16:05:51.557 3242 Delete type=2 #11
+2020/05/28-16:05:51.557 3242 Delete type=2 #7
+2020/05/28-16:05:51.557 3242 Delete type=2 #9
+2020/05/28-16:05:51.557 3242 Delete type=2 #13
+2020/05/28-16:05:51.559 3242 Manual compaction at level-0 from '\x00\x03\x01\x02\x01\x05\x00v\x00i\x00d\x00e\x00o' @ 177 : 1 .. (end); will stop at (end)
+2020/05/28-16:05:51.559 3242 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x03\x01\x02\x01\x05\x00v\x00i\x00d\x00e\x00o' @ 189 : 1
+2020/05/28-16:05:51.559 3242 Compacting 1@1 + 1@2 files
+2020/05/28-16:05:52.489 3242 Generated table #15@1: 48 keys, 2027814 bytes
+2020/05/28-16:05:52.489 3242 Compacted 1@1 + 1@2 files => 2027814 bytes
+2020/05/28-16:05:52.846 3242 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/05/28-16:05:52.847 3242 Delete type=2 #5
+2020/05/28-16:05:52.847 3242 Delete type=2 #14
+2020/05/28-16:05:52.848 3242 Manual compaction at level-1 from '\x00\x03\x01\x02\x01\x05\x00v\x00i\x00d\x00e\x00o' @ 189 : 1 .. (end); will stop at (end)

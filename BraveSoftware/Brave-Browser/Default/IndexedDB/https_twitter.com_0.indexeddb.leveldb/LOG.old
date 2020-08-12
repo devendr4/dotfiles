@@ -1,0 +1,15 @@
+2020/06/24-19:36:44.202 d727 Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/24-19:36:44.202 d727 Recovering log #29
+2020/06/24-19:36:44.202 d727 Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_twitter.com_0.indexeddb.leveldb/000029.log 
+2020/06/24-19:46:00.910 966e Level-0 table #34: started
+2020/06/24-19:46:00.998 966e Level-0 table #34: 11786 bytes OK
+2020/06/24-19:46:01.087 966e Delete type=0 #29
+2020/06/24-19:46:01.133 966e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/24-19:46:01.161 966e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x1b\x00u\x00s\x00e\x00r\x00:\x003\x001\x008\x007\x000\x006\x007\x001\x008\x00:\x00r\x00w\x00e\x00b\x00.\x00s\x00e\x00e\x00n\x00i\x00d\x00s' @ 277 : 1
+2020/06/24-19:46:01.161 966e Compacting 1@1 + 1@2 files
+2020/06/24-19:46:01.233 966e Generated table #35@1: 52 keys, 1726 bytes
+2020/06/24-19:46:01.233 966e Compacted 1@1 + 1@2 files => 1726 bytes
+2020/06/24-19:46:01.280 966e compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/24-19:46:01.281 966e Delete type=2 #34
+2020/06/24-19:46:01.281 966e Delete type=2 #31
+2020/06/24-19:46:01.281 966e Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x1b\x00u\x00s\x00e\x00r\x00:\x003\x001\x008\x007\x000\x006\x007\x001\x008\x00:\x00r\x00w\x00e\x00b\x00.\x00s\x00e\x00e\x00n\x00i\x00d\x00s' @ 277 : 1 .. (end); will stop at (end)

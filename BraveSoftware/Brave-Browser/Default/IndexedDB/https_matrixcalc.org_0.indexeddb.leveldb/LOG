@@ -1,0 +1,15 @@
+2020/06/14-16:24:47.802 7661 Reusing MANIFEST /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_matrixcalc.org_0.indexeddb.leveldb/MANIFEST-000001
+2020/06/14-16:24:47.803 7661 Recovering log #4
+2020/06/14-16:24:47.803 7661 Reusing old log /home/devendra/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_matrixcalc.org_0.indexeddb.leveldb/000004.log 
+2020/06/14-16:24:50.016 68e5 Level-0 table #8: started
+2020/06/14-16:24:50.071 68e5 Level-0 table #8: 190 bytes OK
+2020/06/14-16:24:50.115 68e5 Delete type=0 #4
+2020/06/14-16:24:50.115 68e5 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/06/14-16:24:50.115 68e5 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 44 : 1
+2020/06/14-16:24:50.115 68e5 Compacting 1@1 + 1@2 files
+2020/06/14-16:24:50.150 68e5 Generated table #9@1: 18 keys, 488 bytes
+2020/06/14-16:24:50.150 68e5 Compacted 1@1 + 1@2 files => 488 bytes
+2020/06/14-16:24:50.193 68e5 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/06/14-16:24:50.193 68e5 Delete type=2 #8
+2020/06/14-16:24:50.193 68e5 Delete type=2 #5
+2020/06/14-16:24:50.193 68e5 Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 44 : 1 .. (end); will stop at (end)

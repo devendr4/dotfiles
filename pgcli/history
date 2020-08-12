@@ -1677,3 +1677,1281 @@
 
 # 2020-05-25 17:28:48.705377
 +quit
+
+# 2020-06-08 20:15:48.171336
++\db
+
+# 2020-06-08 20:16:00.219291
++\dn
+
+# 2020-06-08 20:17:47.252630
++quit
+
+# 2020-06-08 21:28:20.452555
++select * from puta
+
+# 2020-06-08 21:28:23.219738
++select * from putas;
+
+# 2020-06-08 21:28:50.421500
++\l
+
+# 2020-06-08 21:29:05.718551
++\c devendra
+
+# 2020-06-08 21:29:14.871673
++select * from putas;
+
+# 2020-06-08 21:30:03.146874
++quit
+
+# 2020-06-11 18:15:12.516344
++create database grupo5
+
+# 2020-06-11 18:15:23.764103
++\db
+
+# 2020-06-11 18:15:36.724909
++\l
+
+# 2020-06-11 18:35:18.288148
++DROP DATABASE grupo5
+
+# 2020-06-11 18:35:35.313157
++CREATE DATABASE covid_grupo_5
+
+# 2020-06-11 18:35:44.338275
++\connect covid_grupo_5
+
+# 2020-06-11 18:35:54.562387
++\?
+
+# 2020-06-11 18:36:09.107371
++quit
+
+# 2020-06-11 19:49:38.322180
++quti
+
+# 2020-06-11 19:49:39.377112
++quit
+
+# 2020-06-11 20:44:28.201680
++ls
+
+# 2020-06-11 22:36:35.203597
++\dt
+
+# 2020-06-11 23:21:15.292849
++\d Cases
+
+# 2020-06-11 23:21:29.042478
++\conninfo
+
+# 2020-06-11 23:22:21.366002
++\dt 
+
+# 2020-06-11 23:22:38.199567
++\dp Cases
+
+# 2020-06-11 23:23:08.345250
++select * from cases
+
+# 2020-06-11 23:23:11.385393
++select * from Cases
+
+# 2020-06-11 23:23:35.915198
++SELECT * from information_schema.tables c<ses
+
+# 2020-06-11 23:39:38.653282
++\dt
+
+# 2020-06-11 23:39:49.246082
++ALTER TABLE Cases
+
+# 2020-06-11 23:41:10.179668
++select * from Cases 
+
+# 2020-06-11 23:41:11.939725
++select * from Cases ;
+
+# 2020-06-11 23:41:14.339939
++select * from Cases;
+
+# 2020-06-11 23:41:17.348145
++select * from publicCases;
+
+# 2020-06-11 23:41:21.044358
++select * from public.Cases;
+
+# 2020-06-11 23:41:29.684911
++quit
+
+# 2020-06-11 23:41:48.342202
++SELECT * FROM "Cases"
+
+# 2020-06-11 23:41:52.662536
++SELECT * FROM Cases
+
+# 2020-06-11 23:41:56.198750
++SELECT * FROM cases
+
+# 2020-06-11 23:42:07.287567
++create table cases
+
+# 2020-06-11 23:42:11.639860
++create table cases()
+
+# 2020-06-11 23:42:16.200202
++select * from cases
+
+# 2020-06-11 23:49:55.543784
++DROP TABLE cases
+
+# 2020-06-11 23:50:36.026598
++select * from cases
+
+# 2020-06-11 23:50:48.203416
++select * from type
+
+# 2020-06-12 00:17:33.394475
++quit
+
+# 2020-06-12 00:19:41.980015
++alter table type add constraint check_name check (name in ('confirmed','death'))
+
+# 2020-06-12 00:20:03.196545
++alter table type add constraint check_name check (name in ("confirmed","death"))
+
+# 2020-06-12 00:27:37.497239
++alter table cases  add constraint check_name check (name in ("confirmed","death"))
+
+# 2020-06-12 00:28:35.339108
++alter table type_case add constraint check_name check (name in ("confirmed","death"))
+
+# 2020-06-12 00:28:48.955581
++alter table type_case add constraint check_name check (name in ('confirmed','death'))
+
+# 2020-06-12 00:29:02.716126
++alter table type_case add constraint check_name check (name in ('confirmedadddd','death'))
+
+# 2020-06-12 00:32:16.756078
++alter table cases  add constraint check_name check (name in ("confirmed","death"))
+
+# 2020-06-12 00:32:23.988535
++alter table type add constraint check_name check (name in ('confirmed','death'))
+
+# 2020-06-12 00:38:17.190198
++INSERT INTO place (name,type) values ('China', 'country')
+
+# 2020-06-12 00:38:53.496238
++DROP TABLE place
+
+# 2020-06-12 00:39:02.488691
++DROP TABLE cases
+
+# 2020-06-12 00:39:08.521034
++DROP TABLE places
+
+# 2020-06-12 00:39:10.985308
++DROP TABLE place
+
+# 2020-06-12 00:39:15.593568
++DROP TABLE type
+
+# 2020-06-12 00:40:30.077649
++INSERT INTO place (name,type) values ('China', 'country')
+
+# 2020-06-12 00:57:19.306482
++ALTER TABLE place modify id serial;
+
+# 2020-06-12 00:59:00.336720
++alter table cases add column id serial not null;
+
+# 2020-06-12 00:59:37.491021
++alter table place drop column id
+
+# 2020-06-12 01:01:13.401007
++alter table cases drop column fk_place
+
+# 2020-06-12 01:01:19.129336
++alter table place drop column id
+
+# 2020-06-12 01:01:38.458934
++alter table place drop constraint fk_place_place
+
+# 2020-06-12 01:01:42.539239
++alter table place drop column id
+
+# 2020-06-12 01:02:03.773020
++alter table place add column id serial not null primary key
+
+# 2020-06-12 01:03:12.258928
++alter table place add constraint fk_place_place foreign key (fk_place) references place(id)
+
+# 2020-06-12 01:03:49.942634
++INSERT INTO place (name,type) values ('China', 'country')
+
+# 2020-06-12 01:03:56.134728
++select * from place
+
+# 2020-06-12 01:05:47.023802
++INSERT INTO type (name) values ('confirmed')
+
+# 2020-06-12 01:06:26.899039
++alter table cases add column fk_place integer
+
+# 2020-06-12 01:06:52.981144
++alter table cases add constraint fk_case_place foreign key (fk_place) references place(id)
+
+# 2020-06-12 01:07:36.184458
++alter table cases drop constraint fk_case_type
+
+# 2020-06-12 01:07:41.624904
++alter table cases drop constraint fk_type_case
+
+# 2020-06-12 01:15:00.953696
++alter table cases drop constraint fk_cases_type
+
+# 2020-06-12 01:15:20.091030
++alter table type drop column id
+
+# 2020-06-12 01:15:33.068046
++alter table type add column id serial not null primary key
+
+# 2020-06-12 01:16:01.358054
++alter table cases add constraint fk_case_type foreign key (fk_type) references type(id)
+
+# 2020-06-12 01:16:33.232362
++inser into type (name) values 'confirmed'
+
+# 2020-06-12 01:16:38.304608
++insert into type (name) values 'confirmed'
+
+# 2020-06-12 01:16:46.193202
++insert into type (name) values ('confirmed')
+
+# 2020-06-12 01:16:51.041628
++insert into type (name) values ('death')
+
+# 2020-06-12 20:22:20.409732
++quit
+
+# 2020-06-14 09:48:36.048721
++CREATE USER WITH PASSWORD '$/lm4*Xh'
+
+# 2020-06-14 09:49:07.233138
++CREATE USER electiva_5 WITH PASSWORD '$/lm4*Xh'
+
+# 2020-06-14 09:50:07.124838
++quit
+
+# 2020-06-14 09:59:59.737702
++select * from plac
+
+# 2020-06-14 10:00:00.633036
++select * from place
+
+# 2020-06-14 10:01:27.437401
++quit
+
+# 2020-06-14 10:02:02.992255
++GRANT USAGE ON SCHEMA public TO electiva_5
+
+# 2020-06-14 10:02:26.993462
++GRANT CONNECT ON DATABASE covid_grupo_5 TO electiva_5
+
+# 2020-06-14 10:02:30.576865
++quit
+
+# 2020-06-14 10:02:44.228597
++$/lm4Xh
+
+# 2020-06-14 10:02:55.698251
++select * from place
+
+# 2020-06-14 10:02:58.098878
++quit
+
+# 2020-06-14 10:03:21.812822
++GRANT SELECT ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-14 10:03:23.860501
++quit
+
+# 2020-06-14 10:03:29.557059
++select * from place
+
+# 2020-06-14 10:05:23.034325
++update place set id = 5001 where name = 'China'
+
+# 2020-06-14 10:05:27.626608
++quit
+
+# 2020-06-14 10:05:52.062299
++GRANT SELECT,INSERT,UPDATE,DELETE,ALTER  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-14 10:05:59.213246
++GRANT SELECT,INSERT,UPDATE,DELETE  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-14 10:06:03.037405
++quit
+
+# 2020-06-14 10:06:11.566102
++update place set id = 5001 where name = 'China'
+
+# 2020-06-14 10:06:15.373343
++select * from place
+
+# 2020-06-14 10:17:06.963766
++\d
+
+# 2020-06-14 10:17:10.115066
++\dt
+
+# 2020-06-14 10:18:12.710822
++select / from case
+
+# 2020-06-14 10:18:15.990997
++select * from case
+
+# 2020-06-14 10:18:17.431780
++select * from cases
+
+# 2020-06-14 10:21:17.249645
++select * from place
+
+# 2020-06-14 11:08:39.499089
++\d
+
+# 2020-06-14 11:08:42.986754
++\l
+
+# 2020-06-14 19:53:04.098755
++select * from cases
+
+# 2020-06-14 19:53:14.303217
++\l
+
+# 2020-06-14 19:53:55.794628
++\d
+
+# 2020-06-14 19:54:06.514764
++\dT
+
+# 2020-06-14 23:31:25.848262
++select * from cases
+
+# 2020-06-14 23:31:58.156617
++select count(*) from cases
+
+# 2020-06-14 23:34:58.690638
++quit
+
+# 2020-06-14 23:35:19.877889
++\d
+
+# 2020-06-14 23:36:31.453038
++CREATE TABLE cases  ( id serial date date quantity integer fk_place integer fk_type integer)
+
+# 2020-06-14 23:37:12.513386
++CREATE TABLE cases  ( id serial, date date, quantity integer, fk_place integer, fk_type integer)
+
+# 2020-06-14 23:39:05.709630
++select count(*) from cases
+
+# 2020-06-14 23:39:20.254519
++delete cases
+
+# 2020-06-14 23:39:30.655525
++delete from cases
+
+# 2020-06-14 23:39:35.183891
++select count(*) from cases
+
+# 2020-06-14 23:41:56.013707
++quit
+
+# 2020-06-14 23:43:27.110344
++delete from cases
+
+# 2020-06-14 23:44:03.513572
++select count(*) from cases
+
+# 2020-06-14 23:44:56.542925
++delete from cases
+
+# 2020-06-14 23:44:59.198620
++select count(*) from cases
+
+# 2020-06-14 23:46:27.350523
++delete from cases
+
+# 2020-06-14 23:46:28.935125
++select count(*) from cases
+
+# 2020-06-14 23:47:29.595909
++delete from cases
+
+# 2020-06-14 23:47:33.372270
++select count(*) from cases
+
+# 2020-06-14 23:47:52.237884
++delete from cases
+
+# 2020-06-14 23:48:10.927508
++select count(*) from cases
+
+# 2020-06-14 23:49:23.893856
++delete from cases
+
+# 2020-06-14 23:49:46.199735
++select count(*) from cases
+
+# 2020-06-14 23:49:59.336838
++delete from cases
+
+# 2020-06-14 23:50:10.633802
++select count(*) from cases
+
+# 2020-06-14 23:59:07.110660
++delete from cases
+
+# 2020-06-14 23:59:29.688000
++select count(*) from cases
+
+# 2020-06-14 23:59:42.361024
++delete from cases
+
+# 2020-06-15 00:00:13.547440
++select count(*) from cases
+
+# 2020-06-15 00:10:46.596805
++delete from cases
+
+# 2020-06-15 00:10:48.309252
++select count(*) from cases
+
+# 2020-06-15 00:14:39.309899
++select * from cases
+
+# 2020-06-15 11:11:58.932702
++\dt
+
+# 2020-06-15 11:12:18.612756
++\l
+
+# 2020-06-15 11:12:50.886415
++GRANT SELECT,INSERT,UPDATE,DELETE  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-15 11:13:14.824579
++select * from cases
+
+# 2020-06-15 11:14:09.083807
++GRANT CREATE,SELECT,INSERT,UPDATE,DELETE  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-15 11:14:58.432116
++SELECT * FROM casos
+
+# 2020-06-15 11:15:03.936073
++SELECT * FROM test
+
+# 2020-06-15 11:15:33.074546
++SELECT * FROM testING
+
+# 2020-06-15 11:15:37.138830
++SELECT * FROM testing
+
+# 2020-06-15 11:33:11.699766
++GRANT CREATE,SELECT,INSERT,UPDATE,DELETE  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-15 11:33:18.772661
++GRANT SELECT,INSERT,UPDATE,DELETE  ON ALL TABLES IN SCHEMA public TO electiva_5
+
+# 2020-06-15 11:34:22.957235
++select * from casos_china
+
+# 2020-06-15 11:34:35.327524
++select count(*) from casos_china
+
+# 2020-06-15 11:38:17.738891
++delete from casos_chiuna
+
+# 2020-06-15 11:38:19.707099
++delete from casos_china
+
+# 2020-06-15 11:38:21.851194
++select count(*) from casos_china
+
+# 2020-06-15 11:44:12.579040
++select * from casos_china
+
+# 2020-06-15 11:52:25.686833
++delete from casos_china
+
+# 2020-06-15 11:52:29.607934
++select * from casos_china
+
+# 2020-06-15 11:56:06.526237
++select count(*) from casos_china
+
+# 2020-06-15 11:56:11.645719
++delete from casos_china
+
+# 2020-06-15 11:56:20.942630
++select count(*) from casos_china
+
+# 2020-06-15 11:56:29.359473
++delete from casos_china
+
+# 2020-06-15 11:57:47.495351
++select count(*) from casos_china
+
+# 2020-06-15 13:12:32.818844
++\c covid_grupo_5
+
+# 2020-06-15 13:12:51.940284
++select count(*) from cases
+
+# 2020-06-15 13:13:24.805657
++select count(*) from place
+
+# 2020-06-15 13:13:31.927021
++delete from place
+
+# 2020-06-15 13:13:40.423542
++select count(*) from cases
+
+# 2020-06-15 13:13:43.063824
++delete from cases
+
+# 2020-06-15 13:13:47.017873
++delete from place
+
+# 2020-06-15 13:13:49.192074
++select count(*) from cases
+
+# 2020-06-15 13:13:53.256483
++select count(*) from place
+
+# 2020-06-15 13:15:59.457982
++delete from place
+
+# 2020-06-15 13:16:03.362097
++delete from cases
+
+# 2020-06-15 13:16:05.698851
++delete from place
+
+# 2020-06-15 13:20:40.966377
++select count(*) from place
+
+# 2020-06-15 13:20:42.694399
++delete from place
+
+# 2020-06-15 13:20:45.126507
++delete from cases
+
+# 2020-06-15 13:23:46.659336
++select count(*) from place
+
+# 2020-06-15 13:29:25.914569
++delete from cases
+
+# 2020-06-15 13:29:28.890110
++delete from place
+
+# 2020-06-15 13:34:11.397876
++delete from cases
+
+# 2020-06-15 13:34:15.685595
++delete from place
+
+# 2020-06-15 13:54:28.564953
++select count(*) from place
+
+# 2020-06-15 13:54:32.565005
++select * from place
+
+# 2020-06-15 13:57:01.994855
++select * from type
+
+# 2020-06-15 14:02:08.263538
++insert into cases (date, quanti
+
+# 2020-06-15 14:02:30.283774
++insert into cases (date, quantity, fk_place, fk_type) values ('
+
+# 2020-06-15 14:02:39.565489
++select * from cases
+
+# 2020-06-15 14:02:59.841241
++insert into cases (date, quantity, fk_place, fk_type) values ('2020-06-12', 20, 1001, 1)
+
+# 2020-06-15 14:03:12.675575
++insert into cases (date, quantity, fk_place, fk_type) values ('2020-06-12', 20, 10001, 1)
+
+# 2020-06-15 14:54:16.003900
++select * from place
+
+# 2020-06-15 14:54:22.436653
++insert into cases (date, quantity, fk_place, fk_type) values ('2020-06-12', 20, 1000, 1)
+
+# 2020-06-15 15:00:41.913704
++GRAN USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public to electiva_5
+
+# 2020-06-15 15:01:20.713947
++GRAN USAGE ON ALL SEQUENCES IN SCHEMA public to electiva_5
+
+# 2020-06-15 15:01:24.938117
++GRANT USAGE ON ALL SEQUENCES IN SCHEMA public to electiva_5
+
+# 2020-06-15 15:15:39.765843
++delete from cases
+
+# 2020-06-15 15:57:18.824907
++SELECT * FROM place
+
+# 2020-06-15 18:24:47.382978
++delete from cases
+
+# 2020-06-15 18:30:59.443337
++delete from place
+
+# 2020-06-15 18:31:03.507363
++delete crom cases
+
+# 2020-06-15 18:31:05.283502
++delete from place
+
+# 2020-06-15 18:31:11.411992
++delete from cases
+
+# 2020-06-15 18:31:12.932072
++delete from place
+
+# 2020-06-15 18:33:22.990299
++delete from cases
+
+# 2020-06-15 18:33:24.318220
++delete from place
+
+# 2020-06-15 18:40:44.509430
++select * from place
+
+# 2020-06-15 18:40:47.564912
++select * from cases
+
+# 2020-06-15 18:46:30.564675
++select * from place
+
+# 2020-06-15 18:47:04.166819
++delete from place
+
+# 2020-06-15 18:47:08.167170
++delete crom cases
+
+# 2020-06-15 18:47:12.647481
++delete from cases
+
+# 2020-06-15 18:47:17.337157
++delete from place
+
+# 2020-06-15 18:55:53.114989
++delete from cases
+
+# 2020-06-15 18:55:54.795143
++delete from place
+
+# 2020-06-15 18:58:13.183718
++delete from cases
+
+# 2020-06-15 18:58:14.255379
++delete from place
+
+# 2020-06-15 18:58:45.759765
++SELECT * FROM place
+
+# 2020-06-15 22:31:17.943957
++delete from cases
+
+# 2020-06-15 22:31:21.240285
++delete from place
+
+# 2020-06-15 22:31:43.353668
++delete from cases
+
+# 2020-06-15 22:31:44.457803
++delete from place
+
+# 2020-06-15 22:33:27.361187
++selet
+
+# 2020-06-15 22:33:29.617276
++select * from place
+
+# 2020-06-15 22:33:43.746414
++select * from place order by id
+
+# 2020-06-15 22:33:55.795286
++select count(*) from place
+
+# 2020-06-15 22:34:01.683639
++select count(*) from cases
+
+# 2020-06-15 22:45:33.572578
++delete from place
+
+# 2020-06-15 22:45:36.900904
++delete from cases
+
+# 2020-06-15 22:45:39.973007
++delete from place
+
+# 2020-06-15 22:52:57.827856
++delete from cases
+
+# 2020-06-15 22:52:59.012041
++delete from place
+
+# 2020-06-15 22:53:04.212396
++delete from cases
+
+# 2020-06-15 23:05:20.577983
++delete from place
+
+# 2020-06-15 23:08:07.516310
++select count(*) from place
+
+# 2020-06-16 00:36:45.083345
++delete from cases
+
+# 2020-06-16 00:37:55.961989
++select count(*) from cases
+
+# 2020-06-16 00:38:59.822037
++select * from cases
+
+# 2020-06-16 00:40:02.626296
++select count(*) from cases
+
+# 2020-06-16 00:40:35.268320
++delete from cases
+
+# 2020-06-16 00:40:55.589715
++select count(*) from cases
+
+# 2020-06-16 00:42:14.698930
++delete from cases
+
+# 2020-06-16 00:42:15.898956
++select count(*) from cases
+
+# 2020-06-16 00:42:53.518085
++delete from cases
+
+# 2020-06-16 00:46:03.434760
++select count(*) from cases
+
+# 2020-06-16 00:46:04.906772
++delete from cases
+
+# 2020-06-16 00:46:19.275707
++select count(*) from cases
+
+# 2020-06-16 01:21:28.819453
++select count(*) from place
+
+# 2020-06-16 01:21:35.587763
++select * from place
+
+# 2020-06-16 01:33:20.055567
++delete from casesy
+
+# 2020-06-16 01:33:22.151474
++delete from cases
+
+# 2020-06-16 01:33:25.975776
++delete from place
+
+# 2020-06-16 01:35:54.722660
++select * from place
+
+# 2020-06-16 01:46:33.263680
++y
+
+# 2020-06-16 01:47:09.473390
++select count(*) from case
+
+# 2020-06-16 01:47:10.465462
++select count(*) from cases
+
+# 2020-06-16 01:49:34.808825
++delete from place
+
+# 2020-06-16 01:49:38.521263
++delete from cases
+
+# 2020-06-16 01:49:40.921209
++delete from place
+
+# 2020-06-16 01:57:20.051782
++select count(*) from cases
+
+# 2020-06-16 02:00:43.408660
++select count(*) from place
+
+# 2020-06-16 02:02:09.846010
++delete from place
+
+# 2020-06-16 02:02:13.302361
++delete from cases
+
+# 2020-06-16 02:02:16.262631
++delete from place
+
+# 2020-06-16 02:03:21.514640
++select count(*) from place
+
+# 2020-06-16 02:03:24.267051
++select count(*) from cases
+
+# 2020-06-16 02:13:23.218959
++delete from place
+
+# 2020-06-16 02:13:26.147152
++delete from cases
+
+# 2020-06-16 02:13:28.963421
++delete from place
+
+# 2020-06-16 02:13:45.909206
++select count(*) from cases
+
+# 2020-06-16 02:13:52.725776
++select * from place
+
+# 2020-06-16 02:16:27.413037
++delete from place
+
+# 2020-06-16 02:16:31.973394
++delete from cases
+
+# 2020-06-16 02:16:35.717883
++delete from place
+
+# 2020-06-16 02:16:59.607955
++select * from place
+
+# 2020-06-16 02:17:03.128389
++delete from cases
+
+# 2020-06-16 02:17:06.504689
++select * from cases
+
+# 2020-06-16 02:17:50.877804
++select unique fk_place from cases
+
+# 2020-06-16 02:18:13.342680
++select * from cases
+
+# 2020-06-16 02:18:20.655392
++select fk_place from cases
+
+# 2020-06-16 02:18:33.968590
++select unique(fk_place) from cases
+
+# 2020-06-16 02:18:44.993668
++select distinct fk_place from cases
+
+# 2020-06-16 02:21:24.511411
++delete from cases
+
+# 2020-06-16 02:21:53.041732
++delete from place
+
+# 2020-06-16 02:22:05.811051
++select distinct fk_place from cases
+
+# 2020-06-16 02:22:55.687116
++select * from place
+
+# 2020-06-16 08:40:08.689728
++select * from cases
+
+# 2020-06-16 08:40:24.964598
++select count (*) from cases
+
+# 2020-06-16 09:03:10.913528
++select * from place
+
+# 2020-06-16 09:04:47.328963
++delete from place
+
+# 2020-06-16 09:05:09.793042
++select * from place
+
+# 2020-06-16 09:26:36.949546
++select count (*) from cases
+
+# 2020-06-16 09:26:40.426333
++select count (*) from place
+
+# 2020-06-16 09:28:28.127724
++select count (*) from cases
+
+# 2020-06-16 09:28:36.304310
++select * from cases
+
+# 2020-06-16 09:29:58.824838
++select sum(quantity) from cases
+
+# 2020-06-16 09:30:13.129392
++select sum(quantity) from cases where fk_place between 6000 and 6999
+
+# 2020-06-16 09:30:25.034270
++select sum(quantity) from cases
+
+# 2020-06-16 09:30:27.787337
++select sum(quantity) from cases where fk_place between 6000 and 6999
+
+# 2020-06-16 09:30:39.931668
++select * from place
+
+# 2020-06-16 09:30:49.148453
++select sum(quantity) from cases where fk_place between 5000 and 5999
+
+# 2020-06-16 09:31:25.840698
++select sum(quantity) from cases where fk_place between 5000 and 5999 group by fk_type
+
+# 2020-06-16 09:31:49.730121
++select t.name,sum(quantity) from cases, type t where fk_place between 5000 and 5999 group by fk_type
+
+# 2020-06-16 09:31:58.899085
++select t.name,sum(quantity) from cases, type t where fk_place between 5000 and 5999 group by t.name
+
+# 2020-06-16 09:32:30.598031
++select t.name,sum(quantity) from cases, type t where fk_place between 5000 and 5999 group by t.name, cases.fk_type
+
+# 2020-06-16 09:35:53.445677
++select t.name,sum(quantity) from cases c, type t where c.fk_place between 5000 and 5999 and date = (select max(date) from cases d where d.fk_place =c.fk_place )group by t.name, cases.fk_type
+
+# 2020-06-16 09:36:50.065848
++select t.name,sum(quantity) from cases c, type t where c.fk_place between 5000 and 5999 and date = (select max(date) from cases d where d.fk_place =c.fk_place )group by t.name, c.fk_type
+
+# 2020-06-16 12:23:19.076049
++select count (*) from cases
+
+# 2020-06-16 12:23:22.244093
++delete from place
+
+# 2020-06-16 12:23:27.284466
++delete from cases
+
+# 2020-06-16 12:23:34.660965
++delete from place
+
+# 2020-06-16 13:38:29.050215
++select count (*) from cases
+
+# 2020-06-16 13:43:29.710232
++select count (*) from place
+
+# 2020-06-16 13:43:34.703158
++select * from place
+
+# 2020-06-16 14:35:40.839362
++select * from cases where fk_place between 6000 and 6999
+
+# 2020-06-16 18:45:38.220785
++delete from cases
+
+# 2020-06-16 18:46:02.109707
++select * from cases
+
+# 2020-06-16 18:46:28.623634
++select count(*) from cases
+
+# 2020-06-16 18:47:07.138513
++select * from cases
+
+# 2020-06-16 18:47:21.827790
++select count(*) from cases
+
+# 2020-06-16 19:47:27.505249
++delete from cases
+
+# 2020-06-16 19:47:31.457413
++delete from places
+
+# 2020-06-16 20:00:27.414878
++select count(*) from cases
+
+# 2020-06-16 20:04:21.988758
++select count(*) from place
+
+# 2020-06-16 20:04:27.397225
++select * from place
+
+# 2020-06-16 20:05:58.858955
++select count(*) from place
+
+# 2020-06-16 20:06:03.355017
++select count(*) from cases
+
+# 2020-06-16 20:33:18.216669
++select count(*) from place
+
+# 2020-06-16 20:35:25.745525
++select count(*) from cases
+
+# 2020-06-16 20:35:27.089616
++select count(*) from place
+
+# 2020-06-16 20:35:55.971585
++select count(*) from cases
+
+# 2020-06-16 20:39:28.274686
++select * from cases
+
+# 2020-06-16 20:43:08.769624
++select distinct fk_place from cases
+
+# 2020-06-16 20:43:19.090336
++select distinct fk_place from cases order by fk_place
+
+# 2020-06-16 20:43:30.210997
++select  fk_place from cases order by fk_place
+
+# 2020-06-16 20:47:45.367412
++select count(*) from cases
+
+# 2020-06-16 21:02:31.690275
++select * from cases where fk_place between 4000 and 4999
+
+# 2020-06-16 22:35:45.781481
++quit
+
+# 2020-06-16 22:35:53.028829
++quit
+
+# 2020-06-16 22:35:56.469042
++quit
+
+# 2020-06-16 22:36:37.274023
++select t.name,sum(quantity) from cases c, type t where c.fk_place between 5000 and 5999 and date = (select max(date) from cases d where d.fk_place =c.fk_place )group by t.name, cases.fk_type
+
+# 2020-06-16 22:36:53.784622
++select t.name,sum(quantity) from cases c, type t where c.fk_place between 5000 and 5999 and date = (select max(date) from cases d where d.fk_place =c.fk_place )group by t.name, c.fk_type
+
+# 2020-06-16 22:40:27.856190
++select distinct t.name,sum(quantity) from cases c, type t where c.fk_place between 5000 and 5999 and date = (select max(date) from cases d where d.fk_place =c.fk_place )group by t.name, c.fk_type
+
+# 2020-06-17 10:41:21.677459
++\dt
+
+# 2020-06-17 10:46:16.035128
++select * froms logs
+
+# 2020-06-17 10:46:29.588744
++select * from logs
+
+# 2020-06-17 10:53:33.172137
++delete from logs
+
+# 2020-06-17 10:54:35.048089
++select * from logs
+
+# 2020-06-17 11:00:32.048033
++select field from logs
+
+# 2020-06-17 11:00:58.994293
++select * from logs
+
+# 2020-06-17 11:01:11.777910
++select log_field from logs
+
+# 2020-06-17 11:03:05.800073
++select log_field from logs where log_field like
+
+# 2020-06-17 11:03:37.753592
++select log_field from logs where log_field like '%Error de conexión%'
+
+# 2020-06-17 11:03:54.682589
++select log_field from logs where log_field like '%Error de conexión% con'
+
+# 2020-06-17 11:03:59.563398
++select log_field from logs where log_field like '%Error de conexión con%'
+
+# 2020-06-17 11:04:54.046092
++select log_field from logs where log_field like '%Error de conexión con:%'
+
+# 2020-06-17 11:06:09.266419
++select log_field from logs where log_field like '%con:%'
+
+# 2020-06-17 11:06:22.259162
++select log_field from logs where log_field like '%puta%'
+
+# 2020-06-17 11:06:27.027366
++select log_field from logs where log_field like '%Mèxico%'
+
+# 2020-06-17 11:06:31.715887
++select log_field from logs where log_field like '%México%'
+
+# 2020-06-17 11:07:29.463731
++\dt
+
+# 2020-06-17 11:07:34.407564
++select * from logging
+
+# 2020-06-17 11:08:30.651018
++select log_field from logs where log_field like '%México%'
+
+# 2020-06-17 11:09:28.334652
++select log_field from logs where log_field like '%2020/06/17 10:57:39 -México%'
+
+# 2020-06-17 11:09:29.870590
++select log_field from logs where log_field like '%México%'
+
+# 2020-06-17 11:10:03.968891
++select log_field from logs where log_field like '2020/06/17 10:57:47 - Error de conexión'
+
+# 2020-06-17 11:12:12.026139
++select log_field from logs where log_field like '______________________Error de conexión'
+
+# 2020-06-17 11:12:22.937785
++select log_field from logs where log_field like '______________________%Error de conexión'
+
+# 2020-06-17 11:13:07.292714
++select log_field from logs where log_field like '______________________%Error de conexión%'
+
+# 2020-06-17 11:13:36.126693
++select log_field from logs where log_field like '%establecer%'
+
+# 2020-06-17 11:15:26.341939
++select log_field from logs where log_field like '%establecere%'
+
+# 2020-06-17 11:15:30.966198
++select log_field from logs where log_field like '%pud%'
+
+# 2020-06-17 11:15:35.446676
++select log_field from logs where log_field like '%pudo%'
+
+# 2020-06-17 11:16:34.042559
++select log_field from logs where log_field like '%pudo%establecer%'
+
+# 2020-06-17 11:16:40.378911
++select log_field from logs where log_field like '%pudo% establecer%'
+
+# 2020-06-17 11:24:42.124815
++select log_field from logs where log_field like '%pudo%'
+
+# 2020-06-17 11:41:50.180674
++select * from logs
+
+# 2020-06-17 11:58:27.668257
++select * from place
+
+# 2020-06-17 11:58:45.381633
++select * from place where fk_place is NULL
+
+# 2020-06-17 13:54:56.905520
++select count(*) from cases 
+
+# 2020-06-17 13:58:11.895672
++select * from place where fk_place is NULL
+
+# 2020-06-17 13:58:25.592575
++select count(*) from case
+
+# 2020-06-17 13:58:26.424630
++select count(*) from cases
+
+# 2020-06-17 13:58:29.336836
++select count(*) from places
+
+# 2020-06-17 13:58:30.888947
++select count(*) from place
+
+# 2020-06-17 13:58:39.465566
++select count(*) from cases
+
+# 2020-06-17 13:58:40.713687
++select count(*) from place
+
+# 2020-06-17 13:59:20.428574
++select count(*) from cases
+
+# 2020-06-17 14:00:17.728558
++select count(*) from place
+
+# 2020-06-17 14:00:27.281221
++select count(*) from cases
+
+# 2020-06-17 14:00:30.897530
++select count(*) from place
+
+# 2020-06-17 14:00:56.771437
++select * from place where id>= 20000
+
+# 2020-06-17 14:01:13.972714
++select count(*) from place where id>= 20000
+
+# 2020-06-17 14:01:38.262401
++select count(*) from place
+
+# 2020-06-17 14:01:40.262993
++select count(*) from place where id>= 20000
+
+# 2020-06-17 14:01:44.806867
++select count(*) from cases
+
+# 2020-06-17 14:07:16.766477
++select count(*) from place
+
+# 2020-06-17 14:08:56.533690
++select count(*) from cases
+
+# 2020-06-17 14:08:58.597760
++select count(*) from place
+
+# 2020-06-17 14:12:13.475496
++select count(*) from place where id not between 2 and 200
+
+# 2020-06-17 14:12:16.067648
++select count(*) from place where id not between 2 and 2000
+
+# 2020-06-17 14:12:24.980289
++select count(*) from place where id not between 5000 and 8000
+
+# 2020-06-17 14:12:28.708515
++select count(*) from place where id  between 5000 and 8000
+
+# 2020-06-17 14:12:32.820902
++select count(*) from place
+
+# 2020-06-17 14:30:20.764306
++select count(*) from place where id  between 5000 and 8000
+
+# 2020-06-17 14:30:34.237046
++select count(*) from place where id  between 5000 and 5999
+
+# 2020-06-17 14:39:54.340203
++select * from place where id>= 6000 and <7000
+
+# 2020-06-17 14:39:57.939936
++select * from place where id>= 6000 and id<7000
+
+# 2020-06-17 14:40:17.093672
++select * from cases where fk_place>= 6000 and fk_place<7000
+
+# 2020-06-17 15:28:10.701489
++TRUNCATE 
+
+# 2020-06-17 15:29:03.891449
++GRANT DELETE TRUNCATE ON ALL TABLES IN SCHEMA Public TO electiva_5
+
+# 2020-06-17 15:29:16.962935
++GRANT DELETe, TRUNCATE ON ALL TABLES IN SCHEMA Public TO electiva_5
+
+# 2020-07-21 10:57:25.710112
++select * from cases where fk_place>= 6000 and fk_place<7000

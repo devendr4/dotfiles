@@ -1,10 +1,12 @@
 c.url.searchengines = {'DEFAULT': 'https://www.google.com/search?q={}',
                         'p' : 'https://www.pirate-bay.net/search?q={}'}
 
+c.downloads.remove_finished = 5000
 
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova and Daniel Mulford
 # Gruvbox dark, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+
 
 base00 = "#1d2021"
 base01 = "#3c3836"

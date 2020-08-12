@@ -1,0 +1,20 @@
+{
+  "sources": {
+    "%2Fhome%2Fdevendra%2FDocuments%2FUCAB%2FDistribuidos%2Fapi_distribuidos": [
+      "q"
+    ]
+  },
+  "marketplace": {
+    "%2Fhome%2Fdevendra%2FDocuments%2Fguao_responsive": [
+      "coc-html"
+    ],
+    "%2Fhome%2Fdevendra": [
+      "explorer"
+    ]
+  },
+  "lists": {
+    "%2Fhome%2Fdevendra": [
+      ":C"
+    ]
+  }
+}

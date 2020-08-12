@@ -1,0 +1,689 @@
+Looking for git in: git
+Using git 2.27.0 from git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+Open repository: /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1
+> git status -z -u
+> git check-ignore -v -z --stdin
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :.gitignore
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :README.md
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/README.md
+> git cat-file -s f5c19e82ec61b3fc9644631978c23c0618e3db89
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :__init__.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/__init__.py
+> git cat-file -s b517a493bad647dba8e9bade6c8e9e8db10edf0a
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :__init__.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/__init__.py
+> git cat-file -s b517a493bad647dba8e9bade6c8e9e8db10edf0a
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git show :__init__.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/__init__.py
+> git cat-file -s b517a493bad647dba8e9bade6c8e9e8db10edf0a
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git show :cliente.py
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :__init__.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/__init__.py
+> git cat-file -s b517a493bad647dba8e9bade6c8e9e8db10edf0a
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :__init__.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/__init__.py
+> git cat-file -s b517a493bad647dba8e9bade6c8e9e8db10edf0a
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 1768b8d8449a44280a33dd3d01602417bcad279b
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s de71c6b579f071da8f5eff1fa01676faa4711317
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git symbolic-ref --short HEAD
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git show :interfaces.py
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :.gitignore
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git cat-file -s 658bf91f88fdae10ffbc1b0594aeb9113844df93
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git cat-file -s 62c4f9c370a41c33d87fceb5da097fa63934a762
+> git show :.gitignore
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s 5f35a14f0d396411ba457b071b1e1b6cb323a9e5
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git symbolic-ref --short HEAD
+> git cat-file -s 5f35a14f0d396411ba457b071b1e1b6cb323a9e5
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git show :cliente.py
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git symbolic-ref --short HEAD
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git show :cliente.py
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git cat-file -s 0c4e07cbc476b06a25b96a7e9e1a4bca0ceb44a3
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :.gitignore
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git cat-file -s 62c4f9c370a41c33d87fceb5da097fa63934a762
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git symbolic-ref --short HEAD
+> git cat-file -s 85dbb871b0c20f8ec9a014238175082db23df266
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git show :.gitignore
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git rev-parse --show-toplevel
+fatal: not a git repository (or any of the parent directories): .git
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git show :requirements.txt
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/requirements.txt
+> git cat-file -s 322dcc3c269d5106504664dc5c44979f456edbcf
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :.gitignore
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/.gitignore
+> git cat-file -s 85dbb871b0c20f8ec9a014238175082db23df266
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git symbolic-ref --short HEAD
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git show :server.py
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template
+> git show :server.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/server.py
+> git cat-file -s fddb3433294b02a94ad74c4a5ec1270c4f0cbc68
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git show :cliente.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/cliente.py
+> git cat-file -s f6bf52bc5439414cbd41751de094e2b672bc9c68
+> git show :interfaces.py
+> git ls-files --stage -- /home/devendra/Documents/UCAB/Distribuidos/Proyecto 1/grupo-1/interfaces.py
+> git cat-file -s d0ce6a859505cbb19200f44a0322bf820a679ab6
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git config --get commit.template

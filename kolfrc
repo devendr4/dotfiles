@@ -1,0 +1,21 @@
+[MainWindow]
+Height 768=722
+State=AAAA/wAAAAD9AAAAAAAAApkAAAJ9AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1366=665
+
+[New Game Dialog Mode]
+0Player 1=#0000ff
+1Player 2=#ff0000
+competition=false
+course=/usr/share/kolf/courses/Impossible
+extra=
+
+[Notification Messages]
+hazardOptions=Drop Outside of Hazard
+
+[Settings]
+showGuideLine=true
+showInfo=true
+sound=true
+useMouse=true

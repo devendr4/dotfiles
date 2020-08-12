@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-html": ">=1.2.4",
+    "coc-java": ">=1.4.11",
+    "coc-jedi": ">=0.14.1",
+    "coc-marketplace": ">=1.7.0",
+    "coc-tsserver": ">=1.5.3"
+  }
+}

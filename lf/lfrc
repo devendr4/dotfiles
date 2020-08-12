@@ -1,5 +1,6 @@
 # interpreter for shell commands (needs to be POSIX compatible)
 set shell sh
+set period 1
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
 # exit on error and option '-u' is used to give error for unset variables.
@@ -18,7 +19,8 @@ set ifs "\n"
 
 # leave some space at the top and the bottom of the screen
 set scrolloff 10
-
+set preview true
+set previewer ~/.config/lf/scope.sh
 # use enter for shell commands
 map <enter> shell
 
@@ -35,28 +37,20 @@ cmd open ${{
 	case $f in
 #	[[ $(file --mime-type ~/Documents/guao_responsive/guao.js -b) = text/* ]]) $EDITOR $f;;
 	*.csv) $EDITOR $f;;
-	*.pdf) mupdf $f & disown;;
-	*.png | *.jpg | *.jpeg) sxiv-rifle $f & disown;;
+	#*.pdf) setsid -f mupdf $fx > /dev/null 2>&1;;
+	*.pdf) setsid -f mupdf $fx > /dev/null 2>&1;;
+	
+	*.png | *.jpg | *.jpeg)setsid -f sxiv-rifle $f > /dev/null 2;;
 	*)
 		case $(file --mime-type $f -b) in 
 			text/*) $EDITOR $f;;
-			*)xdg-open $f & disown;;
+			*)setsid -f xdg-open $f > /dev/null 2>&1;;
 		esac ;;
 	esac
 }}
-
 # move current file or selected files to trash folder
 # (also see 'man mv' for backup/overwrite options)
 cmd trash %set -f; mv $fx ~/.trash
-
-# define a custom 'delete' command
-# cmd delete ${{
-#     set -f
-#     printf "$fx\n"
-#     printf "delete?[y/n]"
-#     read ans
-#     [ $ans = "y" ] && rm -rf $fx
-# }}
 
 
 
@@ -66,21 +60,22 @@ cmd mkdir %{{
 	read ans 
 	mkdir $ans}}
 
-cmd mkfile %{{
+cmd mkfile ${{
   printf "File Name: "
   read ans
-  touch $ans
+  $EDITOR $ans
 }}
 
 
 # Archive bindings
 cmd extract %{{
   case "$f" in
-      *.zip) unzip "$f" ;;
+      *.zip) 7z x "$f" ;;
       *.tar.gz) tar -xzvf "$f" ;;
       *.tar.bz2) tar -xjvf "$f" ;;
       *.tar) tar -xvf "$f" ;;
       *.7z) 7z x "$f";;
+	  *.rar) unrar x "$f";;
       *) echo "Unsupported format" ;;
   esac
 }}
@@ -125,4 +120,6 @@ map az zip
 map a7 7zip
 map ae extract
 map R reload
+map rd redraw
 #set drawbox
+set findlen 0 

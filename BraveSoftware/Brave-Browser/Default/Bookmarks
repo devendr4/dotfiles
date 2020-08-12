@@ -1,0 +1,54 @@
+{
+   "checksum": "26ca6610d8c83a622808925dcea09280",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13235188896530267",
+            "guid": "993032ad-5fb8-445a-a52b-4a4700fbc36a",
+            "id": "5",
+            "name": "zdharma/fast-syntax-highlighting: (Short name F-Sy-H or FSH). Syntax-highlighting for Zshell – fine granularity, number of features, 40 work hours themes",
+            "type": "url",
+            "url": "https://github.com/zdharma/fast-syntax-highlighting"
+         }, {
+            "date_added": "13237249665496667",
+            "guid": "9e7b7147-d541-42dc-9484-5b2202d3678d",
+            "id": "7",
+            "name": "Servicios de sincronización y transacciones - Documentos de Google",
+            "type": "url",
+            "url": "https://docs.google.com/document/d/1eIdCFSzJQe2nE-LTQXrbLc6iBlZtuUTWTG3zDcTAqJA/edit#"
+         }, {
+            "date_added": "13237522296250436",
+            "guid": "b42e354c-47cd-4162-9826-4e4a184672c0",
+            "id": "10",
+            "name": "Mapa BHV V.3 PUBLICO",
+            "type": "url",
+            "url": "https://www.mediafire.com/file/hmjs6aogab01z59/Mapa_BHV_V.3_PUBLICO.rar/file"
+         } ],
+         "date_added": "13235172460906529",
+         "date_modified": "13237522296250436",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13235172460906540",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13235172460906545",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
