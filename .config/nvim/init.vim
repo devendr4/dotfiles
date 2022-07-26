@@ -35,34 +35,8 @@ noremap <C-k> :<C-U>tabnext<CR>
 let g:gruvbox_italic = '1'
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_invert_signs = '1'
-"colorscheme gruvbox
-"colorscheme onedark
+" colorscheme gruvbox
 colorscheme dracula
-"   let g:lightline = {
-" 	\ 'colorscheme': 'gruvbox',
-" 	\ 'active': {
-" 	\   'left': [ [ 'mode', 'paste' ],
-" 	\             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ],
-"   	\	'right': [ ['filetype'] ,
-"   	\				['gitbranch'],
-"   	\				['fileformat']]
-" 	\ },
-" 	\ 'component_function': {
-"   	\	'gitbranch': 'FugitiveHead',
-" 	\   'cocstatus': 'coc#status',
-" 	\ 'filename': 'LightlineFilename',
-"   	\ 'filetype': 'MyFiletype',
-"   	\ 'fileformat': 'MyFileformat',
-" 	\},
-" 	\'tab_component_function':{
-"   	\'tabnum': 'LightlineWebDevIcons',
-" 	\ }
-" 	\}
-"
-" function! LightlineWebDevIcons(n)
-"   let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
-"   return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
-" endfunction
    
 function! MyFiletype()
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
@@ -84,16 +58,11 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-"highlight Pmenu ctermbg=gray guibg=gray
-"autocmd! FileType fzf set laststatus=0 noshowmode noruler
-"			\|autocmd BufLeave <buffer> set laststatus=2 showmode ruler
-"""let g:fzf_layout = {'left': '20%'}
-let g:fzf_action = {
-			\'enter': 'tab split',
-			\'ctrl-v': 'vsplit',
-			\'ctrl-h':'split'} 
+" let g:fzf_action = {
+" 			\'enter': 'tab split',
+" 			\'ctrl-v': 'vsplit',
+" 			\'ctrl-h':'split'} 
 nmap <F1> :CocCommand explorer<CR>
-"nmap <F1> :CHADopen<CR>
 "nmap <F1> :NvimTreeToggle<CR>
 
 if has('nvim')
