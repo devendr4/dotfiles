@@ -1,5 +1,3 @@
-
-
 ca tn tabnew
 set completeopt-=preview
 set nohlsearch
@@ -20,53 +18,14 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-nnoremap <silent> f :Telescope live_grep<CR>
-nnoremap <silent> F :Telescope find_files<CR>
-
-call plug#begin()
-	Plug 'norcalli/nvim-colorizer.lua'
-	Plug 'iamcco/markdown-preview.nvim'
-	Plug 'habamax/vim-gruvbit'
-	Plug 'dracula/vim'
-	Plug 'ThePrimeagen/harpoon'
-	Plug 'morhetz/gruvbox'
-	Plug 'alvan/vim-closetag'
-	Plug 'gregsexton/MatchTag'
-	"Plug 'mattn/Emmet-vim'
-	Plug 'psliwka/vim-smoothie'
-	Plug 'tpope/vim-fugitive'
-	"Plug 'airblade/vim-gitgutter'
-	Plug 'itchyny/vim-gitbranch'
-	" Plug 'junegunn/fzf.vim'
-	Plug 'tpope/vim-surround'
-	Plug 'leafOfTree/vim-vue-plugin' 
-	"Plug 'junegunn/fzf', {'do': {-> fzf#install()}}
-	Plug 'neoclide/coc.nvim', {'branch': 'release'} 
-	"{'branch':'master', 'do': 'yarn install --frozen-lockfile'}
-	"Plug 'sheerun/vim-polyglot'
-	"Plug 'tpope/vim-rails'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'jparise/vim-graphql'
-	Plug 'itchyny/lightline.vim'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'fatih/vim-go'
-"	Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
-	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-	Plug 'rhysd/git-messenger.vim'
-	Plug 'nvim-lua/plenary.nvim'
-	Plug 'nvim-telescope/telescope.nvim'
-	Plug 'lewis6991/gitsigns.nvim'
-	Plug 'ThePrimeagen/harpoon'
-	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-"	Plug 'styled-components/vim-styled-components'
-"
-	Plug 'kyazdani42/nvim-web-devicons' " optional, for file icons
-	Plug 'kyazdani42/nvim-tree.lua'
-	Plug 'romgrk/barbar.nvim'
-
-call plug#end()
+" nnoremap <silent> f :Telescope live_grep<CR>
+" nnoremap <silent> F :Telescope find_files<CR>
+nnoremap <silent> f :Rg<CR>
+nnoremap <silent> F :Files<CR>
 
 
+source $HOME/.config/nvim/plugins.vim
+source $HOME/.config/nvim/config.lua
 
 
 noremap <C-j> :<C-U>tabprevious<CR> 
@@ -186,7 +145,8 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 
-let mapleader = ","
+" let mapleader = ","
+let mapleader = "\<Space>" 
 nnoremap <leader>gb :Git blame<CR>
 
 
@@ -207,9 +167,8 @@ let g:vim_vue_plugin_config = {
 
 
 
-source $HOME/.config/nvim/plugins.vim
-source $HOME/.config/nvim/config.lua
 
 
 set nobackup
 set nowritebackup
+nmap <leader>a <Plug>(coc-codeaction)

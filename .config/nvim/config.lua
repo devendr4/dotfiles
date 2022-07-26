@@ -33,16 +33,10 @@ vim.cmd[[hi CocErrorSign guifg=#cc241d]]
 --
  require('colorizer').setup()
  require('Comment').setup()
- require'hop'.setup()
 
  require'nvim-web-devicons'.setup()
 
 
-require("harpoon").setup({
-  global_settings = {
-    mark_branch = true
-  }
-})
 
 require'nvim-web-devicons'.setup()
 
@@ -76,7 +70,6 @@ telescope.setup {
 }
 
 telescope.load_extension('coc')
-telescope.load_extension('harpoon')
 
 
 require('gitsigns').setup {
