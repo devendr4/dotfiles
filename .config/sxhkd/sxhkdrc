@@ -187,6 +187,9 @@ super + shift +  S
 super + F1
   ~/.config/bspwm/scripts/keybindings_rofi.sh
 
+super + F2
+ pavucontrol
+
 
 
 # expand/contract a window 

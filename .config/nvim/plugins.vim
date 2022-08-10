@@ -1,10 +1,12 @@
 call plug#begin()
+Plug 'rktjmp/lush.nvim'
   Plug 'ap/vim-css-color'
   Plug 'alvan/vim-closetag'
   Plug 'gregsexton/MatchTag'
-  Plug 'psliwka/vim-smoothie'
+  " Plug 'psliwka/vim-smoothie'
   Plug 'tpope/vim-fugitive'
-
+  Plug 'sainnhe/everforest'
+  Plug 'sainnhe/gruvbox-material'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
@@ -28,7 +30,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 
   " Plug 'neovim/nvim-lspconfig'
-  Plug 'jiangmiao/auto-pairs'
+  " Plug 'jiangmiao/auto-pairs'
   Plug 'jparise/vim-graphql'
   Plug 'fatih/vim-go'
 
@@ -39,9 +41,11 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
   "Theme
   Plug 'habamax/vim-gruvbit'
   Plug 'dracula/vim'
-  Plug 'morhetz/gruvbox'
+  " Plug 'morhetz/gruvbox'
+Plug'ellisonleao/gruvbox.nvim'
   Plug 'arcticicestudio/nord-vim'
   Plug 'xiyaowong/nvim-transparent'
+Plug 'shaunsingh/nord.nvim'
 
   Plug 'norcalli/nvim-colorizer.lua'
 
@@ -58,7 +62,20 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
   "indent
+  "
   Plug 'lukas-reineke/indent-blankline.nvim'
 
   Plug 'kyazdani42/nvim-tree.lua'
+
+
+  Plug 'goolord/alpha-nvim'
+
+  "autopairs/tags
+  Plug 'windwp/nvim-ts-autotag'
+  Plug 'windwp/nvim-autopairs'
+  Plug 'karb94/neoscroll.nvim'
+  
+  Plug 'adisen99/apprentice.nvim'
+
+  
   call plug#end()

@@ -1,3 +1,4 @@
+
 ca tn tabnew
 set completeopt-=preview
 set nohlsearch
@@ -11,6 +12,7 @@ set hidden
 set noshowmode
 set updatetime=300
 set splitbelow
+
 set splitright
 map q: <Nop>
 nnoremap Q <nop>
@@ -18,14 +20,15 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-" nnoremap <silent> f :Telescope live_grep<CR>
-" nnoremap <silent> F :Telescope find_files<CR>
-nnoremap <silent> f :Rg<CR>
-nnoremap <silent> F :Files<CR>
+nnoremap <silent> f :Telescope live_grep<CR>
+nnoremap <silent> F :Telescope find_files<CR>
+" nnoremap <silent> f :Rg<CR>
+" nnoremap <silent> F :Files<CR>
 
 
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/config.lua
+source $HOME/.config/nvim/telescope.lua
 
 
 noremap <C-j> :<C-U>tabprevious<CR> 
@@ -36,8 +39,7 @@ let g:gruvbox_italic = '1'
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_invert_signs = '1'
 " colorscheme gruvbox
-colorscheme dracula
-   
+
 function! MyFiletype()
     return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
   endfunction
@@ -54,9 +56,25 @@ function! LightlineFilename()
   return expand('%')
 endfunction
 
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+inoremap <silent><expr> <TAB>
+  \ coc#pum#visible() ? coc#pum#next(1):
+  \ <SID>check_back_space() ? "\<Tab>" :
+  \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
+
+
 
 " let g:fzf_action = {
 " 			\'enter': 'tab split',
@@ -141,3 +159,8 @@ let g:vim_vue_plugin_config = {
 set nobackup
 set nowritebackup
 nmap <leader>a <Plug>(coc-codeaction)
+
+" colorscheme everforest
+colorscheme gruvbox-material
+" colorscheme apprentice
+" set background=dark

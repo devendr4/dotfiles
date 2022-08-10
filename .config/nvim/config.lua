@@ -41,35 +41,35 @@ vim.cmd[[hi CocErrorSign guifg=#cc241d]]
 require'nvim-web-devicons'.setup()
 
 
-local telescope = require('telescope')
-
-telescope.setup {
-  defaults = {
-    sorting_strategy = "ascending",
-    prompt_prefix = " ",
-    prompt_position = "top"
-  },
-  pickers = {
-    git_files = {
-      layout_config = {
-        preview_width = 0.6,
-        prompt_position = "top"
-      }
-    },
-    commands = {
-      layout_config = {
-        prompt_position = "top"
-      }
-    },
-    git_status = {
-      layout_config = {
-        prompt_position = "top"
-      }
-    }
-  }
-}
-
-telescope.load_extension('coc')
+-- local telescope = require('telescope')
+--
+-- telescope.setup {
+--   defaults = {
+--     sorting_strategy = "ascending",
+--     prompt_prefix = " ",
+--     prompt_position = "top"
+--   },
+--   pickers = {
+--     git_files = {
+--       layout_config = {
+--         preview_width = 0.6,
+--         prompt_position = "top"
+--       }
+--     },
+--     commands = {
+--       layout_config = {
+--         prompt_position = "top"
+--       }
+--     },
+--     git_status = {
+--       layout_config = {
+--         prompt_position = "top"
+--       }
+--     }
+--   }
+-- }
+--
+-- telescope.load_extension('coc')
 
 
 require('gitsigns').setup {
@@ -120,6 +120,7 @@ vim.cmd[[command! -nargs=0 GitFiles :Telescope git_files ]]
 vim.cmd[[command! -nargs=0 Commands :Telescope commands ]]
 vim.cmd[[command! -nargs=0 GitStatus :Telescope git_status ]]
 
+require('alpha').setup(require'alpha.themes.dashboard'.config)
 
 require("indent_blankline").setup {
     -- for example, context is off by default, use this to turn it on
@@ -291,3 +292,68 @@ require("bufferline").setup {
 -- }
 
 -- require('dracula').load()
+--
+--vim.o.background = "dark" -- or "light" for light mode
+
+-- Load and setup function to choose plugin and language highlights
+--
+--
+require'nvim-treesitter.configs'.setup {
+  autotag = {
+    enable = true,
+  }
+}
+require("nvim-autopairs").setup {}
+require('neoscroll').setup()
+
+
+require('lush')(require('apprentice').setup({
+  plugins = {
+    "buftabline",
+    "coc",
+    "cmp", -- nvim-cmp
+    "fzf",
+    "gitgutter",
+    "gitsigns",
+    "lsp",
+    "lspsaga",
+    "nerdtree",
+    "netrw",
+    "nvimtree",
+    "neogit",
+    "packer",
+    "signify",
+    "startify",
+    "syntastic",
+    "telescope",
+    "treesitter"
+  },
+  langs = {
+    "c",
+    "clojure",
+    "coffeescript",
+    "csharp",
+    "css",
+    "elixir",
+    "golang",
+    "haskell",
+    "html",
+    "java",
+    "js",
+    "json",
+    "jsx",
+    "lua",
+    "markdown",
+    "moonscript",
+    "objc",
+    "ocaml",
+    "purescript",
+    "python",
+    "ruby",
+    "rust",
+    "scala",
+    "typescript",
+    "viml",
+    "xml"
+  }
+}))
