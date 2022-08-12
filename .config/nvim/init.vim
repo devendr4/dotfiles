@@ -164,3 +164,7 @@ nmap <leader>a <Plug>(coc-codeaction)
 colorscheme gruvbox-material
 " colorscheme apprentice
 " set background=dark
+"
+"
+nmap <leader>h :HopWord<cr>
+nmap <leader>l :HopLine<cr>

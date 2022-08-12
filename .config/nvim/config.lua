@@ -357,3 +357,6 @@ require('lush')(require('apprentice').setup({
     "xml"
   }
 }))
+
+
+require'hop'.setup()

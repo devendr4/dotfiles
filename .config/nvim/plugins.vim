@@ -10,6 +10,7 @@ Plug 'rktjmp/lush.nvim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
 
+Plug'phaazon/hop.nvim'
   Plug 'tpope/vim-surround'
   Plug 'leafOfTree/vim-vue-plugin' 
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
