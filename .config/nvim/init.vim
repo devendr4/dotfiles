@@ -1,6 +1,6 @@
 
 ca tn tabnew
-set completeopt-=preview
+" set completeopt-=preview
 set nohlsearch
 set number
 set clipboard+=unnamedplus
@@ -60,19 +60,19 @@ endfunction
 " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-inoremap <silent><expr> <TAB>
-  \ coc#pum#visible() ? coc#pum#next(1):
-  \ <SID>check_back_space() ? "\<Tab>" :
-  \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+" inoremap <silent><expr> <TAB>
+"   \ coc#pum#visible() ? coc#pum#next(1):
+"   \ <SID>check_back_space() ? "\<Tab>" :
+"   \ coc#refresh()
+" inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+"
+" inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
-
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
+" if has('nvim')
+"   inoremap <silent><expr> <c-space> coc#refresh()
+" else
+"   inoremap <silent><expr> <c-@> coc#refresh()
+" endif
 
 
 
@@ -80,28 +80,23 @@ endif
 " 			\'enter': 'tab split',
 " 			\'ctrl-v': 'vsplit',
 " 			\'ctrl-h':'split'} 
-nmap <F1> :CocCommand explorer<CR>
-"nmap <F1> :NvimTreeToggle<CR>
+" nmap <F1> :CocCommand explorer<CR>
+nmap <F1> :NvimTreeToggle<CR>
 
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
 
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+" nnoremap <silent> K :call <SID>show_documentation()<CR>
 
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg . " " . expand('<cword>')
-  endif
-endfunction
+" function! s:show_documentation()
+"   if (index(['vim','help'], &filetype) >= 0)
+"     execute 'h '.expand('<cword>')
+"   elseif (coc#rpc#ready())
+"     call CocActionAsync('doHover')
+"   else
+"     execute '!' . &keywordprg . " " . expand('<cword>')
+"   endif
+" endfunction
 
-nmap <C-s> :CocCommand prettier.formatFile <CR>
+" nmap <C-s> :CocCommand prettier.formatFile <CR>
 let g:closetag_filetypes= 'html,jsx,javascriptreact,javascript,typescript, typescriptreact, tsx'	
 "let g:node_client_debug= 1
 "
@@ -111,12 +106,12 @@ au! BufRead,BufNewFile *.rsh setfiletype javascript
 "g:smoothie_enabled = 1
 "
 "
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+" nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 :map <C-U>  20<C-Y>
 
@@ -158,7 +153,7 @@ let g:vim_vue_plugin_config = {
 
 set nobackup
 set nowritebackup
-nmap <leader>a <Plug>(coc-codeaction)
+" nmap <leader>a <Plug>(coc-codeaction)
 
 " colorscheme everforest
 colorscheme gruvbox-material
@@ -168,3 +163,7 @@ colorscheme gruvbox-material
 "
 nmap <leader>h :HopWord<cr>
 nmap <leader>l :HopLine<cr>
+map <PageUp> <C-b>
+map <PageDown> <C-f>
+
+set completeopt=menu,menuone,noselect

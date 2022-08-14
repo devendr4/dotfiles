@@ -16,18 +16,18 @@ Plug'phaazon/hop.nvim'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
   "Coc autocomplete
-  Plug 'neoclide/coc.nvim', {'branch': 'release'} 
-  Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
-  Plug 'fannheyward/telescope-coc.nvim'
-  Plug 'felippepuhle/coc-graphql', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc.nvim', {'branch': 'release'} 
+  " Plug 'neoclide/coc-eslint', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-git', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-prettier', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-sources', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-tsserver', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'neoclide/coc-yaml', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'josa42/coc-go', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'fannheyward/coc-rust-analyzer', {'do': 'yarn install --frozen-lockfile'}
+  " Plug 'fannheyward/telescope-coc.nvim'
+  " Plug 'felippepuhle/coc-graphql', {'do': 'yarn install --frozen-lockfile'}
 
 
   " Plug 'neovim/nvim-lspconfig'
@@ -78,5 +78,32 @@ Plug 'shaunsingh/nord.nvim'
   
   Plug 'adisen99/apprentice.nvim'
 
+  "lsp config
+  Plug 'williamboman/mason.nvim'
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'jose-elias-alvarez/null-ls.nvim'
+  Plug 'williamboman/mason-lspconfig.nvim'
+
+
+" main one
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+" 9000+ Snippets
+Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
+
+" lua & third party sources -- See https://github.com/ms-jpq/coq.thirdparty
+" Need to **configure separately**
+
+Plug 'ms-jpq/coq.thirdparty', {'branch': '3p'}
+" - shell repl
+" - nvim lua api
+" - scientific calculator
+" - comment banner
+" - etc
+
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
   
   call plug#end()

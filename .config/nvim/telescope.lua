@@ -57,7 +57,7 @@ telescope.setup({
 
 })
 
-telescope.load_extension('coc')
+-- telescope.load_extension('coc')
 -- telescope.load_extension('harpoon')
 
 vim.cmd[[command! -nargs=0 Commands :Telescope commands ]]
