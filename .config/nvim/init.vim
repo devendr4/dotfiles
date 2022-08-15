@@ -80,8 +80,8 @@ endif
 " 			\'enter': 'tab split',
 " 			\'ctrl-v': 'vsplit',
 " 			\'ctrl-h':'split'} 
-nmap <F1> :CocCommand explorer<CR>
-"nmap <F1> :NvimTreeToggle<CR>
+" nmap <F1> :CocCommand explorer<CR>
+nmap <F1> :NvimTreeFindFileToggle<CR>
 
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
