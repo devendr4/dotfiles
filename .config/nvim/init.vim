@@ -80,8 +80,8 @@ endif
 " 			\'enter': 'tab split',
 " 			\'ctrl-v': 'vsplit',
 " 			\'ctrl-h':'split'} 
-nmap <F1> :CocCommand explorer<CR>
-"nmap <F1> :NvimTreeToggle<CR>
+" nmap <F1> :CocCommand explorer<CR>
+nmap <F1> :NvimTreeFindFileToggle<CR>
 
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
@@ -133,6 +133,7 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 
 " let mapleader = ","
+nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>" 
 nnoremap <leader>gb :Git blame<CR>
 
@@ -159,9 +160,10 @@ let g:vim_vue_plugin_config = {
 set nobackup
 set nowritebackup
 nmap <leader>a <Plug>(coc-codeaction)
+nmap <leader>d :bd<CR>
 
-" colorscheme everforest
-colorscheme gruvbox-material
+colorscheme everforest
+" colorscheme gruvbox-material
 " colorscheme apprentice
 " set background=dark
 "
