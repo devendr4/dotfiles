@@ -60,13 +60,28 @@ endfunction
 " inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-inoremap <silent><expr> <TAB>
-  \ coc#pum#visible() ? coc#pum#next(1):
-  \ <SID>check_back_space() ? "\<Tab>" :
-  \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+" inoremap <silent><expr> <TAB>
+"   \ coc#pum#visible() ? coc#pum#next(1):
+"   \ <SID>check_back_space() ? "\<Tab>" :
+"   \ coc#refresh()
+" inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+"
+" use <tab> for trigger completion and navigate to the next complete item
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <Tab>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+
+inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
+inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
+
 
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
@@ -170,3 +185,6 @@ colorscheme everforest
 "
 nmap <leader>h :HopWord<cr>
 nmap <leader>l :HopLine<cr>
+
+map <PageUp> <C-b>
+map <PageDown> <C-f>
