@@ -13,7 +13,8 @@ Plug 'rktjmp/lush.nvim'
 Plug'phaazon/hop.nvim'
   Plug 'tpope/vim-surround'
   Plug 'leafOfTree/vim-vue-plugin' 
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+" Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug'romgrk/barbar.nvim'
 
   "Coc autocomplete
   Plug 'neoclide/coc.nvim', {'branch': 'release'} 
@@ -45,7 +46,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
   " Plug 'morhetz/gruvbox'
 Plug'ellisonleao/gruvbox.nvim'
   Plug 'arcticicestudio/nord-vim'
-  Plug 'xiyaowong/nvim-transparent'
+  " Plug 'xiyaowong/nvim-transparent'
 Plug 'shaunsingh/nord.nvim'
 
   Plug 'norcalli/nvim-colorizer.lua'
@@ -78,5 +79,6 @@ Plug 'shaunsingh/nord.nvim'
   
   Plug 'adisen99/apprentice.nvim'
 
+  Plug'Shatur/neovim-session-manager'
   
   call plug#end()

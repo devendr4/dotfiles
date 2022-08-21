@@ -205,85 +205,87 @@ require'nvim-treesitter.configs'.setup {
 
 
 require("nvim-tree").setup()
-require("bufferline").setup {
-  options = {
-    indicator_icon = "",
-    show_buffer_close_icons = false,
-    show_close_icon = false,
-    show_tab_indicators = false,
-	separator_style = "slant",
-	diagnostics = "coc",
-	mode = "buffers",
-	-- max_prefix_length = 15,
-  }
-}
-
--- require'bufferline'.setup {
---   -- Enable/disable animations
---   animation = true,
---
---   -- Enable/disable auto-hiding the tab bar when there is a single buffer
---   auto_hide = false,
---
---   -- Enable/disable current/total tabpages indicator (top right corner)
---   tabpages = true,
---
---   -- Enable/disable close button
---   closable = true,
---
---   -- Enables/disable clickable tabs
---   --  - left-click: go to buffer
---   --  - middle-click: delete buffer
---   clickable = true,
---
---   -- Excludes buffers from the tabline
---   exclude_ft = {'javascript'},
---   exclude_name = {'package.json'},
---
---   -- Enable/disable icons
---   -- if set to 'numbers', will show buffer index in the tabline
---   -- if set to 'both', will show buffer index and icons in the tabline
---   icons = true,
---
---   -- If set, the icon color will follow its corresponding buffer
---   -- highlight group. By default, the Buffer*Icon group is linked to the
---   -- Buffer* group (see Highlighting below). Otherwise, it will take its
---   -- default value as defined by devicons.
---   icon_custom_colors = false,
---
---   -- Configure icons on the bufferline.
---   icon_separator_active = '▎',
---   icon_separator_inactive = '▎',
---   icon_close_tab = '',
---   icon_close_tab_modified = '●',
---   icon_pinned = '車',
---
---   -- If true, new buffers will be inserted at the start/end of the list.
---   -- Default is to insert after current buffer.
---   insert_at_end = false,
---   insert_at_start = false,
---
---   -- Sets the maximum padding width with which to surround each tab
---   maximum_padding = 1,
---
---   -- Sets the maximum buffer name length.
---   maximum_length = 30,
---
---   -- If set, the letters for each buffer in buffer-pick mode will be
---   -- assigned based on their name. Otherwise or in case all letters are
---   -- already assigned, the behavior is to assign letters in order of
---   -- usability (see order below)
---   semantic_letters = true,
---
---   -- New buffer letters are assigned in this order. This order is
---   -- optimal for the qwerty keyboard layout but might need adjustement
---   -- for other layouts.
---   letters = 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP',
---
---   -- Sets the name of unnamed buffers. By default format is "[Buffer X]"
---   -- where X is the buffer number. But only a static string is accepted here.
---   no_name_title = nil,
+-- require("bufferline").setup {
+--   options = {
+--     indicator_icon = "",
+--     show_buffer_close_icons = false,
+--     show_close_icon = false,
+--     show_tab_indicators = false,
+-- 	-- separator_style = "slant",
+-- 	diagnostics = "coc",
+-- 	mode = "buffers",
+-- 	-- max_prefix_length = 15,
+--   }
 -- }
+
+-- barbar
+--
+require'bufferline'.setup {
+  -- Enable/disable animations
+  animation = true,
+
+  -- Enable/disable auto-hiding the tab bar when there is a single buffer
+  auto_hide = false,
+
+  -- Enable/disable current/total tabpages indicator (top right corner)
+  tabpages = true,
+
+  -- Enable/disable close button
+  closable = true,
+
+  -- Enables/disable clickable tabs
+  --  - left-click: go to buffer
+  --  - middle-click: delete buffer
+  clickable = true,
+
+  -- Excludes buffers from the tabline
+  exclude_ft = {'javascript'},
+  exclude_name = {'package.json'},
+
+  -- Enable/disable icons
+  -- if set to 'numbers', will show buffer index in the tabline
+  -- if set to 'both', will show buffer index and icons in the tabline
+  icons = true,
+
+  -- If set, the icon color will follow its corresponding buffer
+  -- highlight group. By default, the Buffer*Icon group is linked to the
+  -- Buffer* group (see Highlighting below). Otherwise, it will take its
+  -- default value as defined by devicons.
+  icon_custom_colors = false,
+
+  -- Configure icons on the bufferline.
+  icon_separator_active = '▎',
+  icon_separator_inactive = '▎',
+  icon_close_tab = '',
+  icon_close_tab_modified = '●',
+  icon_pinned = '車',
+
+  -- If true, new buffers will be inserted at the start/end of the list.
+  -- Default is to insert after current buffer.
+  insert_at_end = false,
+  insert_at_start = false,
+
+  -- Sets the maximum padding width with which to surround each tab
+  maximum_padding = 1,
+
+  -- Sets the maximum buffer name length.
+  maximum_length = 30,
+
+  -- If set, the letters for each buffer in buffer-pick mode will be
+  -- assigned based on their name. Otherwise or in case all letters are
+  -- already assigned, the behavior is to assign letters in order of
+  -- usability (see order below)
+  semantic_letters = true,
+
+  -- New buffer letters are assigned in this order. This order is
+  -- optimal for the qwerty keyboard layout but might need adjustement
+  -- for other layouts.
+  letters = 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP',
+
+  -- Sets the name of unnamed buffers. By default format is "[Buffer X]"
+  -- where X is the buffer number. But only a static string is accepted here.
+  no_name_title = nil,
+}
 
 
 
@@ -360,3 +362,19 @@ require('lush')(require('apprentice').setup({
 
 
 require'hop'.setup()
+
+
+local Path = require('plenary.path')
+require('session_manager').setup({
+  sessions_dir = Path:new(vim.fn.stdpath('data'), 'sessions'), -- The directory where the session files will be saved.
+  path_replacer = '__', -- The character to which the path separator will be replaced for session files.
+  colon_replacer = '++', -- The character to which the colon symbol will be replaced for session files.
+  autoload_mode = require('session_manager.config').AutoloadMode.CurrentDir, -- Define what to do when Neovim is started without arguments. Possible values: Disabled, CurrentDir, LastSession
+  autosave_last_session = true, -- Automatically save last session on exit and on session switch.
+  autosave_ignore_not_normal = true, -- Plugin will not save a session when no buffers are opened, or all of them aren't writable or listed.
+  autosave_ignore_filetypes = { -- All buffers of these file types will be closed before the session is saved.
+    'gitcommit',
+  }, 
+  autosave_only_in_session = false, -- Always autosaves session. If true, only autosaves after a session is active.
+  max_path_length = 80,  -- Shorten the display path if length exceeds this threshold. Use 0 if don't want to shorten the path at all.
+})

@@ -203,7 +203,7 @@ super + alt + {h,j,k,l}
 
   # change lang
 super + i
-	/home/devendr4/.local/share/switch_lang.sh
+	~/.local/share/switch_lang.sh
 
 super + Mod + KP_1
 	kitty -e nvim ~/.config/i3/config
