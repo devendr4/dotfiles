@@ -79,6 +79,6 @@ Plug 'shaunsingh/nord.nvim'
   
   Plug 'adisen99/apprentice.nvim'
 
-  Plug'Shatur/neovim-session-manager'
+  Plug 'Shatur/neovim-session-manager'
   
   call plug#end()

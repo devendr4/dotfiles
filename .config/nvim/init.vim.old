@@ -3,7 +3,6 @@ ca tn tabnew
 set completeopt-=preview
 set nohlsearch
 set number
-set clipboard+=unnamedplus
 set mouse=a
 filetype plugin indent on
 set tabstop=4
@@ -26,7 +25,8 @@ nnoremap <silent> F :Telescope find_files<CR>
 " nnoremap <silent> F :Files<CR>
 
 
-source $HOME/.config/nvim/plugins.vim
+" source $HOME/.config/nvim/plugins.vim
+source $HOME/.config/nvim/plugins.lua
 source $HOME/.config/nvim/config.lua
 source $HOME/.config/nvim/telescope.lua
 

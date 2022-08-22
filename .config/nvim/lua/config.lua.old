@@ -32,7 +32,6 @@ vim.cmd[[hi CocErrorSign guifg=#cc241d]]
 -- vim.cmd[[hi CocUnusedHighlight guifg=#f28fad]]
 --
  require('colorizer').setup()
- require('Comment').setup()
 
  require'nvim-web-devicons'.setup()
 
