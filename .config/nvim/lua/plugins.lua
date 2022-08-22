@@ -3,16 +3,14 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-tree.lua'
   use  {'nvim-telescope/telescope.nvim',
   requires =  {'nvim-lua/plenary.nvim'} }
-
-  use 'numToStr/Comment.nvim'
-
-  use 'lewis6991/gitsigns.nvim'
-
-
-  --statusline / bufferline
   use 'romgrk/barbar.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'kyazdani42/nvim-web-devicons'
+
+  use 'numToStr/Comment.nvim'
+  --git
+  use 'lewis6991/gitsigns.nvim'
+  use 'tpope/vim-fugitive'
 
   use {
        'nvim-treesitter/nvim-treesitter',
@@ -32,8 +30,10 @@ return require('packer').startup(function(use)
 
 
   use 'karb94/neoscroll.nvim'
-  use 'goolord/alpha-nvim'
 
+  use 'goolord/alpha-nvim'
   use 'Shatur/neovim-session-manager'
+
+  use 'lukas-reineke/indent-blankline.nvim'
   end
 )

@@ -32,6 +32,10 @@ nmap ("<leader>l", ":HopLine<cr>")
 nmap("<tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>")
 nmap("<s-tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>")
 
+nmap("space","<Nop>")
+
+
+
 --all coc related
 vim.cmd([[
 function! CheckBackspace() abort
@@ -65,5 +69,11 @@ function! s:show_documentation()
 endfunction
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <leader>a <Plug>(coc-codeaction)
 ]])
 -- imap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"

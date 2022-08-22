@@ -4,6 +4,7 @@ vim.g.mapleader = " "
 require('plugins')
 require('config')
 require('keybinds')
+-- require('telescope')
 local vim = vim
 local api = vim.api
 local o   = vim.o
