@@ -7,11 +7,6 @@ require('neoscroll').setup()
 require('alpha').setup(require'alpha.themes.dashboard'.config)
 local Path = require('plenary.path')
 
-require'nvim-treesitter.configs'.setup {
-  autotag = {
-    enable = true,
-  } }
-
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -101,3 +96,20 @@ require('session_manager').setup({
   autosave_only_in_session = false, -- Always autosaves session. If true, only autosaves after a session is active.
   max_path_length = 80,  -- Shorten the display path if length exceeds this threshold. Use 0 if don't want to shorten the path at all.
 })
+
+
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "python", "typescript", "tsx", "python", "javascript" },
+  auto_install = true,
+autotag = {
+    enable = true,
+  },
+  highlight = {
+    enable = true,
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
