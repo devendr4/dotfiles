@@ -21,6 +21,7 @@ nmap("<c-h>", ":wincmd h<CR>")
 nmap("<c-l>", ":wincmd l<CR>")
 -- close buffer
 nmap("<leader>d", ":bd<CR>")
+nmap("<leader>w", ":w<CR>")
 --plugins
 nmap ("<F1>", ":NvimTreeFindFileToggle<CR>")
 nmap("f", ":Telescope live_grep<CR>")
