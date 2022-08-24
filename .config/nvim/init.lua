@@ -5,6 +5,7 @@ require('plugins')
 require('config')
 require('keybinds')
 require('telescope-config')
+-- require('lsp')
 local vim = vim
 local api = vim.api
 local o   = vim.o
