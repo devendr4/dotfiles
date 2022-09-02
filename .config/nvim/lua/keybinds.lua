@@ -20,7 +20,6 @@ nmap("<c-j>", ":wincmd j<CR>")
 nmap("<c-h>", ":wincmd h<CR>")
 nmap("<c-l>", ":wincmd l<CR>")
 -- close buffer
-nmap("<leader>d", ":bd<CR>")
 nmap("<leader>w", ":w<CR>")
 --plugins
 nmap ("<F1>", ":NvimTreeFindFileToggle<CR>")
@@ -30,8 +29,10 @@ nmap("<leader>f", ":Telescope find_files<CR>")
 nmap ("<leader>h", ":HopWord<cr>")
 nmap ("<leader>l", ":HopLine<cr>")
 
-nmap("<tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>")
-nmap("<s-tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>")
+--barbar
+nmap('<tab>','<Cmd>BufferNext<CR>')
+nmap('<s-tab>','<Cmd>BufferPrevious<CR>')
+nmap('<leader>d', '<Cmd>BufferClose<CR>')
 
 nmap("space","<Nop>")
 

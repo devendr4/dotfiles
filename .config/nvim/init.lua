@@ -11,7 +11,7 @@ local api = vim.api
 local o   = vim.o
 
 vim.wo.number = true
-vim.wo.relativenumber = true
+-- vim.wo.relativenumber = true
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.opt.mouse = "a"
