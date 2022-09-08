@@ -173,7 +173,8 @@ super + Print
 
 # Shortcuts
 super + w 
-  microsoft-edge-stable
+	brave
+  # microsoft-edge-stable
 
 super + n 
   thunar

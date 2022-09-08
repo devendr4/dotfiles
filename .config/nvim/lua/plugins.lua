@@ -34,6 +34,17 @@ return require('packer').startup(function(use)
   use 'goolord/alpha-nvim'
   use 'Shatur/neovim-session-manager'
 
-  use 'lukas-reineke/indent-blankline.nvim'
+use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+  require('git-conflict').setup(
+{
+  default_mappings = true, -- disable buffer local mapping created by this plugin
+  disable_diagnostics = false, -- This will disable the diagnostics in a buffer whilst it is conflicted
+  highlights = { -- They must have background color, otherwise the default color will be used
+    incoming = 'DiffDelete',
+    current = 'DiffAdd',
+  }
+}
+  )
+end}
   end
 )
