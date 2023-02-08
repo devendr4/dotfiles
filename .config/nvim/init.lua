@@ -1,12 +1,14 @@
 local api = vim.api
 vim.opt.termguicolors = true
 vim.g.mapleader = " "
-api.nvim_command [[colorscheme everforest]]
+-- 2api.nvim_command [[colorscheme everforest]]
 
 require('plugins')
 require('config')
 require('keybinds')
 require('telescope-config')
+-- require('coq')
+-- require('cmp')
 -- require('lsp')
 local vim = vim
 local o   = vim.o
@@ -23,4 +25,3 @@ o.splitbelow = true
 -- vim.g.colors_name='everforest'
 
 api.nvim_command [[set nohlsearch]]
-

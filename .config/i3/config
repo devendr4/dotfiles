@@ -31,10 +31,10 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec /home/devendra/.config/polybar/scripts/launcher
@@ -164,7 +164,7 @@ bindsym $mod+r mode "resize"
 
 new_window 1pixel
 #START QUTEBROWSER
-bindsym $mod+q exec qutebrowser
+# bindsym $mod+q exec qutebrowser
 
 #START FILE BROWSER
         bindsym $mod+x exec thunar 
