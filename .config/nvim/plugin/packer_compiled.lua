@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  LuaSnip = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    url = "https://github.com/L3MON4D3/LuaSnip"
+  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -89,18 +94,43 @@ _G.packer_plugins = {
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-  ["coc.nvim"] = {
+  ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-nvim-lua"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/cmp-nvim-lua",
+    url = "https://github.com/hrsh7th/cmp-nvim-lua"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  cmp_luasnip = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   everforest = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/everforest",
     url = "https://github.com/sainnhe/everforest"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["git-conflict.nvim"] = {
-    config = { "\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15highlights\1\0\2\fcurrent\fDiffAdd\rincoming\15DiffDelete\1\0\2\21default_mappings\2\24disable_diagnostics\1\nsetup\17git-conflict\frequire\0" },
+    config = { "\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15highlights\1\0\2\fcurrent\fDiffAdd\rincoming\15DiffDelete\1\0\2\24disable_diagnostics\1\21default_mappings\2\nsetup\17git-conflict\frequire\0" },
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/git-conflict.nvim",
     url = "https://github.com/akinsho/git-conflict.nvim"
@@ -115,10 +145,25 @@ _G.packer_plugins = {
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
   },
+  ["lsp-zero.nvim"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
+    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
   },
   ["neoscroll.nvim"] = {
     loaded = true,
@@ -135,10 +180,20 @@ _G.packer_plugins = {
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
   },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
+  },
   ["nvim-colorizer.lua"] = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -160,6 +215,11 @@ _G.packer_plugins = {
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -169,6 +229,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["silicon.nvim"] = {
+    loaded = true,
+    path = "/home/devendr4/.local/share/nvim/site/pack/packer/start/silicon.nvim",
+    url = "https://github.com/krivahtoo/silicon.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
@@ -185,7 +250,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: git-conflict.nvim
 time([[Config for git-conflict.nvim]], true)
-try_loadstring("\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15highlights\1\0\2\fcurrent\fDiffAdd\rincoming\15DiffDelete\1\0\2\21default_mappings\2\24disable_diagnostics\1\nsetup\17git-conflict\frequire\0", "config", "git-conflict.nvim")
+try_loadstring("\27LJ\2\n¢\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\15highlights\1\0\2\fcurrent\fDiffAdd\rincoming\15DiffDelete\1\0\2\24disable_diagnostics\1\21default_mappings\2\nsetup\17git-conflict\frequire\0", "config", "git-conflict.nvim")
 time([[Config for git-conflict.nvim]], false)
 
 _G._packer.inside_compile = false

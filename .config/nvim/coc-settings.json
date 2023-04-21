@@ -3,6 +3,7 @@
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
+    "prisma",
     "javascript",
     "graphql",
     "html",
@@ -23,5 +24,6 @@
   "explorer.previewAction.onHover": false,
   //ruby
   "solargraph.formatting": true,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "snippets.ultisnips.pythonPrompt": false
 }

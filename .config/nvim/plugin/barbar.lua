@@ -5,8 +5,7 @@ require'bufferline'.setup {
   -- Enable/disable animations
   animation = true,
   tabpages = true,
-  closable = false,
-  icons= 'both'
+  icons= { buffer_index = true, filetype = { enabled = true } }
 }
 
 

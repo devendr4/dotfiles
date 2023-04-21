@@ -1,4 +1,5 @@
 return require('packer').startup(function(use)
+	use { 'krivahtoo/silicon.nvim', run = './install.sh' }
 	use 'wbthomason/packer.nvim'
 	use 'kyazdani42/nvim-tree.lua'
 	use { 'nvim-telescope/telescope.nvim',
@@ -26,7 +27,7 @@ return require('packer').startup(function(use)
 	--autopairs/tags
 	use 'windwp/nvim-ts-autotag'
 	use 'windwp/nvim-autopairs'
-	-- use {'neoclide/coc.nvim', branch = 'release'}
+	use {'neoclide/coc.nvim', branch = 'release'}
 
 
 	use 'karb94/neoscroll.nvim'
@@ -34,7 +35,7 @@ return require('packer').startup(function(use)
 
 	use 'goolord/alpha-nvim'
 	use 'Shatur/neovim-session-manager'
-	use {
+	--[[ use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
 		requires = {
@@ -55,7 +56,7 @@ return require('packer').startup(function(use)
 			{ 'L3MON4D3/LuaSnip' }, -- Required
 			{ 'rafamadriz/friendly-snippets' }, -- Optional
 		}
-	}
+	} ]]
 
 
 	--[[  use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
@@ -63,11 +64,11 @@ return require('packer').startup(function(use)
   use 'ms-jpq/coq.thirdparty']]
 
 
-	use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+	--[[ use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
 	use 'hrsh7th/cmp-nvim-lsp' -- LSP source for nvim-cmp
 	use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
-	use 'jose-elias-alvarez/null-ls.nvim'
+	use 'jose-elias-alvarez/null-ls.nvim' ]]
 
 
 
