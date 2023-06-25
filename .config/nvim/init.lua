@@ -1,7 +1,7 @@
 local api = vim.api
 vim.opt.termguicolors = true
 vim.g.mapleader = " "
--- 2api.nvim_command [[colorscheme everforest]]
+api.nvim_command [[colorscheme everforest]]
 
 require('plugins')
 require('config')

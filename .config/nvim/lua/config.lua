@@ -125,14 +125,14 @@ require 'nvim-treesitter.configs'.setup {
   }
 }
   ) ]]
-require('onedark').setup {
+--[[ require('onedark').setup {
 	toggle_style_key = "<leader>ts",
 	-- style = 'warmer',
 	lualine = {
 		transparent = true
 	}
 }
-require('onedark').load()
+require('onedark').load() ]]
 
 
 -----------------------------------LSP-------------------------------------

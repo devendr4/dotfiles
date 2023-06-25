@@ -16,7 +16,7 @@ bspc config focus_follows_pointer true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a alacritty desktop='^1'
-bspc rule -a firefox desktop='^2'
+# bspc rule -a firefox desktop='^2'
 bspc rule -a TelegramDesktop desktop='^2'
 bspc rule -a Slack desktop='^2'
 bspc rule -a Spotify desktop='^9'

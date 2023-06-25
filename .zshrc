@@ -162,3 +162,6 @@ alias wallet-dev="ssh root@159.65.221.171"
 
 alias wallet-prod= "ssh root@137.184.202.212"
 
+alias trustible-dev="ssh vendible@146.190.74.25"
+alias trustible-prod="ssh vendible@67.207.90.175"
+export PATH="$HOME/.cargo/bin:$PATH"
