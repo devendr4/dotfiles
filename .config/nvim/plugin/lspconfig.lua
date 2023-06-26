@@ -31,7 +31,7 @@ local on_attach = function(client, bufnr)
 
 
 	-- See `:help vim.lsp.*` for documentation on any of the below functions
-	buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
+	-- buf_set_keymap('n', 'gD', '<Cmd>lua vim.lsp.buf.declaration()<CR>', opts)
 	--buf_set_keymap('n', 'gd', '<Cmd>lua vim.lsp.buf.definition()<CR>', opts)
 	buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
 	--buf_set_keymap('n', 'K', '<Cmd>lua vim.lsp.buf.hover()<CR>', opts)
@@ -80,10 +80,11 @@ cmp.setup {
 
     -- ... Your other configuration ...
 
-    ['<C-Space>'] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Insert,
-      select = true,
-    },
+    ['<C-Space>'] = cmp.mapping.complete(),
+	-- {
+ --      behavior = cmp.ConfirmBehavior.Insert,
+ --      select = true,
+ --    },
 
     ['<Tab>'] = function(fallback)
       if not cmp.select_next_item() then
