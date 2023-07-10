@@ -38,6 +38,7 @@ sh ~/.screenlayout/monitor.sh &
 # Bar
 ~/.config/polybar/blocks/launch.sh &
 ~/.local/share/fastcursor.sh &
+/usr/bin/copyq &
 # Notifications
 /usr/bin/dunst &
 # Polkit

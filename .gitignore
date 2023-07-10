@@ -1,4 +1,8 @@
 plugged/
 /plugged
 functions/
-/fish
+**/fish/completions
+**/fish/conf.d
+fish_variables
+.zshrc
+.zshrc
