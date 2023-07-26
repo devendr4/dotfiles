@@ -177,8 +177,8 @@ super + Print
 
 # Shortcuts
 super + w 
-	firefox-nightly
-	# brave
+	brave
+	# firefox-nightly
   # microsoft-edge-stable
 
 super + n 

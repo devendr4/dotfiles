@@ -1,5 +1,5 @@
 return require('packer').startup(function(use)
-	use { 'krivahtoo/silicon.nvim', run = './install.sh' }
+	use {'krivahtoo/silicon.nvim', run = './install.sh'}
 	use 'wbthomason/packer.nvim'
 	use 'kyazdani42/nvim-tree.lua'
 	use { 'nvim-telescope/telescope.nvim',
@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
 
 	use 'goolord/alpha-nvim'
 	use 'Shatur/neovim-session-manager'
+
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
@@ -59,9 +60,6 @@ return require('packer').startup(function(use)
 	}
 
 
-	--[[  use { 'ms-jpq/coq_nvim', run = 'python3 -m coq deps' }
-  use 'ms-jpq/coq.artifacts'
-  use 'ms-jpq/coq.thirdparty']]
 
 
 	use 'L3MON4D3/LuaSnip' -- Snippets plugin
@@ -84,3 +82,5 @@ return require('packer').startup(function(use)
 	end }
 end
 )
+
+
