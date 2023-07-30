@@ -160,11 +160,11 @@ XF86AudioMute
 
 # Brightness up
 XF86MonBrightnessUp
-  xbacklight -inc 5
+  ~/.local/share/changebrightness up
 
 # And brightness down
 XF86MonBrightnessDown
-  xbacklight -dec 5
+  ~/.local/share/changebrightness down
 
 # Screenshot
 Print
@@ -177,8 +177,8 @@ super + Print
 
 # Shortcuts
 super + w 
-	firefox-nightly
-	# brave
+	brave
+	# firefox-nightly
   # microsoft-edge-stable
 
 super + n 
