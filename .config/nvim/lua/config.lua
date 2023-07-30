@@ -7,6 +7,11 @@ require('neoscroll').setup()
 require('alpha').setup(require 'alpha.themes.dashboard'.config)
 local Path = require('plenary.path')
 
+--[[ require('silicon').setup({
+  font = 'FantasqueSansMono Nerd Font=16',
+  theme = 'Monokai Extended',
+}) ]]
+
 require('lualine').setup {
 	options = {
 		icons_enabled = true,
@@ -162,7 +167,8 @@ require("null-ls").setup({
 		null_ls.builtins.diagnostics.eslint_d,
 		null_ls.builtins.formatting.eslint_d,
 		null_ls.builtins.formatting.prettierd,
-		null_ls.builtins.formatting.prismaFmt
+		null_ls.builtins.formatting.prismaFmt,
+	null_ls.builtins.formatting.black,
 		-- null_ls.builtins.completion.spell,
 	},
 	on_attach = function(client, bufnr)
@@ -189,4 +195,5 @@ vim.diagnostic.config({
 -- Show line diagnostics automatically in hover window
  vim.o.updatetime = 250
  vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+
 
