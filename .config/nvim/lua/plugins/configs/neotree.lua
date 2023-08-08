@@ -1,19 +1,4 @@
 return {
-  "nvim-neo-tree/neo-tree.nvim",
-    dependencies = {
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-    },
-  branch = "main", -- HACK: force neo-tree to checkout `main` for initial v3 migration since default branch has changed
-  cmd = "Neotree",
-  keys = {
-    { "<F1>", "<cmd>Neotree toggle<cr>", desc = "Toggle tree" },
-  },
-  init = function()
-    vim.g.neo_tree_remove_legacy_commands = true
-  end,
-  opts = function()
-    return {
       auto_clean_after_session_restore = true,
       close_if_last_window = true,
       sources = { "filesystem", "buffers", "git_status" },
@@ -41,5 +26,4 @@ return {
         },
       },
     }
-  end,
-}
+
