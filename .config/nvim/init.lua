@@ -11,18 +11,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local vim = vim
-local o = vim.o
-o.clipboard = "unnamedplus"
-
-local api = vim.api
-
-require("keybinds")
-
+require("options")
 require("lazy").setup("plugins")
+require("keybinds")
 
 require("plugins.configs.lsp")
 require("plugins.configs.mini")
 require("plugins.configs.formatter-nvim")
 
-api.nvim_command([[colorscheme everforest]])
+vim.api.nvim_command([[colorscheme everforest]])

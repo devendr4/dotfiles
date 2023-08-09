@@ -1,7 +1,3 @@
-vim.keymap.set("n", "<Space>", "<Nop>", { silent = true, remap = false })
-
-vim.g.mapleader = " "
-
 local function map(mode, lhs, rhs, opts)
 	opts = opts or {}
 	opts.silent = opts.silent ~= false
@@ -10,6 +6,8 @@ local function map(mode, lhs, rhs, opts)
 	end
 	vim.keymap.set(mode, lhs, rhs, opts)
 end
+
+map("n", "<Space>", "<Nop>", { silent = true, remap = false })
 
 -- better up/down
 map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
@@ -33,6 +31,4 @@ map("n", "<S-Tab>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
 map("n", "<leader>d", "<cmd>bd<CR>", { desc = "Delete buffer" })
 -- map("n","space","<Nop>")
 
-vim.opt.termguicolors = true
-vim.wo.number = true
-vim.wo.relativenumber = true
+map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
