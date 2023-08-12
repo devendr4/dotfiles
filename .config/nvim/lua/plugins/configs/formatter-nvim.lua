@@ -9,6 +9,11 @@ require("formatter").setup({
 	filetype = {
 		-- Formatter configurations for filetype "lua" go here
 		-- and will be executed in order
+		--
+		javascript = {
+			require("formatter.defaults").prettierd,
+			require("formatter.defaults").eslint_d,
+		},
 		typescript = {
 			require("formatter.defaults").prettierd,
 			require("formatter.defaults").eslint_d,
@@ -24,7 +29,8 @@ require("formatter").setup({
 		},
 
 		vue = {
-			require("formatter.defaults").prettier,
+			require("formatter.defaults").prettierd,
+			require("formatter.defaults").eslint_d,
 		},
 
 		python = {
