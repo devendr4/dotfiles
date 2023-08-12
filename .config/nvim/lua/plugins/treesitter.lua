@@ -6,7 +6,7 @@ return {
 	build = ":TSUpdate",
 	opts = function()
 		return {
-			ensure_installed = { "typescript", "python" },
+			ensure_installed = { "typescript", "python", "tsx", "css" },
 
 			highlight = {
 				enabled = true,

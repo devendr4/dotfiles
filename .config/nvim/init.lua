@@ -18,5 +18,3 @@ require("keybinds")
 require("plugins.configs.lsp")
 require("plugins.configs.mini")
 require("plugins.configs.formatter-nvim")
-
-vim.api.nvim_command([[colorscheme everforest]])

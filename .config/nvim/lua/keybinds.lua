@@ -32,3 +32,7 @@ map("n", "<leader>d", "<cmd>bd<CR>", { desc = "Delete buffer" })
 -- map("n","space","<Nop>")
 
 map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
+
+-- LSP Saga
+map("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+map("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", { desc = "Code action" })

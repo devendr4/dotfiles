@@ -27,6 +27,10 @@ return {
 		-- 		}
 		-- 	end,
 		-- },
+		--
+		config = function()
+			require("telescope").load_extension("fzf")
+		end,
 
 		keys = {
 			{ "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", desc = "Find files" },
