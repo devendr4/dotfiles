@@ -2,18 +2,22 @@ return {
 	"nvim-treesitter/nvim-treesitter",
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
+		"windwp/nvim-ts-autotag",
 	},
 	build = ":TSUpdate",
-	opts = function()
-		return {
-			ensure_installed = { "typescript", "python", "tsx", "css" },
+	config = function()
+		local configs = require("nvim-treesitter.configs")
+		configs.setup({
+			ensure_installed = { "typescript", "python", "tsx", "css", "vue", "javascript" },
 
-			highlight = {
-				enabled = true,
-			},
+			highlight = { enable = true },
+			autotag = { enable = true },
+
+			incremental_selection = { enable = true },
+
 			context_commentstring = {
-				enabled = true,
+				enable = true,
 			},
-		}
+		})
 	end,
 }
