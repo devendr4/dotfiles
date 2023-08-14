@@ -1,25 +1,20 @@
-vim.opt.termguicolors = true
-vim.g.mapleader = " "
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
+end
+vim.opt.rtp:prepend(lazypath)
 
-require('plugins')
-require('config')
-require('keybinds')
-require('telescope-config')
--- require('lsp')
-local vim = vim
-local api = vim.api
-local o   = vim.o
+require("options")
+require("lazy").setup("plugins")
+require("keybinds")
 
-vim.wo.number = true
-vim.wo.relativenumber = true
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.opt.mouse = "a"
-o.clipboard = 'unnamedplus'
-o.splitright = true
-o.splitbelow = true
-
--- vim.g.colors_name='everforest'
-
-api.nvim_command [[colorscheme everforest]]
-
+require("plugins.configs.lsp")
+require("plugins.configs.mini")
+require("plugins.configs.formatter-nvim")

@@ -1,2 +1,9 @@
 plugged/
 /plugged
+functions/
+**/fish/completions
+**/fish/conf.d
+fish_variables
+.zshrc
+.zshrc
+Session.vim

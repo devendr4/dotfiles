@@ -75,6 +75,10 @@ super + ctrl + {m,x,y,z}
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
+#
+#
+super + shift + {h,j,k,l}
+	/home/devendr4/.config/bspwm/scripts/bspwm_smart_move {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -173,7 +177,9 @@ super + Print
 
 # Shortcuts
 super + w 
-  microsoft-edge-stable
+	brave
+	# firefox-nightly
+  # microsoft-edge-stable
 
 super + n 
   thunar

@@ -1,79 +1,38 @@
-local vim = vim
-local api = vim.api
-
-
-function map(mode, shortcut, command, expr)
-  vim.api.nvim_set_keymap(mode, shortcut, command, { noremap = true, silent = true,expr=expr or false })
+local function map(mode, lhs, rhs, opts)
+	opts = opts or {}
+	opts.silent = opts.silent ~= false
+	if opts.remap and not vim.g.vscode then
+		opts.remap = nil
+	end
+	vim.keymap.set(mode, lhs, rhs, opts)
 end
 
-function nmap(shortcut, command,expr)
-  map('n', shortcut, command)
-end
+map("n", "<Space>", "<Nop>", { silent = true, remap = false })
 
-function imap(shortcut, command, expr)
-  map('i', shortcut, command,expr)
-end
+-- better up/down
+map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
--- move between splits 
-nmap("<c-k>", ":wincmd k<CR>")
-nmap("<c-j>", ":wincmd j<CR>")
-nmap("<c-h>", ":wincmd h<CR>")
-nmap("<c-l>", ":wincmd l<CR>")
--- close buffer
-nmap("<leader>d", ":bd<CR>")
-nmap("<leader>w", ":w<CR>")
---plugins
-nmap ("<F1>", ":NvimTreeFindFileToggle<CR>")
-nmap("f", ":Telescope live_grep<CR>")
-nmap("<leader>f", ":Telescope find_files<CR>")
---hop
-nmap ("<leader>h", ":HopWord<cr>")
-nmap ("<leader>l", ":HopLine<cr>")
+-- Move to window using the <ctrl> hjkl keys
+map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
+map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
+map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
 
-nmap("<tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bnext<CR>")
-nmap("<s-tab>",":if &modifiable && !&readonly && &modified <CR> :write<CR> :endif<CR>:bprevious<CR>")
+-- Resize window using <ctrl> arrow keys
+map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
+map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
+map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window width" })
+map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
-nmap("space","<Nop>")
+-- Tab navigation
+map("n", "<Tab>", "<cmd>bnext<CR>", { desc = "Next buffer" })
+map("n", "<S-Tab>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
+map("n", "<leader>d", "<cmd>bd<CR>", { desc = "Delete buffer" })
+-- map("n","space","<Nop>")
 
+map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
 
-
---all coc related
-vim.cmd([[
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-inoremap <silent><expr> <Tab>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
-      \ coc#refresh()
-
-
-inoremap <expr> <Tab> coc#pum#visible() ? coc#pum#next(1) : "\<Tab>"
-inoremap <expr> <S-Tab> coc#pum#visible() ? coc#pum#prev(1) : "\<S-Tab>"
-
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
-
-
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-
-
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  elseif (coc#rpc#ready())
-    call CocActionAsync('doHover')
-  else
-    execute '!' . &keywordprg . " " . expand('<cword>')
-  endif
-endfunction
-
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nmap <leader>a <Plug>(coc-codeaction)
-]])
+-- LSP Saga
+map("n", "K", "<cmd>Lspsaga hover_doc<CR>")
+map("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", { desc = "Code action" })
