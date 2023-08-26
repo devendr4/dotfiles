@@ -6,8 +6,9 @@ require("mini.tabline").setup()
 require("mini.statusline").setup()
 require("mini.starter").setup({})
 require("mini.indentscope").setup()
-require("mini.jump2d").setup()
+-- require("mini.jump2d").setup()
 require("mini.basics").setup()
+-- require("mini.surround").setup()
 local miniclue = require("mini.clue")
 
 require("mini.clue").setup({
