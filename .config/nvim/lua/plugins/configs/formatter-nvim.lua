@@ -32,6 +32,14 @@ require("formatter").setup({
 			require("formatter.defaults").prettierd,
 			require("formatter.defaults").eslint_d,
 		},
+		html = {
+			require("formatter.defaults").prettierd,
+			require("formatter.defaults").eslint_d,
+		},
+		scss = {
+
+			require("formatter.defaults").prettierd,
+		},
 
 		python = {
 			require("formatter.filetypes.python").black,

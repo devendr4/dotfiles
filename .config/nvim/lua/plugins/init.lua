@@ -43,7 +43,7 @@ return {
 				"javascript",
 				"typescript",
 				"typescriptreact",
-				"css",
+				"scss",
 				html = {
 					mode = "foreground",
 				},
