@@ -41,6 +41,11 @@ require("formatter").setup({
 			require("formatter.defaults").prettierd,
 		},
 
+		css = {
+
+			require("formatter.defaults").prettierd,
+		},
+
 		python = {
 			require("formatter.filetypes.python").black,
 			require("formatter.filetypes.python").isort,

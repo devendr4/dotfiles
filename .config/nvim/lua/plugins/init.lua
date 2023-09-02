@@ -18,10 +18,23 @@ return {
 		end,
 		lazy = false,
 	},
+
 	{
 		"ggandor/leap.nvim",
 		config = function()
 			require("leap").add_default_mappings()
+		end,
+	},
+	{
+		"michaelrommel/nvim-silicon",
+		lazy = true,
+		cmd = "Silicon",
+		config = function()
+			require("silicon").setup({
+				-- Configuration here, or leave empty to use defaults
+				to_clipboard = true,
+				font = "Iosevka Nerd Font=34",
+			})
 		end,
 	},
 	{
