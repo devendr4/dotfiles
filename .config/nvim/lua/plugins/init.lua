@@ -19,6 +19,7 @@ return {
 		lazy = false,
 	},
 
+	{ "akinsho/git-conflict.nvim", version = "*", config = true },
 	{
 		"ggandor/leap.nvim",
 		config = function()
@@ -57,6 +58,7 @@ return {
 				"typescript",
 				"typescriptreact",
 				"scss",
+				"vue",
 				html = {
 					mode = "foreground",
 				},

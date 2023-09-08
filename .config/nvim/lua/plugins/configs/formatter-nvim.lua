@@ -29,8 +29,10 @@ require("formatter").setup({
 		},
 
 		vue = {
+			require("formatter.defaults").prettier,
 			require("formatter.defaults").prettierd,
 			require("formatter.defaults").eslint_d,
+			require("formatter.defaults").eslint,
 		},
 		html = {
 			require("formatter.defaults").prettierd,
