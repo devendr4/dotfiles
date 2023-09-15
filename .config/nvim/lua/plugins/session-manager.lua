@@ -1,6 +1,7 @@
 return {
 
 	"Shatur/neovim-session-manager",
+	cmd = "SessionManager",
 	opts = function()
 		local Path = require("plenary.path")
 		local config = require("session_manager.config")

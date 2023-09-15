@@ -1,0 +1,26 @@
+return {
+	"stevearc/conform.nvim",
+	opts = function()
+		local prettier = { "prettierd", "prettier" }
+		return {
+
+			format_on_save = {
+				-- These options will be passed to conform.format()
+				timeout_ms = 500,
+				lsp_fallback = true,
+			},
+			formatters_by_ft = {
+				lua = { "stylua" },
+				-- Conform will run multiple formatters sequentially
+				python = { "isort", "black" },
+				-- Use a sub-list to run only the first available formatter
+				javascript = { prettier, { "eslint_d", "eslint" } },
+				typescript = { prettier },
+				json = { prettier },
+				vue = { prettier },
+				html = { prettier },
+				scss = { prettier },
+			},
+		}
+	end,
+}

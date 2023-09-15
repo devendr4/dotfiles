@@ -32,9 +32,9 @@ return {
 			require("telescope").load_extension("fzf")
 		end,
 
+		cmd = "Telescope",
+
 		keys = {
-			{ "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", desc = "Find files" },
-			{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
 		},
 	},
 	{
