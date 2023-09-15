@@ -9,6 +9,7 @@ return {
 			vim.cmd([[colorscheme everforest]])
 		end,
 	},
+	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
 		"numToStr/Comment.nvim",
 		config = function()

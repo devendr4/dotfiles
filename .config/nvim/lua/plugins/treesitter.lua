@@ -3,6 +3,7 @@ return {
 	dependencies = {
 		"JoosepAlviste/nvim-ts-context-commentstring",
 		"windwp/nvim-ts-autotag",
+		{ "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
 	},
 	build = ":TSUpdate",
 	config = function()
