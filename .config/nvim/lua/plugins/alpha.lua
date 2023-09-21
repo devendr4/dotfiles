@@ -33,6 +33,7 @@ return {
 			dashboard.button("s", " Load session", "<cmd>SessionManager load_current_dir_session<CR>"),
 			dashboard.button("f", "󰈞  Find file", "<cmd>Telescope find_files hidden=true<cr>"),
 			dashboard.button("w", "󰈬  Find word", "<cmd>Telescope live_grep hidden=true<cr>"),
+			dashboard.button("c", "󰈬  Config", "<cmd>e ~/.config/nvim/init.lua<cr>"),
 			dashboard.button("q", "󰅚  Quit", "<cmd>qa<CR>"),
 		}
 
