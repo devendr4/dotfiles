@@ -6,7 +6,7 @@ return {
 		require("mini.pairs").setup()
 		require("mini.sessions").setup()
 		-- require("mini.tabline").setup()
-		require("mini.statusline").setup()
+		-- require("mini.statusline").setup()
 		-- require("mini.starter").setup({})
 		-- require("mini.indentscope").setup()
 		-- require("mini.jump2d").setup()
