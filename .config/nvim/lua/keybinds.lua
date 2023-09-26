@@ -26,9 +26,9 @@ map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window wi
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- Tab navigation
-map("n", "<Tab>", "<cmd>bnext<CR>", { desc = "Next buffer" })
-map("n", "<S-Tab>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
-map("n", "<leader>d", "<cmd>bd<CR>", { desc = "Delete buffer" })
+map("n", "<Tab>", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
+map("n", "<S-Tab>", "<cmd>BufferPrevious<CR>", { desc = "Prev buffer" })
+map("n", "<leader>d", "<cmd>BufferClose<CR>", { desc = "Delete buffer" })
 -- map("n","space","<Nop>")
 
 map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
