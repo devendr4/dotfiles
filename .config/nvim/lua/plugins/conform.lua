@@ -14,13 +14,15 @@ return {
 				-- Conform will run multiple formatters sequentially
 				python = { "isort", "black" },
 				-- Use a sub-list to run only the first available formatter
-				javascript = { prettier },
+				javascript = { "eslint_d" }, --prettier },
 				typescript = { prettier },
 				json = { prettier },
 				vue = { prettier, "eslint_d" },
 				html = { prettier },
 				scss = { prettier },
+				css = { prettier },
 				go = { "gofumpt" },
+				bash = { "shfmt" },
 			},
 		}
 	end,

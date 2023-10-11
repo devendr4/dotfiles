@@ -3,9 +3,10 @@ return {
 	opts = {
 		options = {
 			icons_enabled = true,
-			theme = "auto",
+			theme = "everforest",
 			component_separators = { left = "", right = "" },
-			section_separators = { left = "", right = "" },
+			-- section_separators = { left = "", right = "" },
+			section_separators = "",
 			disabled_filetypes = {
 				statusline = {},
 				winbar = {},
