@@ -23,6 +23,7 @@ return {
 				css = { prettier },
 				go = { "gofumpt" },
 				bash = { "shfmt" },
+				sql = { "sql_formatter" },
 			},
 		}
 	end,
