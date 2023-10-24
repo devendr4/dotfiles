@@ -9,10 +9,10 @@ end
 
 map("n", "<Space>", "<Nop>", { silent = true, remap = false })
 
--- better up/down
-map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
-
+-- -- better up/down
+-- map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+-- map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+--
 -- Move to window using the <ctrl> hjkl keys
 map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
 map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
@@ -26,9 +26,9 @@ map("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease window wi
 map("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase window width" })
 
 -- Tab navigation
-map("n", "<Tab>", "<cmd>bnext<CR>", { desc = "Next buffer" })
-map("n", "<S-Tab>", "<cmd>bprevious<CR>", { desc = "Prev buffer" })
-map("n", "<leader>d", "<cmd>bd<CR>", { desc = "Delete buffer" })
+map("n", "<Tab>", "<cmd>BufferNext<CR>", { desc = "Next buffer" })
+map("n", "<S-Tab>", "<cmd>BufferPrevious<CR>", { desc = "Prev buffer" })
+map("n", "<leader>d", "<cmd>BufferClose<CR>", { desc = "Delete buffer" })
 -- map("n","space","<Nop>")
 
 map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
@@ -36,3 +36,16 @@ map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
 -- LSP Saga
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>")
 map("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", { desc = "Code action" })
+
+map("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Go to definition" })
+map("n", "gD", "<cmd>Lspsaga goto_type_definition<CR>", { desc = "Go to type definition" })
+map("n", "<leader>t", "<cmd>TroubleToggle<CR>", { desc = "Trouble toggle" })
+
+map("v", "<leader>s", "<cmd>'<,'>Silicon<CR>", { desc = "Silicon" })
+
+-- Telescope
+map("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "Find files" })
+map("n", "<leader>fg", "<cmd>Telescope live_grep hidden=true<cr>", { desc = "Live grep" })
+
+--barbar
+map("n", "<leader>bd", "<cmd>BufferCloseAllButCurrent<cr>", { desc = "Close all buffers but current" })

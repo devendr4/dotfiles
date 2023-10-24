@@ -1,5 +1,7 @@
 return {
 	"nvim-lua/plenary.nvim",
+	{ "lukas-reineke/indent-blankline.nvim" },
+	{ "iloginow/vim-stylus" },
 	{
 		"sainnhe/everforest",
 		lazy = false,
@@ -9,6 +11,7 @@ return {
 			vim.cmd([[colorscheme everforest]])
 		end,
 	},
+	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
 		"numToStr/Comment.nvim",
 		config = function()
@@ -19,6 +22,36 @@ return {
 		lazy = false,
 	},
 
+	{ "akinsho/git-conflict.nvim", version = "*", config = true },
+	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").add_default_mappings()
+		end,
+	},
+	{
+		"michaelrommel/nvim-silicon",
+		lazy = true,
+		cmd = "Silicon",
+		config = function()
+			require("silicon").setup({
+				-- Configuration here, or leave empty to use defaults
+				to_clipboard = true,
+				font = "Iosevka Nerd Font=34",
+			})
+		end,
+	},
+	{
+		"kylechui/nvim-surround",
+		version = "*", -- Use for stability; omit to use `main` branch for the latest features
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	},
+
 	{
 		"norcalli/nvim-colorizer.lua",
 		opts = function()
@@ -27,7 +60,8 @@ return {
 				"javascript",
 				"typescript",
 				"typescriptreact",
-				"css",
+				"scss",
+				"vue",
 				html = {
 					mode = "foreground",
 				},
@@ -69,41 +103,4 @@ return {
 			-- "rcarriga/nvim-notify",
 		},
 	},
-
-	--[[ {
-		"glepnir/dashboard-nvim",
-		event = "VimEnter",
-		config = function()
-			require("dashboard").setup({
-				theme = "doom",
-				config = {
-					header = { "neovim" }, --your header
-					-- week_header = {
-					-- 	enable = true, --boolean use a week header
-					-- },
-					center = {
-						{
-							icon = " ",
-							icon_hl = "Title",
-							desc = "Find File           ",
-							desc_hl = "String",
-							key = "b",
-							keymap = "SPC f f",
-							key_hl = "Number",
-							action = "lua print(2)",
-						},
-						{
-							icon = " ",
-							desc = "Find Dotfiles",
-							key = "f",
-							keymap = "SPC f d",
-							action = "lua print(3)",
-						},
-					},
-					-- footer = {}, --your footer
-				},
-			})
-		end,
-		dependencies = { { "nvim-tree/nvim-web-devicons" } },
-	}, ]]
 }

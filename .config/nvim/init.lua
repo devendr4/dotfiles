@@ -14,7 +14,3 @@ vim.opt.rtp:prepend(lazypath)
 require("options")
 require("lazy").setup("plugins")
 require("keybinds")
-
-require("plugins.configs.lsp")
-require("plugins.configs.mini")
-require("plugins.configs.formatter-nvim")
