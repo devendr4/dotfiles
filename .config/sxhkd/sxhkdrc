@@ -208,7 +208,7 @@ super + alt + {h,j,k,l}
 
 
   # change lang
-super + i
+super + shift + i
 	~/.local/share/switch_lang.sh
 
 super + Mod + KP_1
