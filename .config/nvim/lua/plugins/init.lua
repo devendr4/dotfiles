@@ -1,6 +1,7 @@
 return {
 	"nvim-lua/plenary.nvim",
-	{ "lukas-reineke/indent-blankline.nvim" },
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
 	{
 		"sainnhe/everforest",
