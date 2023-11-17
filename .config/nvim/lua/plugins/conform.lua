@@ -17,7 +17,8 @@ return {
 				-- Use a sub-list to run only the first available formatter
 				javascript = { "eslint_d", prettier },
 				typescript = { prettier },
-				json = { prettier },
+				typescriptreact = { "eslint_d", prettier },
+				-- json = { prettier },
 				vue = { prettier, "eslint_d" },
 				html = { prettier },
 				htmldjango = { prettier },
