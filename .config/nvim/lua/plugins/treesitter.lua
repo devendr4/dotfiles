@@ -15,10 +15,6 @@ return {
 			autotag = { enable = true },
 
 			incremental_selection = { enable = true },
-
-			context_commentstring = {
-				enable = true,
-			},
 		})
 	end,
 }
