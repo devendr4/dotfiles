@@ -3,15 +3,34 @@ return {
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
+	-- {
+	-- 	"sainnhe/everforest",
+	-- 	lazy = false,
+	-- 	prioriy = 1000,
+	-- 	config = function()
+	-- 		-- load the colorscheme here
+	-- 		vim.cmd([[colorscheme everforest]])
+	-- 	end,
+	-- },
+
 	{
-		"sainnhe/everforest",
+		"shaunsingh/nord.nvim",
 		lazy = false,
 		prioriy = 1000,
 		config = function()
 			-- load the colorscheme here
-			vim.cmd([[colorscheme everforest]])
+			vim.cmd([[colorscheme nord]])
 		end,
 	},
+
+	-- {
+	-- 	"AlexvZyl/nordic.nvim",
+	-- 	lazy = false,
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		require("nordic").load()
+	-- 	end,
+	-- },
 	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
 		"numToStr/Comment.nvim",

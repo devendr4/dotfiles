@@ -2,6 +2,7 @@ return {
 	"stevearc/conform.nvim",
 	opts = function()
 		local prettier = { "prettierd" } --, "prettier" }
+		local ruff = { "ruff_fix", "ruff_format" }
 		return {
 
 			format_on_save = {
@@ -13,15 +14,17 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				-- Conform will run multiple formatters sequentially
-				python = { "isort", "black" },
+				python = { "ruff_fix", "ruff_format" },
 				-- Use a sub-list to run only the first available formatter
 				javascript = { "eslint_d", prettier },
-				typescript = { prettier },
+				-- typescript = { prettier },
+				typescript = { "biome" },
 				typescriptreact = { "eslint_d", prettier },
+				javascriptreact = { "eslint_d", prettier },
 				-- json = { prettier },
 				vue = { prettier, "eslint_d" },
 				html = { prettier },
-				htmldjango = { prettier },
+				htmldjango = { "prettier" },
 				markdown = { prettier },
 				scss = { prettier },
 				css = { prettier },

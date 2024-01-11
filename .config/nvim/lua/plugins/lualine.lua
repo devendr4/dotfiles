@@ -3,7 +3,7 @@ return {
 	opts = {
 		options = {
 			icons_enabled = true,
-			theme = "everforest",
+			theme = "nordic",
 			component_separators = { left = "", right = "" },
 			-- section_separators = { left = "", right = "" },
 			section_separators = "",
