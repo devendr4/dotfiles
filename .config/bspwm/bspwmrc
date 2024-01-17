@@ -36,7 +36,7 @@ bspc config active_border_color         "#073642"
 # Set display from arandr saved script
 sh ~/.screenlayout/monitor.sh &
 # Bar
-~/.config/polybar/cuts/launch.sh &
+~/.config/polybar/forest/launch.sh &
 ~/.local/share/fastcursor.sh &
 /usr/bin/copyq &
 # Notifications
