@@ -3,25 +3,25 @@ return {
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
-	-- {
-	-- 	"sainnhe/everforest",
-	-- 	lazy = false,
-	-- 	prioriy = 1000,
-	-- 	config = function()
-	-- 		-- load the colorscheme here
-	-- 		vim.cmd([[colorscheme everforest]])
-	-- 	end,
-	-- },
-
 	{
-		"shaunsingh/nord.nvim",
+		"sainnhe/everforest",
 		lazy = false,
 		prioriy = 1000,
 		config = function()
 			-- load the colorscheme here
-			vim.cmd([[colorscheme nord]])
+			vim.cmd([[colorscheme everforest]])
 		end,
 	},
+
+	-- {
+	-- 	"shaunsingh/nord.nvim",
+	-- 	lazy = false,
+	-- 	prioriy = 1000,
+	-- 	config = function()
+	-- 		-- load the colorscheme here
+	-- 		vim.cmd([[colorscheme nord]])
+	-- 	end,
+	-- },
 
 	-- {
 	-- 	"AlexvZyl/nordic.nvim",
