@@ -3,15 +3,76 @@ return {
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
+	{ "rktjmp/lush.nvim" },
 	{
-		"sainnhe/everforest",
-		lazy = false,
-		prioriy = 1000,
+		"adisen99/apprentice.nvim",
+
 		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme everforest]])
+			vim.o.background = "dark" -- or "light" for light mode
+
+			-- Load and setup function to choose plugin and language highlights
+			require("lush")(require("apprentice").setup({
+				plugins = {
+					"buftabline",
+					"coc",
+					"cmp", -- nvim-cmp
+					"fzf",
+					"gitgutter",
+					"gitsigns",
+					"lsp",
+					"lspsaga",
+					"nerdtree",
+					"netrw",
+					"nvimtree",
+					"neogit",
+					"packer",
+					"signify",
+					"startify",
+					"syntastic",
+					"telescope",
+					"treesitter",
+				},
+				langs = {
+					"c",
+					"clojure",
+					"coffeescript",
+					"csharp",
+					"css",
+					"elixir",
+					"golang",
+					"haskell",
+					"html",
+					"java",
+					"js",
+					"json",
+					"jsx",
+					"lua",
+					"markdown",
+					"moonscript",
+					"objc",
+					"ocaml",
+					"purescript",
+					"python",
+					"ruby",
+					"rust",
+					"scala",
+					"typescript",
+					"viml",
+					"xml",
+				},
+			}))
 		end,
 	},
+
+	-- {
+	-- 	"sainnhe/everforest",
+	-- 	lazy = false,
+	-- 	prioriy = 1000,
+	-- 	config = function()
+	-- 		-- load the colorscheme here
+	-- 		vim.cmd([[colorscheme everforest]])
+	-- 	end,
+	-- },
 
 	-- {
 	-- 	"shaunsingh/nord.nvim",

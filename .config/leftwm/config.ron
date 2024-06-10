@@ -59,7 +59,7 @@
     layout_mode: Tag,
     insert_behavior: Bottom,
     scratchpad: [
-        (name: "Alacritty", value: "alacritty", x: 860, y: 390, height: 300, width: 200),
+        (name: "Kitty", value: "kitty", x: 860, y: 390, height: 300, width: 200),
     ],
     window_rules: [],
     disable_current_tag_swap: false,
@@ -121,6 +121,9 @@
         (command: Execute, value: "~/.config/rofi/powermenu.sh", modifier: ["modkey", "Shift"], key: "e"),
         (command: Execute, value: "~/.local/share/screenshot-actions/screenshot.sh maim selectToClip", modifier: ["modkey"], key: "s"),
         (command: Execute, value: "~/.local/share/screenshot-actions/screenshot.sh maim fullToFile", modifier: ["modkey", "Shift"], key: "s"),
+				(command: Execute, value : "amixer -q set Master 5%+ unmute", modifier:[], key: "XF86AudioRaiseVolume"),
+				(command: Execute, value : "amixer -q set Master 5%- unmute", modifier:[], key: "XF86AudioLowerVolume"),
+				(command: Execute, value : "pcmanfm", modifier:["modkey"], key: "n")
     ],
     state_path: None,
 )
