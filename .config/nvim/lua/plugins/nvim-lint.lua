@@ -6,7 +6,7 @@ return {
 			typescriptreact = { "eslint_d" },
 			vue = { "eslint_d" },
 			dockerfile = { "hadolint" },
-			python = { "ruff", "pylint" },
+			python = { "ruff", "mypy", "pylint" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
