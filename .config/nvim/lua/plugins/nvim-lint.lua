@@ -7,6 +7,7 @@ return {
 			vue = { "eslint_d" },
 			dockerfile = { "hadolint" },
 			python = { "ruff", "mypy", "pylint" },
+			sql = { "sqlfluff" },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
