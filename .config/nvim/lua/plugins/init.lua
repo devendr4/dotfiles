@@ -3,6 +3,7 @@ return {
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
+	{ "rktjmp/lush.nvim" },
 	{
 		"ellisonleao/gruvbox.nvim",
 		priority = 1000,
