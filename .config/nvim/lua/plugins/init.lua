@@ -5,93 +5,13 @@ return {
 	{ "iloginow/vim-stylus" },
 	{ "rktjmp/lush.nvim" },
 	{
-		"adisen99/apprentice.nvim",
-
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
 		config = function()
-			vim.o.background = "dark" -- or "light" for light mode
-
-			-- Load and setup function to choose plugin and language highlights
-			require("lush")(require("apprentice").setup({
-				plugins = {
-					"buftabline",
-					"coc",
-					"cmp", -- nvim-cmp
-					"fzf",
-					"gitgutter",
-					"gitsigns",
-					"lsp",
-					"lspsaga",
-					"nerdtree",
-					"netrw",
-					"nvimtree",
-					"neogit",
-					"packer",
-					"signify",
-					"startify",
-					"syntastic",
-					"telescope",
-					"treesitter",
-				},
-				langs = {
-					"c",
-					"clojure",
-					"coffeescript",
-					"csharp",
-					"css",
-					"elixir",
-					"golang",
-					"haskell",
-					"html",
-					"java",
-					"js",
-					"json",
-					"jsx",
-					"lua",
-					"markdown",
-					"moonscript",
-					"objc",
-					"ocaml",
-					"purescript",
-					"python",
-					"ruby",
-					"rust",
-					"scala",
-					"typescript",
-					"viml",
-					"xml",
-				},
-			}))
+			-- load the colorscheme here
+			vim.cmd([[colorscheme gruvbox]])
 		end,
 	},
-
-	-- {
-	-- 	"sainnhe/everforest",
-	-- 	lazy = false,
-	-- 	prioriy = 1000,
-	-- 	config = function()
-	-- 		-- load the colorscheme here
-	-- 		vim.cmd([[colorscheme everforest]])
-	-- 	end,
-	-- },
-
-	-- {
-	-- 	"shaunsingh/nord.nvim",
-	-- 	lazy = false,
-	-- 	prioriy = 1000,
-	-- 	config = function()
-	-- 		-- load the colorscheme here
-	-- 		vim.cmd([[colorscheme nord]])
-	-- 	end,
-	-- },
-
-	-- {
-	-- 	"AlexvZyl/nordic.nvim",
-	-- 	lazy = false,
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		require("nordic").load()
-	-- 	end,
-	-- },
 	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
 		"numToStr/Comment.nvim",
@@ -167,6 +87,29 @@ return {
 			-- or leave it empty to use the default settings
 			-- refer to the configuration section below
 		},
+	},
+
+	{
+		"windwp/nvim-ts-autotag",
+
+		config = function()
+			require("nvim-ts-autotag").setup({
+				opts = {
+					-- Defaults
+					enable_close = true, -- Auto close tags
+					enable_rename = true, -- Auto rename pairs of tags
+					enable_close_on_slash = false, -- Auto close on trailing </
+				},
+				-- Also override individual filetype configs, these take priority.
+				-- Empty by default, useful if one of the "opts" global settings
+				-- doesn't work well in a specific filetype
+				per_filetype = {
+					["html"] = {
+						enable_close = false,
+					},
+				},
+			})
+		end,
 	},
 
 	{

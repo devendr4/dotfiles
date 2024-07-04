@@ -49,3 +49,5 @@ map("n", "<leader>fg", "<cmd>Telescope live_grep hidden=true<cr>", { desc = "Liv
 
 --barbar
 map("n", "<leader>bd", "<cmd>BufferCloseAllButCurrent<cr>", { desc = "Close all buffers but current" })
+
+map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })

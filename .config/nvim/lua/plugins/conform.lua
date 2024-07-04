@@ -18,7 +18,7 @@ return {
 				-- Use a sub-list to run only the first available formatter
 				javascript = { "eslint_d", prettier },
 				-- typescript = { prettier },
-				typescript = { "biome", "eslintd", prettier },
+				typescript = { "eslintd", "eslint", prettier, "biome" },
 				typescriptreact = { "eslint_d", prettier },
 				javascriptreact = { "eslint_d", prettier },
 				json = { prettier },
@@ -30,7 +30,7 @@ return {
 				css = { prettier },
 				go = { "gofumpt" },
 				bash = { "shfmt" },
-				-- sql = { "sql_formatter" },
+				-- sql = { "sqlfmt" },
 			},
 		}
 	end,
