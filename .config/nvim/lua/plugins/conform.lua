@@ -17,6 +17,7 @@ return {
 				python = { "ruff_fix", "ruff_format" },
 				-- Use a sub-list to run only the first available formatter
 				javascript = { "eslint_d", prettier },
+				svelte = { "eslint_d", prettier },
 				-- typescript = { prettier },
 				typescript = { "eslintd", "eslint", prettier, "biome" },
 				typescriptreact = { "eslint_d", prettier },
