@@ -68,6 +68,9 @@ fi
 #set background
 nitrogen --restore
 
+
+~/.local/share/fastcursor.sh
 #set the theme.toml config
+
 leftwm-command "LoadTheme $SCRIPTPATH/theme.toml"
 
