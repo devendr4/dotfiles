@@ -13,6 +13,13 @@ local config = {
 	},
 }
 local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
-bar.apply_to_config(config)
+bar.apply_to_config(config, {
+	enabled_modules = {
+		username = false,
+		hostname = false,
+		cwd = true,
+		clock = false,
+	},
+})
 
 return config
