@@ -4,6 +4,8 @@ functions/
 **/fish/completions
 **/fish/conf.d
 fish_variables
+fish/fishd.tmp.*
 .zshrc
 .zshrc
 Session.vim
+.config/fish/fishd.tmp.*

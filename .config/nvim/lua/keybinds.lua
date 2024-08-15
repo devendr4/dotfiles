@@ -39,13 +39,8 @@ map("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", { desc = "Code action" })
 
 map("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Go to definition" })
 map("n", "gD", "<cmd>Lspsaga goto_type_definition<CR>", { desc = "Go to type definition" })
-map("n", "<leader>t", "<cmd>TroubleToggle<CR>", { desc = "Trouble toggle" })
 
 map("v", "<leader>s", "<cmd>'<,'>Silicon<CR>", { desc = "Silicon" })
-
--- Telescope
-map("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "Find files" })
-map("n", "<leader>fg", "<cmd>Telescope live_grep hidden=true<cr>", { desc = "Live grep" })
 
 --barbar
 map("n", "<leader>bd", "<cmd>BufferCloseAllButCurrent<cr>", { desc = "Close all buffers but current" })

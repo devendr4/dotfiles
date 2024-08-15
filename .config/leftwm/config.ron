@@ -58,8 +58,10 @@
     ],
     layout_mode: Tag,
     insert_behavior: Bottom,
-    scratchpad: [
-        (name: "Kitty", value: "kitty", x: 860, y: 390, height: 300, width: 200),
+    // scratchpad: [ (name: "Kitty", value: "kitty", x: 860, y: 390, height: 300, width: 200),
+    // ],
+
+    scratchpad: [ (name: "Wezterm", value: "wezterm", x: 860, y: 390, height: 300, width: 200),
     ],
     window_rules: [],
     disable_current_tag_swap: false,
@@ -73,7 +75,7 @@
     auto_derive_workspaces: true,
     disable_cursor_reposition_on_resize: false,
     keybind: [
-        (command: Execute, value: "rofi -modi drun -show drun -line-padding 4 -columns 2 -padding 50 -hide-scrollbar -terminal kitty -show-icons -drun-icon-theme 'Arc-X-D' -font 'Droid Sans Regular 10'", modifier: ["modkey"], key: "d"),
+        (command: Execute, value: "rofi -modi drun -show drun -line-padding 4 -columns 2 -padding 50 -hide-scrollbar -terminal wezterm -show-icons -drun-icon-theme 'Arc-X-D' -font 'Droid Sans Regular 10'", modifier: ["modkey"], key: "d"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "q"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
         (command: Execute, value: "loginctl kill-session $XDG_SESSION_ID", modifier: ["modkey", "Shift"], key: "x"),
@@ -82,8 +84,8 @@
         // (command: SwapTags, value: "", modifier: ["modkey"], key: "w"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "k"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "j"),
-        (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
-        (command: MoveWindowTop, value: "", modifier: ["modkey", "Shift"], key: "Return"),
+        (command: Execute, value: "wezterm", modifier: ["modkey"], key: "Return"),
+        // (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: FocusWindowUp, value: "", modifier: ["modkey"], key: "k"),
         (command: FocusWindowDown, value: "", modifier: ["modkey"], key: "j"),
         (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "k"),
