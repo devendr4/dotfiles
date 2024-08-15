@@ -51,3 +51,5 @@ map("n", "<leader>fg", "<cmd>Telescope live_grep hidden=true<cr>", { desc = "Liv
 map("n", "<leader>bd", "<cmd>BufferCloseAllButCurrent<cr>", { desc = "Close all buffers but current" })
 
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
+
+map("n", "<leader>ri", "<cmd>TSToolsRemoveUnusedImports<cr>", { desc = "Remove unused imports" })
