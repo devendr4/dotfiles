@@ -11,7 +11,10 @@ return {
 			-- Autocompletion
 			{ "hrsh7th/nvim-cmp" }, -- Required
 			{ "hrsh7th/cmp-nvim-lsp" }, -- Required
-			{ "L3MON4D3/LuaSnip" }, -- Required
+			{
+				"L3MON4D3/LuaSnip",
+				dependencies = { "rafamadriz/friendly-snippets", "saadparwaiz1/cmp_luasnip" },
+			}, -- Required
 		},
 	},
 
@@ -37,13 +40,25 @@ return {
 
 			-- (Optional) Configure lua language server for neovim
 			require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+			require("luasnip.loaders.from_vscode").lazy_load()
 
 			lsp.setup()
 
 			local cmp = require("cmp")
-			local luasnip = require("luasnip")
+			require("luasnip.loaders.from_vscode").lazy_load()
 
 			cmp.setup({
+				snippet = {
+					expand = function(args)
+						require("luasnip").lsp_expand(args.body)
+					end,
+				},
+				sources = cmp.config.sources({
+					{ name = "nvim_lsp" },
+					{ name = "luasnip" }, -- For luasnip users.
+				}, {
+					{ name = "buffer" },
+				}),
 				mapping = {
 					-- `Enter` key to confirm completion
 					["<CR>"] = cmp.mapping.confirm({ select = false }),
