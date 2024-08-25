@@ -31,7 +31,8 @@ map("n", "<S-Tab>", "<cmd>BufferPrevious<CR>", { desc = "Prev buffer" })
 map("n", "<leader>d", "<cmd>BufferClose<CR>", { desc = "Delete buffer" })
 -- map("n","space","<Nop>")
 
-map("n", "<leader>l", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
+map("n", "<leader>li", "<cmd>LspInfo<CR>", { desc = "LSP Info" })
+map("n", "<leader>lr", "<cmd>LspRestart<CR>", { desc = "Restart LSP" })
 
 -- LSP Saga
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>")
