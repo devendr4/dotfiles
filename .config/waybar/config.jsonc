@@ -1,6 +1,6 @@
 {
 		"layer": "top",
-		"modules-left": ["hyprland/workspaces", "temperature", "hyprland/window"],
+		"modules-left": ["hyprland/workspaces", "temperature", "hyprland/window","hyprland/submap"],
 		/*"modules-center": ["hyprland/window"],*/
 		"modules-right": ["tray", "custom/subs", "cpu", "memory", "idle_inhibitor", "clock", "pulseaudio", "bluetooth"],
 

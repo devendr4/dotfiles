@@ -78,6 +78,16 @@ window#waybar {
   color: @bg;
 }
 
+#submap {
+  margin: 5px 5px 2px 5px;
+  border-radius: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: @bg;
+  /* color: @active-green; */
+  color: @peach;
+}
+
 #workspaces button {
   margin: 5px 2px 5px 2px;
   border-radius: 3px;
