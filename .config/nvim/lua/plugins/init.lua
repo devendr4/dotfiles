@@ -4,15 +4,28 @@ return {
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
 	{ "rktjmp/lush.nvim" },
-	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
-		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme gruvbox]])
-		end,
-	},
+	-- {
+	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		-- load the colorscheme here
+	-- 		vim.cmd([[colorscheme gruvbox]])
+	-- 	end,
+	-- },
 	-- { "nvim-treesitter/nvim-treesitter-angular" },
+	{
+  "neanias/everforest-nvim",
+  version = false,
+  lazy = false,
+  priority = 1000, -- make sure to load this before all the other start plugins
+  -- Optional; default configuration will be used if setup isn't called.
+  config = function()
+vim.cmd([[colorscheme everforest]])
+    require("everforest").setup({
+      -- Your config here
+    })
+  end,
+},
 	{
 		"numToStr/Comment.nvim",
 		config = function()
