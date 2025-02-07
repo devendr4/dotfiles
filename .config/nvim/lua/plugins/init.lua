@@ -18,15 +18,28 @@ return {
 		config = true,
 	},
 
+	-- {
+	-- 	"ellisonleao/gruvbox.nvim",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		-- load the colorscheme here
+	-- 		vim.cmd([[colorscheme gruvbox]])
+	-- 	end,
+	-- },
+	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
-		"ellisonleao/gruvbox.nvim",
-		priority = 1000,
+		"neanias/everforest-nvim",
+		version = false,
+		lazy = false,
+		priority = 1000, -- make sure to load this before all the other start plugins
+		-- Optional; default configuration will be used if setup isn't called.
 		config = function()
-			-- load the colorscheme here
-			vim.cmd([[colorscheme gruvbox]])
+			vim.cmd([[colorscheme everforest]])
+			require("everforest").setup({
+				-- Your config here
+			})
 		end,
 	},
-	-- { "nvim-treesitter/nvim-treesitter-angular" },
 	{
 		"numToStr/Comment.nvim",
 		config = function()

@@ -1,18 +1,18 @@
 disable_ligatures never
-font_size 14.0
+# font_size 14.0
+font_size 10.0
 scrollback_lines 10000000
 
 font_family Fira Code
 font_family Monaspace Neon
-font_family JetBrains Mono
+# font_family JetBrains Mono
 
-include onedark.conf
-include nord.conf
-include everforest.conf
-window_margin_width 10
+window_margin_width 20
+
+background_opacity 0.9
 
 
 # BEGIN_KITTY_THEME
-# Everforest Dark Medium
+# Gruvbox Dark
 include current-theme.conf
 # END_KITTY_THEME
