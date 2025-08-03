@@ -6,7 +6,7 @@ return {
 			typescriptreact = { "eslint_d" },
 			vue = { "eslint_d" },
 			dockerfile = { "hadolint" },
-			python = { "ruff","ty"}, -- "mypy", "pylint" },
+			python = { "ruff", "mypy", "pylint" },
 			sql = { "sqlfluff" },
 		}
 

@@ -30,7 +30,7 @@ return {
 
 			["<Tab>"] = { "select_next", "fallback" },
 			["<S-Tab>"] = { "select_prev", "fallback" },
-			["<CR>"] = { "select_and_accept" },
+			["<CR>"] = { "select_and_accept", "fallback" },
 
 			["<S-k>"] = { "scroll_documentation_up", "fallback" },
 			["<S-j>"] = { "scroll_documentation_down", "fallback" },
@@ -46,12 +46,12 @@ return {
 		},
 
 		-- (Default) Only show the documentation popup when manually triggered
-		completion = { documentation = { auto_show = false } },
+		completion = { documentation = { auto_show = true } },
 
 		-- Default list of enabled providers defined so that you can extend it
 		-- elsewhere in your config, without redefining it, due to `opts_extend`
 		sources = {
-			default = { "lsp", "path" }, --  "snippets", "buffer" },
+			default = { "lsp", "path", "snippets", "buffer" },
 		},
 
 		-- (Default) Rust fuzzy matcher for typo resistance and significantly better performance
