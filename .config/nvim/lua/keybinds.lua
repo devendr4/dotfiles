@@ -38,8 +38,8 @@ map("n", "<leader>lr", "<cmd>LspRestart<CR>", { desc = "Restart LSP" })
 -- map("n", "K", "<cmd>Lspsaga hover_doc<CR>")
 -- map("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", { desc = "Code action" })
 --
--- map("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Go to definition" })
--- map("n", "gD", "<cmd>Lspsaga goto_type_definition<CR>", { desc = "Go to type definition" })
+map("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { desc = "Go to definition" })
+map("n", "gD", "<cmd>Lspsaga goto_type_definition<CR>", { desc = "Go to type definition" })
 
 map("v", "<leader>s", "<cmd>'<,'>Silicon<CR>", { desc = "Silicon" })
 
