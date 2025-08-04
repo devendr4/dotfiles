@@ -4,20 +4,20 @@ return {
 	{ "romainl/vim-cool" },
 	{ "iloginow/vim-stylus" },
 	{ "rktjmp/lush.nvim" },
-	{
-		"zbirenbaum/copilot-cmp",
-		config = function()
-			require("copilot_cmp").setup()
-		end,
-	},
+	-- {
+	-- 	"zbirenbaum/copilot-cmp",
+	-- 	config = function()
+	-- 		require("copilot_cmp").setup()
+	-- 	end,
+	-- },
 
-	{
-		"zbirenbaum/copilot.lua",
-		cmd = "Copilot",
-		event = "InsertEnter",
-		config = true,
-	},
-
+	-- {
+	-- 	"zbirenbaum/copilot.lua",
+	-- 	cmd = "Copilot",
+	-- 	event = "InsertEnter",
+	-- 	config = true,
+	-- },
+	--
 	-- {
 	-- 	"ellisonleao/gruvbox.nvim",
 	-- 	priority = 1000,
