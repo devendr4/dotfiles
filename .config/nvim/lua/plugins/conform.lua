@@ -1,7 +1,8 @@
 return {
 	"stevearc/conform.nvim",
 	opts = function()
-		local prettier = { "prettierd", "eslint_d" } --, "prettier" }
+		local prettier = { "biome" } --, "prettier" }
+		-- local prettier = { "prettierd", "eslint_d" } --, "prettier" }
 		local ruff = { "ruff_fix", "ruff_format" }
 		return {
 
@@ -20,7 +21,8 @@ return {
 				javascript = prettier,
 				svelte = prettier,
 				typescript = prettier,
-				typescriptreact = prettier,
+				-- typescriptreact = prettier,
+				typescriptreact = { 'biome'},
 				javascriptreact = prettier,
 				json = prettier,
 				vue = prettier,
