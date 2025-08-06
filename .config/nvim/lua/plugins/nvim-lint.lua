@@ -22,6 +22,8 @@ return {
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local lint = require("lint")
+		local ns = require("lint").get_namespace("mypy")
+		vim.diagnostic.config({ virtual_text = true, underline = true }, ns)
 
 		lint.linters_by_ft = {
 			python = { "mypy" },
