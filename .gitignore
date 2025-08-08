@@ -9,3 +9,4 @@ fish/fishd.tmp.*
 .zshrc
 Session.vim
 .config/fish/fishd.tmp.*
+~/.undodir
