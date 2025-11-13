@@ -5,6 +5,7 @@ return {
 		require("mini.animate").setup()
 		require("mini.pairs").setup()
 		require("mini.sessions").setup()
+		require("mini.icons").setup()
 		-- require("mini.tabline").setup()
 		-- require("mini.statusline").setup()
 		-- require("mini.starter").setup({})
