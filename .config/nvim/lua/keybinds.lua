@@ -47,3 +47,6 @@ map("v", "<leader>s", "<cmd>'<,'>Silicon<CR>", { desc = "Silicon" })
 map("n", "<leader>bd", "<cmd>BufferCloseAllButCurrent<cr>", { desc = "Close all buffers but current" })
 
 map("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
+vim.keymap.set("n", "<leader>rn", function()
+	return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true })
